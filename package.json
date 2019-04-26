@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Mon portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://eliseekn@bitbucket.org/eliseekn/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "eliseekn",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/eliseekn/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglifycss": "^1.1.0",
+    "node-sass": "^4.11.0"
+  }
+}
