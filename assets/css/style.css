@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/assets/fonts/Roboto/Roboto-Regular.eot');
+    src: url('/assets/fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/assets/fonts/Roboto/Roboto-Bold.eot');
+    src: url('/assets/fonts/Roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+	--title-font: "Open sans", sans-serif;
+	--text-font: "Roboto-Regular";
+	--dark-blue: #3b494f;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -10,8 +32,8 @@ html {
 
 body {
 	color: white;
-	background-color: #3b494f;
-	font-family: Open-sans, sans-serif;
+	background-color: var(--dark-blue);
+	font-family: var(--text-font);
 	line-height: 1.5;
 	text-align: justify;
 }
@@ -20,13 +42,24 @@ a {
 	text-decoration:none;
 }
 
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
 .container {
 	max-width: 960px;
 	width: 90%;
 	margin: 0 auto;
 }
 
-.header {
+header,
+#methodologie,
+#cas-pratique,
+#contact {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -34,14 +67,16 @@ a {
 	justify-content: center;
 }
 
-.header h1 {
+header h1 {
 	font-size: 3rem;
 	margin-bottom: 1em;
+	font-family: var(--title-font);
 }
 
 .btn-link {
 	color: white;
 	font-weight: bold;
+	font-size: 1.2rem;
 	padding: 1em 1.5em;
 	border-radius: 5px;
 	border: 2px solid white;
@@ -57,55 +92,40 @@ a {
 	align-items: center;
 }
 
-.button-group a {
-	font-size: 1.3rem;
-}
-
 .button-group li {
+	font-size: 1.3rem;
 	margin-right: .5em;
 }
 
-#etude-cas .section__content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#etude-cas, 
-#contact {
-	height: 100vh;
-	display: flex;
-}
-
-#etude-cas p,
+#methodologie p,
+#cas-pratique p,
 #contact p {
 	font-size: 1.5rem;
 }
 
-#etude-cas h2,
+#methodologie h2,
+#cas-pratique h2,
 #contact h2 {
 	font-size: 2rem;
+	font-family: var(--title-font);
 }
 
-#etude-cas h3 {
-	font-size: 1.5rem;
+#cas-pratique .section__content {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
 }
 
 .section__header {
-	padding: 3em 0;
+	padding-bottom: 3em;
 }
 
 .section__content .row {
 	display: flex;
 }
 
-.section__content .row p,
-.section__content .row img {
+.section__content .row col {
 	width: 50%;
-}
-
-.section__content .row img {
-	margin-left: 2em;
 }
 
 #scroll-top {
@@ -114,7 +134,7 @@ a {
     right: 15px;
     bottom: 15px;
     z-index: 11;
-    border-radius: 8px;
+    border-radius: 5px;
     width: 50px;
     height: 50px;
     text-align: center;
