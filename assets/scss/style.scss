@@ -167,7 +167,7 @@ header {
     }
 
     @media only screen and (max-width: 768px) {
-        padding-bottom: 2em;
+        padding-bottom: 1.5em;
     }
 }
 
@@ -179,6 +179,8 @@ header {
 
         @media only screen and (max-width: 768px) {
             font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 1em;
         }
     }
 
@@ -268,5 +270,5 @@ footer {
     z-index: 11;
     overflow: auto;
     background-color: rgba(254, 124, 127, .1);
-    padding-top: 100px;    
+    padding-top: 100px;
 }
