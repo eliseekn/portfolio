@@ -30,18 +30,18 @@ body {
 	font-size: 1.3rem;
 	padding: 1em 1.5em;
 	border-radius: 5px;
-	border: 2px solid $light-pink;
+	border: 2px solid $light-blue;
     transition: all .3s ease-out;
-    
+
     li {
         margin-right: .5em;
-        color: $light-pink;
+        color: $light-blue;
         transition: all 1s ease-out;
     }
 
     &:hover {
-        box-shadow: 0 0 5px $light-pink;
-        
+        box-shadow: 0 0 5px $light-blue;
+
         li {
             transform: rotate(360deg);
         }
@@ -76,10 +76,10 @@ body {
     width: 50px;
     height: 50px;
     text-align: center;
-    color: $light-pink;
+    color: $light-blue;
     transform: translate(-50%, -50%);
     transition: all .3s ease-out;
-    
+
     li {
         font-size: 2rem;
         margin-top: .25em;
@@ -87,7 +87,7 @@ body {
     }
 
     &:hover {
-        box-shadow: 0 0 5px $light-pink !important;
+        box-shadow: 0 0 5px $light-blue !important;
 
         li {
             transform: rotate(360deg);
@@ -122,7 +122,7 @@ header {
 
     .about-p {
         line-height: 1.8;
-        
+
         @media only screen and (max-width: 375px) {
             display: none;
         }
@@ -132,7 +132,7 @@ header {
         font-size: 3rem;
         margin-bottom: 1em;
         font-family: $title-font;
-        color: $light-pink;
+        color: $light-blue;
 
         @media only screen and (max-width: 768px) {
             font-size: 2rem;
@@ -142,7 +142,7 @@ header {
 
 .section__header {
     padding-bottom: 3em;
-    
+
     p {
         font-family: $medium-font;
         font-size: 1.5rem;
@@ -159,7 +159,7 @@ header {
     h2 {
         font-size: 2rem;
         font-family: $title-font;
-        color: $light-pink;
+        color: $light-blue;
 
         @media only screen and (max-width: 768px) {
             font-size: 1.5rem;
@@ -174,7 +174,7 @@ header {
 .section__content {
     ul {
         margin-bottom: 2em;
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         line-height: 1.8;
 
         @media only screen and (max-width: 768px) {
@@ -195,7 +195,7 @@ header {
     }
 
     .col-img {
-        background-color: $light-pink;
+        background-color: $light-blue;
 
         img {
             cursor: pointer;
