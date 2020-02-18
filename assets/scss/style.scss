@@ -118,11 +118,21 @@ header {
 		@media only screen and (max-width: 600px) {
 			font-size: 2rem;
 		}
+		
+		@media only screen and (max-width: 355px) {
+			
+		}
     }
 
 	.btn-group {
 		margin-top: 2em;
-	}		
+	}
+	
+	.about-p {
+		@media only screen and (max-width: 355px) {
+			display: none;
+		}
+	}
 }
 
 .section__header {

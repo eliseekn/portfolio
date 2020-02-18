@@ -164,6 +164,11 @@ header h1 {
 header .btn-group {
   margin-top: 2em;
 }
+@media only screen and (max-width: 355px) {
+  header .about-p {
+    display: none;
+  }
+}
 
 .section__header {
   padding-bottom: 3em;
