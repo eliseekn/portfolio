@@ -76,6 +76,11 @@ body {
   color: #9bb6c2;
   transition: all 1s ease-out;
 }
+@media only screen and (max-width: 355px) {
+  .btn li {
+    display: none;
+  }
+}
 .btn:hover {
   box-shadow: 0 0 5px #9bb6c2;
 }
