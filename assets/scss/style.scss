@@ -11,10 +11,11 @@ body {
 	font-family: $text-font;
     text-align: justify;
     line-height: 1.5;
+	font-size: 1.5rem;
 
-    @media only screen and (min-width: 400px) and (max-width: 425px) {
-        text-align: left;
-    }
+	@media only screen and (max-width: 600px) {
+		font-size: 1.2rem;
+	}
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
 .btn {
 	color: white;
 	font-family: $medium-font;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	padding: 1em 1.5em;
 	border-radius: 5px;
 	border: 2px solid $light-blue;
@@ -47,37 +48,33 @@ body {
         }
     }
 
-    @media only screen and (max-width: 375px) {
-        width: 100%;
-    }
+	@media only screen and (max-width: 600px) {
+		font-size: 1.2rem;
+	}
 
-    @media only screen and (max-width: 768px) {
-        font-size: 1.2rem;
-    }
 }
 
 .btn-group {
 	display: flex;
     align-items: center;
 
-    @media only screen and (max-width: 425px) {
-        flex-direction: column;
-        align-items: start;
-    }
+	@media only screen and (max-width: 780px) {
+		flex-direction: column;
+		align-items: start;
+	}
 }
 
 #scroll-top {
     position: fixed;
     display: none;
-    right: 15px;
-    bottom: 15px;
+    right: 50px;
+    bottom: 50px;
     z-index: 11;
     border-radius: 5px;
     width: 50px;
     height: 50px;
     text-align: center;
     color: $light-blue;
-    transform: translate(-50%, -50%);
     transition: all .3s ease-out;
 
     li {
@@ -99,7 +96,7 @@ body {
 header,
 #methodologie,
 #realisations,
-footer {
+#contact {
     height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -108,24 +105,8 @@ footer {
 }
 
 header {
-    p {
-        font-size: 1.5rem;
-
-        @media only screen and (max-width: 768px) {
-            font-size: 1.2rem;
-        }
-    }
-
-    p:first-child::before {
+	p:first-child::before {
         @include before();
-    }
-
-    .about-p {
-        line-height: 1.8;
-
-        @media only screen and (max-width: 375px) {
-            display: none;
-        }
     }
 
     h1 {
@@ -133,11 +114,15 @@ header {
         margin-bottom: 1em;
         font-family: $title-font;
         color: $light-blue;
-
-        @media only screen and (max-width: 768px) {
-            font-size: 2rem;
-        }
+	
+		@media only screen and (max-width: 600px) {
+			font-size: 2rem;
+		}
     }
+
+	.btn-group {
+		margin-top: 2em;
+	}		
 }
 
 .section__header {
@@ -145,12 +130,7 @@ header {
 
     p {
         font-family: $medium-font;
-        font-size: 1.5rem;
-
-        @media only screen and (max-width: 768px) {
-            font-size: 1.2rem;
-        }
-    }
+	}
 
     p::before {
         @include before();
@@ -160,103 +140,94 @@ header {
         font-size: 2rem;
         font-family: $title-font;
         color: $light-blue;
-
-        @media only screen and (max-width: 768px) {
-            font-size: 1.5rem;
-        }
+		
+		@media only screen and (max-width: 600px) {
+			font-size: 1.5rem;
+		}
     }
+	
+	@media only screen and (max-width: 600px) {
+		padding-bottom: 2em;
+	}
+	
+	@media only screen and (max-width: 930px) {
+		padding-bottom: 2em;
+	}
 
-    @media only screen and (max-width: 768px) {
-        padding-bottom: 1.5em;
-    }
 }
 
-.section__content {
-    ul {
-        margin-bottom: 2em;
-        font-size: 1.5rem;
-        line-height: 1.8;
-
-        @media only screen and (max-width: 768px) {
-            font-size: 1.2rem;
-            line-height: 1.5;
-            margin-bottom: 1em;
-        }
-    }
-
-    p {
-        font-size: 1.3rem;
-    }
-
-    .col-text {
-        @media only screen and (max-width: 425px) {
-            display: none;
-        }
-    }
-
-    .col-img {
-        background-color: $light-blue;
-
-        img {
-            cursor: pointer;
-            transition: opacity .3s ease-out;
-
-            &:hover {
-                opacity: .8;
-            }
-        }
-    }
-}
-
-.row {
-    .col {
+.col {
+    .row {
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 }
 
+#methodologie,
 #realisations {
     .section__content {
         .btn-group {
             margin-top: 2em;
         }
-
-        .btn-group__right {
-            margin-left: 1em;
-
-            @media only screen and (max-width: 425px) {
-                margin-left: 0;
-                margin-top: .5em;
-            }
-        }
-
-        p {
-            @media only screen and (max-width: 768px) {
-                font-size: 1rem;
-            }
-        }
     }
 }
 
-footer {
+#realisations {
+	.section__content {
+    	.col-img {
+        	background-color: $light-blue;
+
+        	img {
+            	cursor: pointer;
+            	transition: opacity .3s ease-out;
+
+            	&:hover {
+                	opacity: .8;
+            	}
+        	}
+    	}
+	}
+	
+	.md-lg {
+		@media only screen and (max-width: 980px) {
+			display: none;
+		}
+	}
+
+	.sm {
+		display: none;
+
+		@media only screen and (max-width: 980px) {
+			display: block;
+		}
+	}
+}
+
+#contact {
     .section__content {
         .btn-group {
             margin-bottom: 2em;
-
-            @media only screen and (max-width: 425px) {
-                margin-bottom: .5em;
-            }
+			
+			@media only screen and (max-width: 780px) {
+				margin-bottom: 0;
+			}
         }
 
-        .btn-group__right {
+        .btn-right {
             margin-left: 1em;
-
-            @media only screen and (max-width: 425px) {
-                margin-left: 0;
-                margin-top: .5em;
-            }
+			
+			@media only screen and (max-width: 780px) {
+				margin-left: 0;
+				margin-bottom: 1em;
+			}
         }
+
+		.btn-left {
+			@media only screen and (max-width: 780px) {
+				margin-bottom: 1em;
+			}
+		}
     }
 }
 
@@ -272,3 +243,4 @@ footer {
     background-color: rgba(254, 124, 127, .1);
     padding-top: 100px;
 }
+
