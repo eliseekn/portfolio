@@ -14,6 +14,7 @@ $(function() {
     $( ".owl-carousel" ).owlCarousel({
         items: 1,
 		mouseDrag: false,
+		touchDrag: false,
         loop: false,
         nav: false,
         animateIn: 'slideInRight'

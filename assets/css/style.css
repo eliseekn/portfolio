@@ -148,6 +148,11 @@ header .fullname {
   font-family: "Pacifico";
   font-size: 3.5rem;
 }
+@media only screen and (max-width: 600px) {
+  header .fullname {
+    font-size: 2rem;
+  }
+}
 header .btn-group {
   margin-top: 2em;
 }
@@ -208,16 +213,8 @@ header .about-text {
   margin-top: 1em;
 }
 @media only screen and (max-width: 980px) {
-  #realisations .md-lg {
+  #realisations .section__content .col-text {
     display: none;
-  }
-}
-#realisations .sm {
-  display: none;
-}
-@media only screen and (max-width: 980px) {
-  #realisations .sm {
-    display: block;
   }
 }
 
@@ -242,6 +239,13 @@ header .about-text {
   #contact .section__content .btn-left {
     margin-bottom: 1em;
   }
+}
+#contact .section__content a {
+  color: #9bb6c2;
+  font-weight: bold;
+}
+#contact .section__content span {
+  font-weight: bold;
 }
 
 .mockup-modal {
