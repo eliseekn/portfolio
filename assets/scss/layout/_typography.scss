@@ -10,6 +10,16 @@
 }
 
 @font-face {
+    font-family: 'Pacifico';
+    src: url('/assets/fonts/Pacifico/Pacifico.eot');
+	src: url('/assets/fonts/Pacifico/Pacifico.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Pacifico/Pacifico.woff2') format('woff2'),
+		url('/assets/fonts/Pacifico/Pacifico.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Montserrat-Medium';
     src: url('/assets/fonts/Montserrat/Montserrat-Medium.eot');
 	src: url('/assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
@@ -33,3 +43,4 @@
 $title-font: "Montserrat-Bold";
 $text-font: "Roboto-Regular";
 $medium-font: "Montserrat-Medium";
+$special-font: "Pacifico";

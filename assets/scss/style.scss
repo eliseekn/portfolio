@@ -9,7 +9,6 @@ body {
 	color: white;
 	background-color: $dark-blue;
 	font-family: $text-font;
-    text-align: justify;
     line-height: 1.5;
 	font-size: 1.5rem;
 
@@ -26,29 +25,16 @@ body {
 
 //buttons layout
 .btn {
-	color: white;
+	color: $light-blue;
 	font-family: $medium-font;
 	font-size: 1.5rem;
-	padding: 1em 1.5em;
+	padding: .8em 1.5em;
 	border-radius: 5px;
 	border: 2px solid $light-blue;
     transition: all .3s ease-out;
 
-    li {
-        margin-right: .5em;
-        color: $light-blue;
-        transition: all 1s ease-out;
-@media only screen and (max-width: 355px) {
-			display: none;
-		}
-    }
-
     &:hover {
         box-shadow: 0 0 5px $light-blue;
-
-        li {
-            transform: rotate(360deg);
-        }
     }
 
 	@media only screen and (max-width: 600px) {
@@ -97,7 +83,6 @@ body {
 
 //layout styles
 header,
-#methodologie,
 #realisations,
 #contact {
     height: 100vh;
@@ -108,26 +93,30 @@ header,
 }
 
 header {
-	p:first-child::before {
-        @include before();
-    }
-
-    h1 {
+	h1 {
         font-size: 3rem;
-        margin-bottom: 1em;
+        margin: .1em 0;
         font-family: $title-font;
         color: $light-blue;
+		text-transform: uppercase;
 	
 		@media only screen and (max-width: 600px) {
 			font-size: 2rem;
 		}
+	}
+	
+	.fullname{
+		font-family: $special-font;
+		font-size: 3.5rem;
 	}
 
 	.btn-group {
 		margin-top: 2em;
 	}
 	
-	.about-p {
+	.about-text {
+		margin-top: 1.5em;
+		
 		@media only screen and (max-width: 355px) {
 			display: none;
 		}
@@ -138,12 +127,9 @@ header {
     padding-bottom: 3em;
 
     p {
-        font-family: $medium-font;
+        font-family: $special-font;
+		font-size: 2rem;
 	}
-
-    p::before {
-        @include before();
-    }
 
     h2 {
         font-size: 2rem;
@@ -173,15 +159,6 @@ header {
     }
 }
 
-#methodologie,
-#realisations {
-    .section__content {
-        .btn-group {
-            margin-top: 2em;
-        }
-    }
-}
-
 #realisations {
 	.section__content {
     	.col-img {
@@ -196,6 +173,10 @@ header {
             	}
         	}
     	}
+
+		.btn-group {
+            margin-top: 1em;
+        }
 	}
 	
 	.md-lg {
@@ -249,7 +230,23 @@ header {
     height: 100%;
     z-index: 11;
     overflow: auto;
-    background-color: rgba(254, 124, 127, .1);
+    background-color: rgba(0, 0, 0, .5);
     padding-top: 100px;
 }
 
+.mockup-title {
+	background-color: $dark-blue !important;
+	padding: .8em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	a {
+		color: white;
+	}
+
+	li {
+		cursor: pointer;
+		font-size: 1.5rem;
+	}
+}
