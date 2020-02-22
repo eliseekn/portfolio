@@ -29,6 +29,13 @@ img {
   font-style: normal;
 }
 @font-face {
+  font-family: "Pacifico";
+  src: url("/assets/fonts/Pacifico/Pacifico.eot");
+  src: url("/assets/fonts/Pacifico/Pacifico.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Pacifico/Pacifico.woff2") format("woff2"), url("/assets/fonts/Pacifico/Pacifico.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Montserrat-Medium";
   src: url("/assets/fonts/Montserrat/Montserrat-Medium.eot");
   src: url("/assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("/assets/fonts/Montserrat/Montserrat-Medium.woff") format("woff");
@@ -46,7 +53,6 @@ body {
   color: white;
   background-color: #3b494f;
   font-family: "Roboto-Regular";
-  text-align: justify;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -63,29 +69,16 @@ body {
 }
 
 .btn {
-  color: white;
+  color: #9bb6c2;
   font-family: "Montserrat-Medium";
   font-size: 1.5rem;
-  padding: 1em 1.5em;
+  padding: 0.8em 1.5em;
   border-radius: 5px;
   border: 2px solid #9bb6c2;
   transition: all 0.3s ease-out;
 }
-.btn li {
-  margin-right: 0.5em;
-  color: #9bb6c2;
-  transition: all 1s ease-out;
-}
-@media only screen and (max-width: 355px) {
-  .btn li {
-    display: none;
-  }
-}
 .btn:hover {
   box-shadow: 0 0 5px #9bb6c2;
-}
-.btn:hover li {
-  transform: rotate(360deg);
 }
 @media only screen and (max-width: 600px) {
   .btn {
@@ -130,7 +123,6 @@ body {
 }
 
 header,
-#methodologie,
 #realisations,
 #contact {
   height: 100vh;
@@ -140,37 +132,30 @@ header,
   justify-content: center;
 }
 
-header p:first-child::before {
-  content: " ";
-  display: inline-block;
-  height: 15px;
-  text-shadow: none;
-  background-color: #9bb6c2;
-  width: 80px;
-  position: absolute;
-  z-index: -1;
-}
-@media only screen and (max-width: 768px) {
-  header p:first-child::before {
-    width: 65px;
-  }
-}
 header h1 {
   font-size: 3rem;
-  margin-bottom: 1em;
+  margin: 0.1em 0;
   font-family: "Montserrat-Bold";
   color: #9bb6c2;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   header h1 {
     font-size: 2rem;
   }
 }
+header .fullname {
+  font-family: "Pacifico";
+  font-size: 3.5rem;
+}
 header .btn-group {
   margin-top: 2em;
 }
+header .about-text {
+  margin-top: 1.5em;
+}
 @media only screen and (max-width: 355px) {
-  header .about-p {
+  header .about-text {
     display: none;
   }
 }
@@ -179,22 +164,8 @@ header .btn-group {
   padding-bottom: 3em;
 }
 .section__header p {
-  font-family: "Montserrat-Medium";
-}
-.section__header p::before {
-  content: " ";
-  display: inline-block;
-  height: 15px;
-  text-shadow: none;
-  background-color: #9bb6c2;
-  width: 80px;
-  position: absolute;
-  z-index: -1;
-}
-@media only screen and (max-width: 768px) {
-  .section__header p::before {
-    width: 65px;
-  }
+  font-family: "Pacifico";
+  font-size: 2rem;
 }
 .section__header h2 {
   font-size: 2rem;
@@ -223,11 +194,6 @@ header .btn-group {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-#methodologie .section__content .btn-group,
-#realisations .section__content .btn-group {
-  margin-top: 2em;
-}
-
 #realisations .section__content .col-img {
   background-color: #9bb6c2;
 }
@@ -237,6 +203,9 @@ header .btn-group {
 }
 #realisations .section__content .col-img img:hover {
   opacity: 0.8;
+}
+#realisations .section__content .btn-group {
+  margin-top: 1em;
 }
 @media only screen and (max-width: 980px) {
   #realisations .md-lg {
@@ -284,8 +253,23 @@ header .btn-group {
   height: 100%;
   z-index: 11;
   overflow: auto;
-  background-color: rgba(254, 124, 127, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   padding-top: 100px;
+}
+
+.mockup-title {
+  background-color: #3b494f !important;
+  padding: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mockup-title a {
+  color: white;
+}
+.mockup-title li {
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

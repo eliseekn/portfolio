@@ -3,29 +3,29 @@ $(function() {
         once: true
     });
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 180) {
-            $("#scroll-top").fadeIn('slow');
+    $( window ).scroll( function() {
+        if ( $( this ).scrollTop() > 180 ) {
+            $( "#scroll-top" ).fadeIn( 'slow' );
         } else {
-            $("#scroll-top").fadeOut('slow');
+            $( "#scroll-top" ).fadeOut( 'slow' );
         }
     });
 
-    $(".owl-carousel").owlCarousel({
-        margin: 30,
+    $( ".owl-carousel" ).owlCarousel({
         items: 1,
+		mouseDrag: false,
         loop: false,
         nav: false,
-        animateOut: 'fadeOut',
         animateIn: 'slideInRight'
     });
 
-    $(".mockup").click(function() {
-        $("#mockup-image").attr("src", this.dataset.path + "full.jpg");
-        $(".mockup-modal").css("display", "block");
+    $( ".mockup" ).click( function() {
+        $( "#mockup-image" ).attr( "src", this.dataset.imgPath );
+		$( ".mockup-title" ).children().attr( "href", this.dataset.projectLink );
+        $( ".mockup-modal" ).css( "display", "block" );
     });
 
-    $(".mockup-modal").click(function() {
-        $(this).css("display", "none");
+    $( ".mockup-modal" ).find( "li" ).click( function() {
+        $( ".mockup-modal"  ).css( "display", "none" );
     });
 });
