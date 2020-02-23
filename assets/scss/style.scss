@@ -6,8 +6,8 @@
 
 //main styles
 body {
-	color: white;
-	background-color: $dark-blue;
+	color: $paragraph-color;
+	background-color: $bg-color;
 	font-family: $text-font;
     line-height: 1.5;
 	font-size: 1.5rem;
@@ -25,16 +25,16 @@ body {
 
 //buttons layout
 .btn {
-	color: $light-blue;
+	color: $btn-color;
 	font-family: $medium-font;
 	font-size: 1.5rem;
 	padding: .8em 1.5em;
 	border-radius: 5px;
-	border: 2px solid $light-blue;
+	border: 2px solid $btn-color;
     transition: all .3s ease-out;
 
     &:hover {
-        box-shadow: 0 0 5px $light-blue;
+        box-shadow: 0 0 5px $btn-color;
     }
 
 	@media only screen and (max-width: 600px) {
@@ -63,7 +63,7 @@ body {
     width: 50px;
     height: 50px;
     text-align: center;
-    color: $light-blue;
+    color: $btn-color;
     transition: all .3s ease-out;
 
     li {
@@ -73,7 +73,7 @@ body {
     }
 
     &:hover {
-        box-shadow: 0 0 5px $light-blue !important;
+        box-shadow: 0 0 5px $btn-color !important;
 
         li {
             transform: rotate(360deg);
@@ -97,7 +97,7 @@ header {
         font-size: 3rem;
         margin: .1em 0;
         font-family: $title-font;
-        color: $light-blue;
+        color: $title-color;
 		text-transform: uppercase;
 	
 		@media only screen and (max-width: 600px) {
@@ -108,6 +108,7 @@ header {
 	.fullname{
 		font-family: $special-font;
 		font-size: 3.5rem;
+		color: $subtitle-color;
 
 		@media only screen and (max-width: 600px) {
 			font-size: 2rem;
@@ -128,31 +129,23 @@ header {
 }
 
 .section__header {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 
     p {
         font-family: $special-font;
 		font-size: 2rem;
+		color: $subtitle-color;
 	}
 
     h2 {
         font-size: 2rem;
         font-family: $title-font;
-        color: $light-blue;
+        color: $title-color;
 		
 		@media only screen and (max-width: 600px) {
 			font-size: 1.5rem;
 		}
     }
-	
-	@media only screen and (max-width: 600px) {
-		padding-bottom: 2em;
-	}
-	
-	@media only screen and (max-width: 930px) {
-		padding-bottom: 2em;
-	}
-
 }
 
 .col {
@@ -166,7 +159,7 @@ header {
 #realisations {
 	.section__content {
     	.col-img {
-        	background-color: $light-blue;
+        	background-color: $title-color;
 
         	img {
             	cursor: pointer;
@@ -216,7 +209,7 @@ header {
 		}
 		
 		a {
-			color: $light-blue;
+			color: $title-color;
 			font-weight: bold;
 		}
 		
@@ -240,7 +233,7 @@ header {
 }
 
 .mockup-title {
-	background-color: $dark-blue !important;
+	background-color: $bg-color !important;
 	padding: .8em;
 	display: flex;
 	align-items: center;
