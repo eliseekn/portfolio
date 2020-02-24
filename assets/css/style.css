@@ -56,6 +56,11 @@ body {
   line-height: 1.5;
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 355px) {
+  body {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 600px) {
   body {
     font-size: 1.2rem;
@@ -79,6 +84,11 @@ body {
 }
 .btn:hover {
   box-shadow: 0 0 5px #b6f7c1;
+}
+@media only screen and (max-width: 355px) {
+  .btn {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .btn {
@@ -157,6 +167,20 @@ header .fullname {
 header .btn-group {
   margin-top: 2em;
 }
+header .btn-group .btn-group__right {
+  margin-left: 1em;
+}
+@media only screen and (max-width: 780px) {
+  header .btn-group .btn-group__right {
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 780px) {
+  header .btn-group .btn-group__left {
+    margin-bottom: 1em;
+  }
+}
 header .about-text {
   margin-top: 1.5em;
 }
@@ -218,26 +242,10 @@ header .about-text {
     margin-bottom: 0;
   }
 }
-#contact .section__content .btn-right {
-  margin-left: 1em;
-}
-@media only screen and (max-width: 780px) {
-  #contact .section__content .btn-right {
-    margin-left: 0;
-    margin-bottom: 1em;
-  }
-}
-@media only screen and (max-width: 780px) {
-  #contact .section__content .btn-left {
-    margin-bottom: 1em;
-  }
-}
-#contact .section__content a {
+
+.highlight {
+  font-weight: bold;
   color: #7e97a6;
-  font-weight: bold;
-}
-#contact .section__content span {
-  font-weight: bold;
 }
 
 .mockup-modal {

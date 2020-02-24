@@ -11,6 +11,10 @@ body {
 	font-family: $text-font;
     line-height: 1.5;
 	font-size: 1.5rem;
+	
+	@media only screen and (max-width: 355px) {
+		text-align: center;
+	}
 
 	@media only screen and (max-width: 600px) {
 		font-size: 1.2rem;
@@ -37,10 +41,13 @@ body {
         box-shadow: 0 0 5px $btn-color;
     }
 
+	@media only screen and (max-width: 355px) {
+		width: 100%;
+	}
+
 	@media only screen and (max-width: 600px) {
 		font-size: 1.2rem;
 	}
-
 }
 
 .btn-group {
@@ -117,6 +124,23 @@ header {
 
 	.btn-group {
 		margin-top: 2em;
+		
+        .btn-group__right {
+            margin-left: 1em;
+			
+			@media only screen and (max-width: 780px) {
+				margin-left: 0;
+				margin-bottom: 1em;
+			}
+        }
+
+		.btn-group__left {
+			@media only screen and (max-width: 780px) {
+				margin-bottom: 1em;
+			}
+		}
+		
+
 	}
 	
 	.about-text {
@@ -192,31 +216,12 @@ header {
 				margin-bottom: 0;
 			}
         }
+	}
+}
 
-        .btn-right {
-            margin-left: 1em;
-			
-			@media only screen and (max-width: 780px) {
-				margin-left: 0;
-				margin-bottom: 1em;
-			}
-        }
-
-		.btn-left {
-			@media only screen and (max-width: 780px) {
-				margin-bottom: 1em;
-			}
-		}
-		
-		a {
-			color: $title-color;
-			font-weight: bold;
-		}
-		
-		span {
-			font-weight: bold;
-		}
-    }
+.highlight {
+	font-weight: bold;
+	color: $title-color;
 }
 
 .mockup-modal {
