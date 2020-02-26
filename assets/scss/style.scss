@@ -182,10 +182,16 @@ header {
 
 #realisations {
 	.section__content {
+		.col-text {
+			p {
+				text-align: justify;
+			}	
+		}
+
     	.col-img {
         	background-color: $title-color;
-
-        	img {
+        	
+			img {
             	cursor: pointer;
             	transition: opacity .3s ease-out;
 

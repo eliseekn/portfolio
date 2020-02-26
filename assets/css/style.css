@@ -215,6 +215,9 @@ header .about-text {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
+#realisations .section__content .col-text p {
+  text-align: justify;
+}
 #realisations .section__content .col-img {
   background-color: #7e97a6;
 }
