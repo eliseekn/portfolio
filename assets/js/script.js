@@ -22,7 +22,6 @@ $(function() {
 
     $( ".mockup" ).click( function() {
         $( "#mockup-image" ).attr( "src", this.dataset.imgPath );
-		$( ".mockup-title" ).children().attr( "href", this.dataset.projectLink );
         $( ".mockup-modal" ).css( "display", "block" );
     });
 

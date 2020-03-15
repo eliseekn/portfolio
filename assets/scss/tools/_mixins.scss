@@ -1,15 +1,22 @@
-//mixins definitions
-@mixin before() {
-    content: " ";
-	display: inline-block;
-    height: 15px;
-    text-shadow: none;
-    background-color: $light-blue;
-	width: 80px;
-	position: absolute;
-	z-index: -1;
+//import fonts from google
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700|Pacifico|Roboto&display=swap');
 
-	@media only screen and (max-width: 768px) {
-		width: 65px;
-	}
+@mixin title-font() {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+@mixin text-font() {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+@mixin medium-font() {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+@mixin special-font() {
+	font-family: 'Pacifico', cursive;
+	font-weight: 500;
 }

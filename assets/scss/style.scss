@@ -1,14 +1,13 @@
 //import styles
 @import "layout/reset";
-@import "layout/typography";
 @import "layout/colors";
 @import "tools/mixins";
 
 //main styles
 body {
+	@include text-font();
 	color: $paragraph-color;
 	background-color: $bg-color;
-	font-family: $text-font;
     line-height: 1.5;
 	font-size: 1.5rem;
 	
@@ -29,8 +28,8 @@ body {
 
 //buttons layout
 .btn {
+	@include medium-font();
 	color: $btn-color;
-	font-family: $medium-font;
 	font-size: 1.5rem;
 	padding: .8em 1.5em;
 	border-radius: 5px;
@@ -101,9 +100,9 @@ header,
 
 header {
 	h1 {
+		@include title-font();
         font-size: 3rem;
         margin: .1em 0;
-        font-family: $title-font;
         color: $title-color;
 		text-transform: uppercase;
 	
@@ -113,7 +112,7 @@ header {
 	}
 	
 	.fullname{
-		font-family: $special-font;
+		@include special-font();
 		font-size: 3.5rem;
 		color: $subtitle-color;
 
@@ -156,14 +155,14 @@ header {
     padding-bottom: 2em;
 
     p {
-        font-family: $special-font;
+		@include special-font();
 		font-size: 2rem;
 		color: $subtitle-color;
 	}
 
     h2 {
+		@include title-font();
         font-size: 2rem;
-        font-family: $title-font;
         color: $title-color;
 		
 		@media only screen and (max-width: 600px) {
@@ -245,17 +244,23 @@ header {
 
 .mockup-title {
 	background-color: $bg-color !important;
-	padding: .8em;
+	padding: .5em .8em;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-
-	a {
-		color: white;
-	}
+	justify-content: end;
 
 	li {
+		color: white;
 		cursor: pointer;
-		font-size: 1.5rem;
+		font-size: 2rem;
 	}
+}
+
+//owlcarousel custom dots colors
+.owl-theme .owl-dots .owl-dot span {
+	background-color: white !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background-color: $btn-color !important;
 }
