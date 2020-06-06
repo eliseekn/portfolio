@@ -5,8 +5,9 @@
 
 //main styles
 body {
+	overflow-x: hidden;
 	@include text-font();
-	color: $paragraph-color;
+	color: white;
 	background-color: $bg-color;
     line-height: 1.5;
 	font-size: 1.5rem;
@@ -34,7 +35,7 @@ body {
 	padding: .8em 1.5em;
 	border-radius: 5px;
 	border: 2px solid $btn-color;
-    transition: all .3s ease-out;
+    transition: all .5s ease-in-out;
 
     &:hover {
         box-shadow: 0 0 5px $btn-color;
@@ -70,12 +71,12 @@ body {
     height: 50px;
     text-align: center;
     color: $btn-color;
-    transition: all .3s ease-out;
+    transition: all .5s ease-in-out;
 
     li {
         font-size: 2rem;
         margin-top: .25em;
-        transition: all 1s ease-out ;
+        transition: all .5s ease-in-out;
     }
 
     &:hover {
@@ -192,7 +193,7 @@ header {
         	
 			img {
             	cursor: pointer;
-            	transition: opacity .3s ease-out;
+            	transition: opacity .5s ease-in-out;
 
             	&:hover {
                 	opacity: .8;
