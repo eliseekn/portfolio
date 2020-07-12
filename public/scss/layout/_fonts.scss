@@ -1,5 +1,6 @@
 //import fonts from google
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700|Pacifico|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 @mixin title-font() {
 	font-family: 'Montserrat', sans-serif;
@@ -19,4 +20,9 @@
 @mixin special-font() {
 	font-family: 'Pacifico', cursive;
 	font-weight: 500;
+}
+
+@mixin special-font-2() {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
 }

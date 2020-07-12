@@ -1,9 +1,9 @@
 //import styles
 @import "layout/reset";
 @import "layout/colors";
-@import "tools/mixins";
+@import "layout/fonts";
+@import "layout/animations";
 
-//main styles
 body {
 	overflow-x: hidden;
 	@include text-font();
@@ -27,22 +27,26 @@ body {
 	margin: 0 auto;
 }
 
-//buttons layout
 .btn {
+	margin: 1.5em 0;
+}
+
+.btn-link {
 	@include medium-font();
 	color: $btn-color;
 	font-size: 1.5rem;
-	padding: .8em 1.5em;
+	padding: .5em 1.2em;
 	border-radius: 5px;
 	border: 2px solid $btn-color;
-    transition: all .5s ease-in-out;
+	margin-top: 1em;
+	@include transition(all, .5s, ease-in-out);
 
     &:hover {
         box-shadow: 0 0 5px $btn-color;
     }
 
 	@media only screen and (max-width: 355px) {
-		width: 100%;
+		display: block;
 	}
 
 	@media only screen and (max-width: 600px) {
@@ -50,13 +54,45 @@ body {
 	}
 }
 
-.btn-group {
-	display: flex;
-    align-items: center;
+.grid {
+    display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
-	@media only screen and (max-width: 780px) {
-		flex-direction: column;
-		align-items: start;
+.highlight {
+	font-weight: bold;
+	color: $title-color;
+}
+
+.card {
+	padding: .8em 1.5em;
+	border-radius: 5px;
+	border: 2px solid $subtitle-color;
+	@include transition(all, .5s, ease-in-out);
+
+    &:hover {
+        box-shadow: 0 0 5px $subtitle-color;
+    }
+
+	.card-title {
+		@include special-font-2();
+		//color: $title-color;
+		margin-bottom: .8em;
+		font-size: 1.8rem;
+
+		@media only screen and (max-width: 600px) {
+			font-size: 1.5rem;
+		}
+	}
+
+	.card-text {
+		@include text-font();
+		font-size: 1.3rem;
+
+		@media only screen and (max-width: 600px) {
+			font-size: 1.2rem;
+		}
 	}
 }
 
@@ -71,25 +107,23 @@ body {
     height: 50px;
     text-align: center;
     color: $btn-color;
-    transition: all .5s ease-in-out;
-
-    li {
-        font-size: 2rem;
-        margin-top: .25em;
-        transition: all .5s ease-in-out;
-    }
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-size: 1.8rem;
+	@include transition(all, .5s, ease-in-out);
 
     &:hover {
         box-shadow: 0 0 5px $btn-color !important;
-
-        li {
-            transform: rotate(360deg);
-        }
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
     }
 }
 
-//layout styles
-header,
+#presentation,
+#services,
 #realisations,
 #contact {
     height: 100vh;
@@ -99,7 +133,7 @@ header,
     justify-content: center;
 }
 
-header {
+#presentation {
 	h1 {
 		@include title-font();
         font-size: 3rem;
@@ -112,8 +146,8 @@ header {
 		}
 	}
 	
-	.fullname{
-		@include special-font();
+	.name {
+		@include special-font-2();
 		font-size: 3.5rem;
 		color: $subtitle-color;
 
@@ -122,34 +156,40 @@ header {
 		}
 	}
 
-	.btn-group {
-		margin-top: 2em;
-		
-        .btn-group__right {
-            margin-left: 1em;
-			
-			@media only screen and (max-width: 780px) {
-				margin-left: 0;
-				margin-bottom: 1em;
-			}
-        }
-
-		.btn-group__left {
-			@media only screen and (max-width: 780px) {
-				margin-bottom: 1em;
-			}
-		}
-		
-
-	}
-	
-	.about-text {
+	.about {
 		margin-top: 1.5em;
 		
 		@media only screen and (max-width: 355px) {
 			display: none;
 		}
 	}
+}
+
+#realisations {
+	.section__content {
+		.col-text {
+			p {
+				text-align: justify;
+			}	
+			
+			@media only screen and (max-width: 980px) {
+				display: none;
+			}
+		}
+
+    	.col-img {
+        	background-color: $title-color;
+        	
+			img {
+            	cursor: pointer;
+				@include transition(opacity, .5s, ease-in-out);
+				
+            	&:hover {
+                	opacity: .8;
+            	}
+        	}
+    	}
+	}	
 }
 
 .section__header {
@@ -172,65 +212,7 @@ header {
     }
 }
 
-.col {
-    .row {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-}
-
-#realisations {
-	.section__content {
-		.col-text {
-			p {
-				text-align: justify;
-			}	
-		}
-
-    	.col-img {
-        	background-color: $title-color;
-        	
-			img {
-            	cursor: pointer;
-            	transition: opacity .5s ease-in-out;
-
-            	&:hover {
-                	opacity: .8;
-            	}
-        	}
-    	}
-
-		.btn-group {
-            margin-top: 1em;
-        }
-
-		.col-text {
-			@media only screen and (max-width: 980px) {
-				display: none;
-			}
-		}
-	}	
-}
-
-#contact {
-    .section__content {
-        .btn-group {
-            margin-bottom: 2em;
-			
-			@media only screen and (max-width: 780px) {
-				margin-bottom: 0;
-			}
-        }
-	}
-}
-
-.highlight {
-	font-weight: bold;
-	color: $title-color;
-}
-
-.mockup-modal {
+#modal {
     display: none;
     position: fixed;
     left: 0;
@@ -240,24 +222,18 @@ header {
     z-index: 11;
     overflow: auto;
     background-color: rgba(0, 0, 0, .5);
-    padding-top: 100px;
+	padding-top: 100px;
 }
 
-.mockup-title {
+#modal-title {
 	background-color: $bg-color !important;
 	padding: .5em .8em;
 	display: flex;
 	align-items: center;
 	justify-content: end;
-
-	li {
-		color: white;
-		cursor: pointer;
-		font-size: 2rem;
-	}
+	font-size: 1.8rem;
 }
 
-//owlcarousel custom dots colors
 .owl-theme .owl-dots .owl-dot span {
 	background-color: white !important;
 }
