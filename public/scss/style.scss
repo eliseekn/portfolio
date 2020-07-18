@@ -54,6 +54,16 @@ body {
 			display: block;
 		}
 
+		.col-left {
+			.btn {
+				margin-top: 1em;
+
+				@media only screen and (max-width: 425px) {
+					display: none;
+				}
+			}
+		}
+
 		.col-right {
 			img {
 				@media only screen and (max-width: 768px) {
@@ -78,21 +88,6 @@ body {
 			color: white;
 			background-color: $bg-color;
 			font-size: 1.2rem;
-		}
-
-		button {
-			@include roboto();
-			cursor: pointer;
-			color: $btn-color !important;
-			background-color: $bg-color;
-			font-size: 1.2rem !important;
-			padding: .5em 1.2em !important;
-			border: 2px solid $btn-color;
-			@include transition(all, .5s, ease-in-out);
-
-			&:hover {
-				box-shadow: 0 0 5px $btn-color;
-			}
 		}
 	}
 }
@@ -136,6 +131,21 @@ body {
             	}
         	}
     	}
+	}
+}
+
+.btn {
+	@include montserrat();
+	cursor: pointer;
+	color: $btn-color !important;
+	background-color: $bg-color;
+	font-size: 1.2rem !important;
+	padding: .5em 1.2em !important;
+	border: 2px solid $btn-color;
+	@include transition(all, .5s, ease-in-out);
+
+	&:hover {
+		box-shadow: 0 0 5px $btn-color;
 	}
 }
 
