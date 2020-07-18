@@ -69,7 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         fetch('https://script.google.com/macros/s/AKfycbx8VMQXTGdaDeTDb6_L8kRv2-eRaQ5D2Fq2RoevQH6EHYfPU94l/exec', {
             method: 'post',
-            headers: {'Content-Type': 'application/json'},
+            headers: {
+                'Content-Type': 'application/json',
+                'mode' : 'same-origin'
+            },
             body: JSON.stringify(object)
         })
         .then(response => response.json())
