@@ -62,18 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#contact-form').addEventListener('submit', event => {
         event.preventDefault()
+        document.querySelector('button[type=submit]').innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> ' + document.querySelector('button[type=submit]').innerHTML
 
-        let object = {}
-        const formData = new FormData(document.querySelector('#contact-form'))
-        formData.forEach((value, key) => {object[key] = value})
-        
         fetch('https://script.google.com/macros/s/AKfycbx8VMQXTGdaDeTDb6_L8kRv2-eRaQ5D2Fq2RoevQH6EHYfPU94l/exec', {
             method: 'post',
-            headers: {
-                'Content-Type': 'application/json',
-                'mode' : 'same-origin'
-            },
-            body: JSON.stringify(object)
+            body: new FormData(document.querySelector('#contact-form'))
         })
         .then(response => response.json())
         .then(data => {
@@ -84,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             document.querySelector('#contact-form').reset()
+            window.location.reload()
         })
     })
 })
