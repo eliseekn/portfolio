@@ -4,3 +4,10 @@
     -moz-transition: $attr $time $type !important;
     -o-transition: $attr $time $type !important;
 }
+
+@mixin rotate {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}

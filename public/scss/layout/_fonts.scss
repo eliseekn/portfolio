@@ -2,27 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700|Pacifico|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-@mixin title-font() {
+@mixin montserrat() {
 	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 }
 
-@mixin text-font() {
+@mixin roboto() {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
 }
 
-@mixin medium-font() {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-}
-
-@mixin special-font() {
+@mixin pacifico() {
 	font-family: 'Pacifico', cursive;
 	font-weight: 500;
 }
 
-@mixin special-font-2() {
+@mixin playfair() {
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
 }

@@ -11,6 +11,10 @@ html {
 
 a {
 	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 img {
@@ -18,3 +22,6 @@ img {
 	height: 100%;
 }
 
+textarea {
+	resize: none;
+}

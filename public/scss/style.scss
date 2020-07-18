@@ -6,17 +6,14 @@
 
 body {
 	overflow-x: hidden;
-	@include text-font();
+	@include roboto();
 	color: white;
 	background-color: $bg-color;
     line-height: 1.5;
 	font-size: 1.5rem;
 	
-	@media only screen and (max-width: 355px) {
+	@media only screen and (max-width: 768px) {
 		text-align: center;
-	}
-
-	@media only screen and (max-width: 600px) {
 		font-size: 1.2rem;
 	}
 }
@@ -27,31 +24,123 @@ body {
 	margin: 0 auto;
 }
 
-.btn {
-	margin: 1.5em 0;
+#presentation {
+	h1 {
+		@include montserrat();
+        color: $title-color;
+		text-transform: uppercase;
+		margin-bottom: .5em;
+		font-size: 3rem;
+	}
+	
+	.name {
+		@include playfair();
+		color: $secondary-color;
+		font-size: 2.5rem;
+	}
+
+	h1, .name {
+		@media only screen and (max-width: 768px) {
+			font-size: 2rem;
+		}
+	}
+
+	.row {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		align-items: center;
+		
+		@media only screen and (max-width: 768px) {
+			display: block;
+		}
+
+		.col-right {
+			img {
+				@media only screen and (max-width: 768px) {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
-.btn-link {
-	@include medium-font();
-	color: $btn-color;
-	font-size: 1.5rem;
-	padding: .5em 1.2em;
-	border-radius: 5px;
-	border: 2px solid $btn-color;
-	margin-top: 1em;
-	@include transition(all, .5s, ease-in-out);
-
-    &:hover {
-        box-shadow: 0 0 5px $btn-color;
-    }
-
-	@media only screen and (max-width: 355px) {
-		display: block;
+#contact {
+	.row {
+		.col-right {
+			@media only screen and (max-width: 768px) {
+				display: none;
+			}
+		}
 	}
 
-	@media only screen and (max-width: 600px) {
-		font-size: 1.2rem;
+	form {
+		input, textarea {
+			color: white;
+			background-color: $bg-color;
+			font-size: 1.2rem;
+		}
+
+		button {
+			@include roboto();
+			cursor: pointer;
+			color: $btn-color !important;
+			background-color: $bg-color;
+			font-size: 1.2rem !important;
+			padding: .5em 1.2em !important;
+			border: 2px solid $btn-color;
+			@include transition(all, .5s, ease-in-out);
+
+			&:hover {
+				box-shadow: 0 0 5px $btn-color;
+			}
+		}
 	}
+}
+
+.section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	.section__header {
+		padding-bottom: 1.5em;
+		
+		h2 {
+			@include pacifico();
+			font-size: 2.5rem;
+			color: $title-color;
+		}
+	}
+
+	.section__content {
+		.col-text {
+			p {
+				text-align: justify;
+			}	
+			
+			@media only screen and (max-width: 980px) {
+				display: none;
+			}
+		}
+
+    	.col-img {
+			position: relative;
+			cursor: pointer;
+				
+			img {
+				@include transition(all, .5s, ease-in-out);
+				
+            	&:hover {
+					opacity: .4;
+            	}
+        	}
+    	}
+	}
+}
+
+.round-border {
+	border-radius: 5px !important;
 }
 
 .grid {
@@ -61,38 +150,34 @@ body {
 }
 
 .highlight {
-	font-weight: bold;
-	color: $title-color;
+	font-weight: bold !important;
+	color: $title-color !important;
 }
 
 .card {
-	padding: .8em 1.5em;
-	border-radius: 5px;
-	border: 2px solid $subtitle-color;
+	padding: .8em 1.2em;
+	border: 2px solid $secondary-color;
+	color: white !important;
+	background-color: $bg-color !important;
 	@include transition(all, .5s, ease-in-out);
 
     &:hover {
-        box-shadow: 0 0 5px $subtitle-color;
+		box-shadow: 0 0 5px $secondary-color;
+		
+		.card-title {
+			color: $title-color;
+		}
     }
 
 	.card-title {
-		@include special-font-2();
-		//color: $title-color;
+		@include playfair();
 		margin-bottom: .8em;
-		font-size: 1.8rem;
-
-		@media only screen and (max-width: 600px) {
-			font-size: 1.5rem;
-		}
+		font-size: 1.6rem;
+		@include transition(all, .5s, ease-in-out);
 	}
 
 	.card-text {
-		@include text-font();
-		font-size: 1.3rem;
-
-		@media only screen and (max-width: 600px) {
-			font-size: 1.2rem;
-		}
+		text-align: justify;
 	}
 }
 
@@ -110,105 +195,11 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    font-size: 1.8rem;
 	@include transition(all, .5s, ease-in-out);
 
     &:hover {
         box-shadow: 0 0 5px $btn-color !important;
-		transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		-o-transform: rotate(360deg);
-    }
-}
-
-#presentation,
-#services,
-#realisations,
-#contact {
-    height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    justify-content: center;
-}
-
-#presentation {
-	h1 {
-		@include title-font();
-        font-size: 3rem;
-        margin: .1em 0;
-        color: $title-color;
-		text-transform: uppercase;
-	
-		@media only screen and (max-width: 600px) {
-			font-size: 2rem;
-		}
-	}
-	
-	.name {
-		@include special-font-2();
-		font-size: 3.5rem;
-		color: $subtitle-color;
-
-		@media only screen and (max-width: 600px) {
-			font-size: 2rem;
-		}
-	}
-
-	.about {
-		margin-top: 1.5em;
-		
-		@media only screen and (max-width: 355px) {
-			display: none;
-		}
-	}
-}
-
-#realisations {
-	.section__content {
-		.col-text {
-			p {
-				text-align: justify;
-			}	
-			
-			@media only screen and (max-width: 980px) {
-				display: none;
-			}
-		}
-
-    	.col-img {
-        	background-color: $title-color;
-        	
-			img {
-            	cursor: pointer;
-				@include transition(opacity, .5s, ease-in-out);
-				
-            	&:hover {
-                	opacity: .8;
-            	}
-        	}
-    	}
-	}	
-}
-
-.section__header {
-    padding-bottom: 2em;
-
-    p {
-		@include special-font();
-		font-size: 2rem;
-		color: $subtitle-color;
-	}
-
-    h2 {
-		@include title-font();
-        font-size: 2rem;
-        color: $title-color;
-		
-		@media only screen and (max-width: 600px) {
-			font-size: 1.5rem;
-		}
+		@include rotate();
     }
 }
 
@@ -225,7 +216,7 @@ body {
 	padding-top: 100px;
 }
 
-#modal-title {
+.modal-title {
 	background-color: $bg-color !important;
 	padding: .5em .8em;
 	display: flex;
@@ -240,4 +231,19 @@ body {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	background-color: $btn-color !important;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: -1;
+	background-color: $secondary-color;
 }
