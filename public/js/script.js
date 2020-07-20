@@ -3,34 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
         once: true
     })
 
-    $("#services .owl-carousel").owlCarousel({
-        items: 2,
-        margin: 15,
-        mouseDrag: false,
-        touchDrag: true,
-        loop: false,
-        nav: false,
-        responsive : {
-            0: {
-                items: 1
-            },
-
-            768: {
-                items: 2
-            }
-        }
-    })
-
     $("#portfolio .owl-carousel").owlCarousel({
         items: 1,
-        mouseDrag: false,
-        touchDrag: true,
-        loop: false,
-        nav: false
-    })
-
-    $("#projects .owl-carousel").owlCarousel({
-        items: 1,
+        margin: 15,
         mouseDrag: false,
         touchDrag: true,
         loop: false,
@@ -62,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#contact-form').addEventListener('submit', event => {
         event.preventDefault()
-        document.querySelector('button[type=submit]').innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> ' + document.querySelector('button[type=submit]').innerHTML
+        document.querySelector('button[type=submit]').innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> ' + document.querySelector('button[type=submit]').textContent
 
         fetch('https://script.google.com/macros/s/AKfycbx8VMQXTGdaDeTDb6_L8kRv2-eRaQ5D2Fq2RoevQH6EHYfPU94l/exec', {
             method: 'post',

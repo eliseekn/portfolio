@@ -10,7 +10,7 @@ body {
 	color: white;
 	background-color: $bg-color;
     line-height: 1.5;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	
 	@media only screen and (max-width: 768px) {
 		text-align: center;
@@ -112,10 +112,6 @@ body {
 		.col-text {
 			p {
 				text-align: justify;
-			}	
-			
-			@media only screen and (max-width: 980px) {
-				display: none;
 			}
 		}
 
@@ -153,10 +149,10 @@ body {
 	border-radius: 5px !important;
 }
 
-.grid {
+.grid-card {
     display: grid;
-	grid-gap: 1em;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: .5em;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .highlight {
@@ -166,13 +162,13 @@ body {
 
 .card {
 	padding: .8em 1.2em;
-	border: 2px solid $secondary-color;
+	border: 2px solid $title-color;
 	color: white !important;
 	background-color: $bg-color !important;
 	@include transition(all, .5s, ease-in-out);
 
     &:hover {
-		box-shadow: 0 0 5px $secondary-color;
+		box-shadow: 0 0 5px $title-color;
 		
 		.card-title {
 			color: $title-color;
@@ -184,10 +180,28 @@ body {
 		margin-bottom: .8em;
 		font-size: 1.6rem;
 		@include transition(all, .5s, ease-in-out);
+
+		@media only screen and (max-width: 768px) {
+			text-align: left;
+		}
 	}
 
 	.card-text {
 		text-align: justify;
+	}
+}
+
+.list {
+	margin-left: 1em;
+
+	.list-item {
+		display: flex;
+		align-items: center;
+	}
+
+	.list-item-bullet {
+		color: $title-color;
+		margin-right: .5em;
 	}
 }
 
@@ -255,5 +269,5 @@ body {
 	align-items: center;
 	justify-content: center;
 	z-index: -1;
-	background-color: $secondary-color;
+	background-color: $bg-color;
 }
