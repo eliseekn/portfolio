@@ -12,26 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
         nav: false
     })
 
-    document.querySelectorAll('.show-modal').forEach(element => {
-        element.addEventListener('click', event => {
-            document.querySelector('#modal-image').setAttribute('src', event.target.dataset.image)
-            document.querySelector('#modal').setAttribute('style', 'display: block')
-        })
-    })
-
-    document.querySelector('#close-modal').addEventListener('click', () => {
-        document.querySelector('#modal').setAttribute('style', 'display: none');
-    })
-
-    document.querySelector('#modal').addEventListener('click', () => {
-        document.querySelector('#modal').setAttribute('style', 'display: none');
-    })
-
     window.addEventListener('scroll', () => {
         if (window.scrollY > 280) {
-            $('#scroll-top').fadeIn('slow')
+            document.querySelector('#scroll-top').classList.remove('d-none')
+            document.querySelector('#scroll-top').classList.add('d-flex')
         } else {
-            $('#scroll-top').fadeOut('slow')
+            document.querySelector('#scroll-top').classList.remove('d-flex')
+            document.querySelector('#scroll-top').classList.add('d-none')
         }
     })
 
