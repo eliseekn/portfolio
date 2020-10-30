@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-	max-width: 960px;
+	//max-width: 980px;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -37,13 +37,21 @@ body {
 		@include playfair();
 		color: $secondary-color;
 		font-size: 2.5rem;
-	}
+    }
+    
+    .description {
+        width: 80%;
+
+        @media only screen and (max-width: 768px) {
+			width: 100%;
+		}
+    }
 
 	h1, .name {
 		@media only screen and (max-width: 768px) {
 			font-size: 2rem;
 		}
-	}
+    }
 
 	.row {
 		display: grid;
@@ -51,36 +59,62 @@ body {
 		align-items: center;
 		
 		@media only screen and (max-width: 768px) {
-			display: block;
+            display: flex;
+            justify-content: center;
 		}
 
 		.col-left {
 			.btn {
 				margin-top: 1em;
 
-				@media only screen and (max-width: 425px) {
-					display: none;
-				}
+                @media only screen and (max-width: 425px) {
+                    display: none;
+                }
 			}
+
+            @media only screen and (max-width: 768px) {
+                order: 2;
+            }
 		}
 
 		.col-right {
 			img {
 				@media only screen and (max-width: 768px) {
-					display: none;
-				}
+                    width: 150px;
+                    margin-bottom: 1em;
+                    order: 1;
+                }
 			}
 		}
 	}
 }
 
+#competences {
+    .btn {
+        margin-top: 1.5em;
+
+        @media only screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+}
+
+#portfolio {
+    .btn {
+        margin-top: 1.5em;
+
+        @media only screen and (max-width: 425px) {
+            display: none;
+        }
+    }
+}
+
 #contact {
 	.row {
-		.col-right {
-			@media only screen and (max-width: 768px) {
-				display: none;
-			}
-		}
+        @media only screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
 	}
 
 	form {
@@ -93,7 +127,8 @@ body {
 }
 
 .section {
-	min-height: 100vh;
+    min-height: 100vh;
+    padding: 5em 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -104,7 +139,11 @@ body {
 		h2 {
 			@include pacifico();
 			font-size: 2.5rem;
-			color: $title-color;
+            color: $title-color;
+            
+            @media only screen and (max-width: 768px) {
+                font-size: 2.3rem;
+            }
 		}
 	}
 
@@ -112,7 +151,8 @@ body {
 		.col-text {
 			p {
 				text-align: justify;
-			}
+                margin-bottom: .5em
+            }
 		}
 	}
 }
@@ -125,7 +165,11 @@ body {
 	font-size: 1.2rem !important;
 	padding: .5em 1.2em !important;
 	border: 2px solid $btn-color;
-	@include transition(all, .5s, ease-in-out);
+    @include transition(all, .5s, ease-in-out);
+            
+    @media only screen and (max-width: 768px) {
+        font-size: 1.1rem !important;
+    }
 
 	&:hover {
 		box-shadow: 0 0 5px $btn-color;
@@ -139,7 +183,7 @@ body {
 .grid-card {
     display: grid;
 	grid-gap: .5em;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .highlight {
@@ -169,24 +213,23 @@ body {
 		@include transition(all, .5s, ease-in-out);
 
 		@media only screen and (max-width: 768px) {
-			text-align: left;
+            font-size: 1.4rem;
 		}
 	}
 
-	.card-text {
-		text-align: justify;
-	}
+    .card-description {
+        margin-top: 1em;
+        font-size: 1.3rem;
+        text-align: left;
+
+		@media only screen and (max-width: 768px) {
+            text-align: center;
+		}
+    }
 }
 
 .list {
-	margin-left: 1em;
-
 	.list-item {
-		display: flex;
-		align-items: center;
-	}
-
-	.list-item-bullet {
 		color: $title-color;
 		margin-right: .5em;
 	}
@@ -225,11 +268,15 @@ body {
 //https://divinotes.com/create-image-scrolls-hover/
 .img-scroll {
     cursor: pointer;
-    height: 220px;
+    height: 280px;
 	background-size: 100% auto !important;
     background-repeat: no-repeat;
     background-position: top center;
     @include transition(background-position, 10s, linear);
+            
+    @media only screen and (max-width: 768px) {
+        height: 200px;
+    }
 
     &:hover {
         background-position: bottom center !important;

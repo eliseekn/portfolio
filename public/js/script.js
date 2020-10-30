@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data.result === 'success') {
                 alert('Votre message a bien été envoyé. Vous serez recontactez dans les plus brefs délais.')
             } else {
-                alert('Une erreur est survenue lors du traitement de votre message. Si le problème persiste, je vous suggère d\'utiliser directement email indiquée sur la page.')
+                alert('Une erreur est survenue lors du traitement de votre message. Si le problème persiste, je vous suggère d\'utiliser directement l\'adresse email indiquée sur la page.')
             }
 
             document.querySelector('#contact-form').reset()
