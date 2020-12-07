@@ -18,11 +18,11 @@ body {
 	}
 }
 
-.container {
+/* .container {
 	//max-width: 980px;
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
-}
+} */
 
 #presentation {
 	h1 {
@@ -182,8 +182,8 @@ body {
 
 .grid-card {
     display: grid;
-	grid-gap: .5em;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .highlight {
@@ -192,7 +192,7 @@ body {
 }
 
 .card {
-	padding: .8em 1.2em;
+	padding: .8em 1em;
 	border: 2px solid $title-color;
 	color: white !important;
 	background-color: $bg-color !important;
