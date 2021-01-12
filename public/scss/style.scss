@@ -268,14 +268,14 @@ body {
 //https://divinotes.com/create-image-scrolls-hover/
 .img-scroll {
     cursor: pointer;
-    height: 280px;
+    height: 380px;
 	background-size: 100% auto !important;
     background-repeat: no-repeat;
     background-position: top center;
     @include transition(background-position, 10s, linear);
             
     @media only screen and (max-width: 768px) {
-        height: 200px;
+        height: 250px;
     }
 
     &:hover {
