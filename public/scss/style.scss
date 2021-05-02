@@ -282,3 +282,13 @@ body {
         background-position: bottom center !important;
     }
 }
+
+.custom-link {
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        color: white;
+        text-decoration: underline;
+    }
+}
