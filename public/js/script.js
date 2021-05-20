@@ -12,13 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
         nav: false
     })
 
+    $("#portfolio .owl-carousel-projects").owlCarousel({
+        items: 1,
+        margin: 15,
+        mouseDrag: false,
+        touchDrag: true,
+        loop: false,
+        nav: false
+    })
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 280) {
-            document.querySelector('#scroll-top').classList.remove('d-none')
-            document.querySelector('#scroll-top').classList.add('d-flex')
+            document.querySelector('#scroll-top').style.display = 'flex'
         } else {
-            document.querySelector('#scroll-top').classList.remove('d-flex')
-            document.querySelector('#scroll-top').classList.add('d-none')
+            document.querySelector('#scroll-top').style.display = 'none'
         }
     })
 
