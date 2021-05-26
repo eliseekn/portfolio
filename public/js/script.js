@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         fetch('https://script.google.com/macros/s/AKfycbx8VMQXTGdaDeTDb6_L8kRv2-eRaQ5D2Fq2RoevQH6EHYfPU94l/exec', {
             method: 'post',
+            headers: {'Access-Control-Allow-Origin': '*' },
             body: new FormData(document.querySelector('#contact-form'))
         })
         .then(response => response.json())
