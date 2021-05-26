@@ -31,11 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#contact-form').addEventListener('submit', event => {
         event.preventDefault()
-        document.querySelector('button[type=submit]').innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> ' + document.querySelector('button[type=submit]').textContent
+        let submitButton = document.querySelector('button[type=submit]')
+        let formData = new FormData(document.querySelector('#contact-form'))
 
-        fetch('https://script.google.com/macros/s/AKfycbx8VMQXTGdaDeTDb6_L8kRv2-eRaQ5D2Fq2RoevQH6EHYfPU94l/exec', {
+        submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> ' + submitButton.textContent
+
+        // send it out
+        let xhr = new XMLHttpRequest();
+        xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+        xhr.open("POST", "https://script.google.com/macros/s/AKfycbx8VMQXTGdaDeTDb6_L8kRv2-eRaQ5D2Fq2RoevQH6EHYfPU94l/exec");
+        xhr.send(formData);
+
+        xhr.onload = () => alert(xhr.response);
+
+        /* fetch('https://script.google.com/macros/s/AKfycbx8VMQXTGdaDeTDb6_L8kRv2-eRaQ5D2Fq2RoevQH6EHYfPU94l/exec', {
             method: 'post',
-            headers: {'Access-Control-Allow-Origin': '*' },
+            headers: {'Access-Control-Allow-Origin': '*'},
             body: new FormData(document.querySelector('#contact-form'))
         })
         .then(response => response.json())
@@ -48,6 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             document.querySelector('#contact-form').reset()
             window.location.reload()
-        })
+        }) */
     })
 })
