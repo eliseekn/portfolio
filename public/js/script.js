@@ -31,28 +31,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#contact-form').addEventListener('submit', event => {
         event.preventDefault()
+
         let submitButton = document.querySelector('button[type=submit]')
+        let submitButtonText = submitButton.textContent
+        
+        submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span>'
 
-        submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"></span> ' + submitButton.textContent
+        let formData = new FormData(document.querySelector('#contact-form'))
+        formData.append('timestamp', new Date().toUTCString())
 
-        fetch('https://script.google.com/macros/s/AKfycbx8VMQXTGdaDeTDb6_L8kRv2-eRaQ5D2Fq2RoevQH6EHYfPU94l/exec', {
-            method: 'POST',
-            body: new FormData(document.querySelector('#contact-form'))
+        let data = {}
+
+        formData.forEach((value, key) => {
+            data[key] = value
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.result === 'success') {
-                alert('Votre message a bien été envoyé. Vous serez recontactez dans les plus brefs délais.')
-            } else {
-                alert('Une erreur est survenue lors du traitement de votre message. Si le problème persiste, je vous suggère d\'utiliser directement l\'adresse email indiquée sur la page.')
-            }
 
+        fetch('https://sheet.best/api/sheets/b0e5f88f-386b-43a3-85f8-dc194a89262f', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(() => {
+            alert('Votre message a bien été envoyé. Vous serez recontactez dans les plus brefs délais.')
             document.querySelector('#contact-form').reset()
             window.location.reload()
-        })
-        .catch(error => {
-            alert(error)
-            document.querySelector('#contact-form').reset()
         })
     })
 })
