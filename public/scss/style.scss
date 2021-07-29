@@ -35,7 +35,7 @@ body {
 	
 	.name {
 		@include playfair();
-		color: $secondary-color;
+		//color: $secondary-color;
 		font-size: 2.5rem;
     }
     
