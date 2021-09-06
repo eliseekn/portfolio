@@ -1,23 +1,22 @@
-//import fonts from google
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700|Pacifico|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-@mixin montserrat() {
+@mixin font_montserrat() {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
 
-@mixin roboto() {
+@mixin font_roboto() {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
 }
 
-@mixin pacifico() {
+@mixin font_pacifico() {
 	font-family: 'Pacifico', cursive;
 	font-weight: 500;
 }
 
-@mixin playfair() {
+@mixin font_playfair() {
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
 }

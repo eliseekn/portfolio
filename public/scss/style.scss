@@ -1,4 +1,3 @@
-//import styles
 @import "layout/reset";
 @import "layout/colors";
 @import "layout/fonts";
@@ -6,7 +5,7 @@
 
 body {
 	overflow-x: hidden;
-	@include roboto();
+	@include font_roboto();
 	color: white;
 	background-color: $bg-color;
     line-height: 1.5;
@@ -18,25 +17,21 @@ body {
 	}
 }
 
-/* .container {
-	//max-width: 980px;
-	width: 95%;
-	margin: 0 auto;
-} */
-
 #presentation {
 	h1 {
-		@include montserrat();
+		@include font_montserrat();
         color: $title-color;
 		text-transform: uppercase;
 		margin-bottom: .5em;
-		font-size: 3rem;
+		font-size: 2.8rem;
+
+        @media only screen and (max-width: 768px) {
+			font-size: 2rem;
+		}
 	}
 	
-	.name {
-		@include playfair();
-		//color: $secondary-color;
-		font-size: 2.5rem;
+	.fullname {
+		font-size: 2rem;
     }
     
     .description {
@@ -44,12 +39,6 @@ body {
 
         @media only screen and (max-width: 768px) {
 			width: 100%;
-		}
-    }
-
-	h1, .name {
-		@media only screen and (max-width: 768px) {
-			font-size: 2rem;
 		}
     }
 
@@ -79,7 +68,7 @@ body {
 
 		.col-right {
 			img {
-                width: 350px;
+                width: 300px;
 
 				@media only screen and (max-width: 768px) {
                     width: 150px;
@@ -89,26 +78,6 @@ body {
 			}
 		}
 	}
-}
-
-#competences {
-    .btn {
-        margin-top: 1.5em;
-
-        @media only screen and (max-width: 425px) {
-            display: none;
-        }
-    }
-}
-
-#portfolio {
-    .btn {
-        margin-top: 1.5em;
-
-        @media only screen and (max-width: 425px) {
-            display: none;
-        }
-    }
 }
 
 #contact {
@@ -139,7 +108,7 @@ body {
 		padding-bottom: 1.5em;
 		
 		h2 {
-			@include pacifico();
+			@include font_pacifico();
 			font-size: 2.5rem;
             color: $title-color;
             
@@ -160,34 +129,27 @@ body {
 }
 
 .btn {
-	@include montserrat();
+	@include font_montserrat();
 	cursor: pointer;
-	color: $btn-color !important;
+	color: $btn-color;
 	background-color: $bg-color;
-	font-size: 1.2rem !important;
-	padding: .5em 1.2em !important;
+	font-size: 1.2rem;
+	padding: .5em 1.2em;
 	border: 2px solid $btn-color;
     @include transition(all, .5s, ease-in-out);
             
     @media only screen and (max-width: 768px) {
-        font-size: 1.1rem !important;
-    }
-
-    svg {
-        @include transition(all, 1s, ease-in-out);
+        font-size: 1.1rem;
     }
 
 	&:hover {
-		box-shadow: 0 0 5px $btn-color;
-		
-        svg {
-            @include rotate()
-        }
+        color: $btn-color;
+        box-shadow: 0 0 5px $btn-color;
 	}
 }
 
 .round-border {
-	border-radius: 5px !important;
+	border-radius: 5px;
 }
 
 .grid-card {
@@ -197,23 +159,32 @@ body {
 }
 
 .highlight {
-	font-weight: bold !important;
-	color: $title-color !important;
+	font-weight: bold;
+	color: $title-color;
+
+    &:hover {
+        color: $title-color;
+    }
 }
 
 .card {
 	padding: .5em .8em;
 	border: 2px solid $title-color;
-	color: white !important;
-	background-color: $bg-color !important;
+	color: white;
+	background-color: $bg-color;
 	@include transition(all, .5s, ease-in-out);
 
     &:hover {
 		box-shadow: 0 0 8px $title-color;
     }
 
+    .icon {
+        color: $btn-color;
+        margin-right: .5em;
+    }
+
 	.card-title {
-		@include playfair();
+		@include font_playfair();
 		margin-bottom: .8em;
 		font-size: 1.6rem;
 		@include transition(all, .5s, ease-in-out);
@@ -232,13 +203,6 @@ body {
             text-align: center;
 		}
     }
-}
-
-.list {
-	.list-item {
-		color: $btn-color;
-		margin-right: .5em;
-	}
 }
 
 #scroll-top {
@@ -269,24 +233,6 @@ body {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	background-color: $btn-color !important;
-}
-
-//https://divinotes.com/create-image-scrolls-hover/
-.img-scroll {
-    cursor: pointer;
-    height: 380px;
-	background-size: 100% auto !important;
-    background-repeat: no-repeat;
-    background-position: top center;
-    @include transition(background-position, 10s, linear);
-            
-    @media only screen and (max-width: 768px) {
-        height: 250px;
-    }
-
-    &:hover {
-        background-position: bottom center !important;
-    }
 }
 
 .custom-link {

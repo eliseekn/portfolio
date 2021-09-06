@@ -3,19 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
         once: true
     })
 
-    $("#portfolio .owl-carousel").owlCarousel({
+    $("#realisations .owl-carousel").owlCarousel({
         items: 1,
         margin: 15,
-        mouseDrag: false,
-        touchDrag: true,
-        loop: false,
-        nav: false
-    })
-
-    $("#portfolio .owl-carousel-projects").owlCarousel({
-        items: 1,
-        margin: 15,
-        mouseDrag: false,
+        mouseDrag: true,
         touchDrag: true,
         loop: false,
         nav: false
