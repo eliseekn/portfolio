@@ -169,6 +169,16 @@ body {
 }
 
 .card {
+    background-color: $bg-color;
+    border: 2px solid $title-color;
+	@include transition(all, .5s, ease-in-out);
+
+    &:hover {
+		box-shadow: 0 0 8px $title-color;
+    }
+}
+
+._card {
 	padding: .5em .8em;
 	border: 2px solid $title-color;
 	color: white;
@@ -184,7 +194,7 @@ body {
         margin-right: .5em;
     }
 
-	.card-title {
+	._card-title {
 	    @include font_playfair();
 		margin-bottom: .8em;
 		font-size: 1.6rem;
@@ -195,7 +205,7 @@ body {
 		}
 	}
 
-    .card-description {
+    ._card-description {
         margin-top: 1em;
         font-size: 1.3rem;
         text-align: left;

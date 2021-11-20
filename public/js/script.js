@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     $("#realisations .owl-carousel").owlCarousel({
-        items: 1,
-        margin: 15,
+        items: 2,
+        margin: 30,
         mouseDrag: true,
         touchDrag: true,
         loop: false,
