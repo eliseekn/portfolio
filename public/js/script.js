@@ -4,12 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     $("#realisations .owl-carousel").owlCarousel({
-        items: 2,
+        items: 1,
         margin: 30,
         mouseDrag: true,
         touchDrag: true,
         loop: false,
-        nav: false
+        nav: false,
+        responsive : {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            }
+        }
     })
 
     window.addEventListener('scroll', () => {
