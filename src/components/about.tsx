@@ -1,4 +1,5 @@
 import { IProps } from "../interfaces/iprops"
+import avatar from '../../img/avatar.png'
 
 export default function About({ activePage, setActivePage }: IProps) {
     return (
@@ -27,7 +28,7 @@ export default function About({ activePage, setActivePage }: IProps) {
                 </div>
 
                 <div className="col-span-6 md:col-auto m-auto order-1 md:order-2">
-                    <img src="../assets/avatar.png" alt="Avatar" loading="lazy" className="w-28 md:w-full" />
+                    <img src={avatar} alt="Avatar" loading="lazy" className="w-28 md:w-full" />
                 </div>
             </div>
         </div>

@@ -1,3 +1,11 @@
+import cps_securite from '../../img/work/cps_securite.png'
+import iziloyer from '../../img/work/iziloyer.png'
+import les_ateliers_nappy from '../../img/work/les_ateliers_nappy.png'
+import iziplanning from '../../img/work/iziplanning.png'
+import diaspozen from '../../img/work/diaspozen.png'
+import yellior from '../../img/work/yellior.png'
+import cabinet_gesma from '../../img/work/cabinet_gesma.png'
+
 export interface IData {
     url: string,
     img: string,
@@ -10,7 +18,7 @@ export const workData: Array<Array<IData>> = [
     [
         {
             url: 'https://cps-securite.com',
-            img: '../assets/work/cps_securite.png',
+            img: cps_securite,
             alt: 'CPS Sécurité',
             skills: 'Laravel',
             desc: 'Intégration backend du site'
@@ -18,7 +26,7 @@ export const workData: Array<Array<IData>> = [
 
         {
             url: 'https://iziloyer.net',
-            img: '../assets/work/iziloyer.png',
+            img: iziloyer,
             alt: 'IZI LOYER',
             skills: 'Laravel, Bootstrap, Javascript',
             desc: 'Intégration de la maquette, développement de l\'application web'
@@ -26,7 +34,7 @@ export const workData: Array<Array<IData>> = [
 
         {
             url: 'https://lesateliersnappy.com',
-            img: '../assets/work/les_ateliers_nappy.png',
+            img: les_ateliers_nappy,
             alt: 'Les Ateliers Nappy',
             skills: 'WordPress, API EtsyShop',
             desc: 'Refonte et personnalisation du thème'
@@ -36,7 +44,7 @@ export const workData: Array<Array<IData>> = [
     [
         {
             url: 'https://iziplanning.com',
-            img: '../assets/work/iziplanning.png',
+            img: iziplanning,
             alt: 'IZI PLANNING',
             skills: 'Laravel, Bootstrap, Javascript',
             desc: 'Intégration de la maquette, développement de l\'application web'
@@ -44,7 +52,7 @@ export const workData: Array<Array<IData>> = [
 
         {
             url: 'https://diaspozen.com',
-            img: '../assets/work/diaspozen.png',
+            img: diaspozen,
             alt: 'DIASPO ZEN',
             skills: 'TinyMVC, Bootstrap, Javascript',
             desc: 'Intégration de la maquette, développement de l\'application web'
@@ -52,7 +60,7 @@ export const workData: Array<Array<IData>> = [
 
         {
             url: 'https://yellior.ci',
-            img: '../assets/work/yellior.png',
+            img: yellior,
             alt: 'Yellior',
             skills: 'GIMP, TinyMVC, Bootstrap, Javascript',
             desc: 'Design et intégration de la maquette, développement de l\'application web'
@@ -62,7 +70,7 @@ export const workData: Array<Array<IData>> = [
     [
         {
             url: 'https://cabinetgesma.com',
-            img: '../assets/work/cabinet_gesma.png',
+            img: cabinet_gesma,
             alt: 'Cabinet GESMA',
             skills: 'GIMP, WordPress',
             desc: 'Design et intégration de la maquette'
