@@ -22,7 +22,7 @@ export default function Work({ activePage, setActivePage }: IProps) {
                 {activeData.map((data, index) => {
                     return <div key={index} className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
                         <a href={data.url} target="_blank" rel="nofollow noreferrer noopener">
-                            <img src={data.img} alt={data.alt} loading="lazy" className="rounded-t-lg" />
+                            <img src={data.img} alt={data.alt} loading="lazy" className="rounded-t-lg" onLoad={() => <div className="inline-block w-8 h-8 border-4 rounded-full"></div>} />
                         </a>
 
                         <div className="p-4">

@@ -23,15 +23,15 @@ export const workData: Array<Array<IData>> = [
             img: immobiliere_abidjan,
             alt: 'Immobilière d\'Abidjan',
             skills: 'Next.js, Bootstrap',
-            desc: 'Design et intégration de la maquette, développement de l\'application web'
+            desc: 'Design et intégration responsive, développement de l\'application web'
         },
 
         {
             url: '#',
             img: eliseekn,
-            alt: 'Portfolio | Elisée Kouadio N\'Guessan',
+            alt: 'Portfolio',
             skills: 'React.js, TailwindCSS',
-            desc: 'Design et intégration de la maquette'
+            desc: 'Design et intégration responsive'
         },
 
         {
@@ -49,7 +49,7 @@ export const workData: Array<Array<IData>> = [
             img: iziloyer,
             alt: 'IZI LOYER',
             skills: 'Laravel, Bootstrap, Javascript',
-            desc: 'Intégration de la maquette, développement de l\'application web'
+            desc: 'Intégration responsive, développement de l\'application web'
         },
 
         {
@@ -65,7 +65,7 @@ export const workData: Array<Array<IData>> = [
             img: iziplanning,
             alt: 'IZI PLANNING',
             skills: 'Laravel, Bootstrap, Javascript',
-            desc: 'Intégration de la maquette, développement de l\'application web'
+            desc: 'Intégration responsive, développement de l\'application web'
         }
     ],
     
@@ -75,7 +75,7 @@ export const workData: Array<Array<IData>> = [
             img: diaspozen,
             alt: 'DIASPO ZEN',
             skills: 'Laravel, TinyMVC, Bootstrap, Javascript',
-            desc: 'Intégration de la maquette, développement de l\'application web'
+            desc: 'Intégration responsive, développement de l\'application web'
         },
 
         {
@@ -83,7 +83,7 @@ export const workData: Array<Array<IData>> = [
             img: yellior,
             alt: 'Yellior',
             skills: 'TinyMVC, Bootstrap, Javascript',
-            desc: 'Design et intégration de la maquette, développement de l\'application web'
+            desc: 'Design et intégration responsive, développement de l\'application web'
         },
 
         {
@@ -91,7 +91,7 @@ export const workData: Array<Array<IData>> = [
             img: cabinet_gesma,
             alt: 'Cabinet GESMA',
             skills: 'WordPress, Bootstrap',
-            desc: 'Design et intégration de la maquette'
+            desc: 'Design et intégration responsive, développement WordPress'
         },
     ]
 ]
