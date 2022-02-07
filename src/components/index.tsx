@@ -1,6 +1,6 @@
 import About from "./about"
-import Skills from "./skills"
+import Services from "./services"
 import Work from "./work"
 import Contact from "./contact"
 
-export { About, Skills, Work, Contact }
+export { About, Services, Work, Contact }

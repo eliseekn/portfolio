@@ -18,6 +18,8 @@ export default function Work({ activePage, setActivePage }: IProps) {
 
     return (
         <div className="flex flex-col items-start justify-center min-h-screen">
+            <h1 className="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">{activePage}</h1>
+            
             <div className="grid grid-cols-3 gap-3">
                 {activeData.map((data, index) => {
                     return <div key={index} className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
@@ -34,7 +36,7 @@ export default function Work({ activePage, setActivePage }: IProps) {
             </div>
 
             <div className="flex items-center justify-center lg:justify-start mt-10">
-                <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => setActivePage('Skills')} title="Retour">
+                <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => setActivePage('Mes services')} title="Retour">
                     <FontAwesomeIcon icon={faArrowLeft} />
                 </button>
 
@@ -42,7 +44,7 @@ export default function Work({ activePage, setActivePage }: IProps) {
                     <FontAwesomeIcon icon={faSyncAlt} />
                 </button>
 
-                <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => setActivePage('Contact')}>
+                <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => setActivePage('Me contacter')}>
                     <span className="hidden md:block">Me contacter</span>
                     <span className="block md:hidden">Contact</span>
                 </button>
