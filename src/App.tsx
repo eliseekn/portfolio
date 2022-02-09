@@ -14,6 +14,7 @@ export default function App() {
     const About = React.lazy(() => import('./components/about'))
     const Services = React.lazy(() => import('./components/services'))
     const Work = React.lazy(() => import('./components/work'))
+    const Projects = React.lazy(() => import('./components/projects'))
     const Contact = React.lazy(() => import('./components/contact'))
 
     return (
@@ -28,6 +29,10 @@ export default function App() {
 
             {activePage === 'Mes réalisations' &&  <Suspense fallback={<Spinner />}>
                 <Work activePage={activePage} setActivePage={setActivePage} />
+            </Suspense>}
+
+            {activePage === 'Mes projets' &&  <Suspense fallback={<Spinner />}>
+                <Projects activePage={activePage} setActivePage={setActivePage} />
             </Suspense>}
 
             {activePage === 'Me contacter' &&  <Suspense fallback={<Spinner />}>

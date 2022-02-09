@@ -22,7 +22,7 @@ export default function Services({ activePage, setActivePage }: IProps) {
                     </div>
 
                     <p className="text-base md:text-xl md:leading-loose">
-                        Je développe des API avec PHP et Node.js, mais également des applications web avec Next.js/React.js et Vue.js.
+                        Je développe des API avec PHP et Node.js, mais également des applications web dynamiques avec React.js et Vue.js.
                     </p>
                 </div>
 
@@ -36,7 +36,9 @@ export default function Services({ activePage, setActivePage }: IProps) {
                         <span className="mx-4 md:ml-6"><FontAwesomeIcon icon={faJsSquare} color="#7e97a6" /></span>
                     </div>
 
-                    <p className="text-base md:text-xl md:leading-loose">Je développe des thèmes et des plugins sur mesure pour WordPress.</p>
+                    <p className="text-base md:text-xl md:leading-loose">
+                        Je développe des thèmes et des plugins sur mesure pour WordPress.
+                    </p>
                 </div>
 
                 <div className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">

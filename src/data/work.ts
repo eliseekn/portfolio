@@ -23,7 +23,7 @@ export const workData: Array<Array<IData>> = [
             img: immobiliere_abidjan,
             alt: 'Immobilière d\'Abidjan',
             skills: 'Next.js, Bootstrap',
-            desc: 'Design et intégration responsive, développement du backoffice'
+            desc: 'Design et intégration responsive, développement du backoffice.'
         },
 
         {
@@ -31,7 +31,7 @@ export const workData: Array<Array<IData>> = [
             img: eliseekn,
             alt: 'Portfolio',
             skills: 'React.js, Typescript, TailwindCSS',
-            desc: 'Design et intégration responsive'
+            desc: 'Design et intégration responsive.'
         },
 
         {
@@ -39,7 +39,7 @@ export const workData: Array<Array<IData>> = [
             img: cps_securite,
             alt: 'CPS Sécurité',
             skills: 'Laravel',
-            desc: 'Implémentation backend du site'
+            desc: 'Implémentation backend.'
         }
     ],
     
@@ -49,7 +49,7 @@ export const workData: Array<Array<IData>> = [
             img: iziloyer,
             alt: 'IZI LOYER',
             skills: 'Laravel, Bootstrap, Javascript',
-            desc: 'Intégration responsive, développement du backoffice'
+            desc: 'Intégration responsive, développement du backoffice.'
         },
 
         {
@@ -57,7 +57,7 @@ export const workData: Array<Array<IData>> = [
             img: les_ateliers_nappy,
             alt: 'Les Ateliers Nappy',
             skills: 'WordPress, API EtsyShop',
-            desc: 'Refonte et personnalisation du thème'
+            desc: 'Refonte et personnalisation du thème.'
         },
 
         {
@@ -65,7 +65,7 @@ export const workData: Array<Array<IData>> = [
             img: iziplanning,
             alt: 'IZI PLANNING',
             skills: 'Laravel, Bootstrap, Javascript',
-            desc: 'Intégration responsive, développement du backoffice'
+            desc: 'Intégration responsive, développement du backoffice.'
         }
     ],
     
@@ -75,7 +75,7 @@ export const workData: Array<Array<IData>> = [
             img: diaspozen,
             alt: 'DIASPO ZEN',
             skills: 'Laravel, TinyMVC, Bootstrap, Javascript',
-            desc: 'Intégration responsive, développement du backoffice'
+            desc: 'Intégration responsive, développement du backoffice.'
         },
 
         {
@@ -83,7 +83,7 @@ export const workData: Array<Array<IData>> = [
             img: yellior,
             alt: 'Yellior',
             skills: 'TinyMVC, Bootstrap, Javascript',
-            desc: 'Design et intégration responsive, développement du backoffice'
+            desc: 'Design et intégration responsive, développement du backoffice.'
         },
 
         {
@@ -91,7 +91,7 @@ export const workData: Array<Array<IData>> = [
             img: cabinet_gesma,
             alt: 'Cabinet GESMA',
             skills: 'WordPress, Bootstrap',
-            desc: 'Design et intégration responsive, développement WordPress'
+            desc: 'Design et intégration responsive, développement WordPress.'
         },
     ]
 ]

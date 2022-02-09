@@ -68,7 +68,7 @@ export default function Contact({ activePage, setActivePage }: IProps) {
                     </div>
                     
                     <div className="flex items-center justify-center md:justify-start mt-10">
-                        <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => setActivePage('Mes réalisations')} title="Retour">
+                        <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => setActivePage('Mes projets')} title="Retour">
                             <FontAwesomeIcon icon={faArrowLeft} />
                         </button>
                     </div>

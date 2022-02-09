@@ -2,7 +2,7 @@ import { IProps } from "../interfaces/iprops"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft, faSyncAlt } from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react"
-import { IData, workData } from "../data/work-data"
+import { IData, workData } from "../data/work"
 
 export default function Work({ activePage, setActivePage }: IProps) {
     const [activeItem, setActiveItem] = useState<number>(1)
@@ -22,15 +22,13 @@ export default function Work({ activePage, setActivePage }: IProps) {
             
             <div className="grid grid-cols-3 gap-3">
                 {activeData.map((data, index) => {
-                    return <div key={index} className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
-                        <a href={data.url} target="_blank" rel="nofollow noreferrer noopener">
-                            <img src={data.img} alt={data.alt} loading="lazy" className="rounded-t-lg" onLoad={() => <div className="inline-block w-8 h-8 border-4 rounded-full"></div>} />
-                        </a>
-
+                    return <div key={index} className="relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
+                        <img src={data.img} alt={data.alt} loading="lazy" className="rounded-t-lg" onLoad={() => <div className="inline-block w-8 h-8 border-4 rounded-full"></div>} />
                         <div className="p-4">
                             <p className="text-[#7e97a6] font-bold text-base md:text-xl md:leading-loose">{data.skills}</p>
                             <p className="text-base md:text-xl md:leading-loose">{data.desc}</p>
                         </div>
+                        <a href={data.url} target="_blank" rel="nofollow noreferrer noopener" className="after:absolute after:inset-0"></a>
                     </div>
                 })}
             </div>
@@ -44,9 +42,8 @@ export default function Work({ activePage, setActivePage }: IProps) {
                     <FontAwesomeIcon icon={faSyncAlt} />
                 </button>
 
-                <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => setActivePage('Me contacter')}>
-                    <span className="hidden md:block">Me contacter</span>
-                    <span className="block md:hidden">Contact</span>
+                <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => setActivePage('Mes projets')}>
+                    Mes projets
                 </button>
             </div>
         </div>
