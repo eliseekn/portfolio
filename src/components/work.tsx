@@ -2,18 +2,18 @@ import { IProps } from "../interfaces/iprops"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft, faSyncAlt } from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react"
-import { IData, workData } from "../data/work"
+import { IData, Data } from "../data/work"
 
 export default function Work({ activePage, setActivePage }: IProps) {
     const [activeItem, setActiveItem] = useState<number>(1)
-    const [activeData, setActiveData] = useState<Array<IData>>(workData[0])
+    const [activeData, setActiveData] = useState<Array<IData>>(Data[0])
 
     const loadMoreWork = () => {
         setActiveItem(activeItem + 1)
 
-        if (activeItem >= workData.length - 1) setActiveItem(0)
+        if (activeItem >= Data.length - 1) setActiveItem(0)
 
-        setActiveData(workData[activeItem])
+        setActiveData(Data[activeItem])
     }
 
     return (
@@ -24,10 +24,12 @@ export default function Work({ activePage, setActivePage }: IProps) {
                 {activeData.map((data, index) => {
                     return <div key={index} className="relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
                         <img src={data.img} alt={data.alt} loading="lazy" className="rounded-t-lg" onLoad={() => <div className="inline-block w-8 h-8 border-4 rounded-full"></div>} />
+                        
                         <div className="p-4">
                             <p className="text-[#7e97a6] font-bold text-base md:text-xl md:leading-loose">{data.skills}</p>
                             <p className="text-base md:text-xl md:leading-loose">{data.desc}</p>
                         </div>
+                        
                         <a href={data.url} target="_blank" rel="nofollow noreferrer noopener" className="after:absolute after:inset-0"></a>
                     </div>
                 })}

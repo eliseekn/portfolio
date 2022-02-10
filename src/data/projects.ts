@@ -4,7 +4,7 @@ export interface IData {
     desc: string
 }
 
-export const projectsData: Array<Array<IData>> = [
+export const Data: Array<Array<IData>> = [
     [
         {
             name: 'TinyMVC',
@@ -21,7 +21,7 @@ export const projectsData: Array<Array<IData>> = [
         {
             name: 'CountriesHelper',
             url: 'https://github.com/eliseekn/countries-helper',
-            desc: 'Helper pour le package Countries for Laravel.'
+            desc: 'Package Laravel qui est un helper pour le package Countries for Laravel.'
         }
     ],
 ]

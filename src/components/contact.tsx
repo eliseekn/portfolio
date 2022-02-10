@@ -24,12 +24,23 @@ export default function Contact({ activePage, setActivePage }: IProps) {
     const [isLoading, setIsLoading] = useState<boolean>(false)
 
     const submitContactForm = () => {
-        setIsLoading(true)
+        if (formData.name == '' || formData.email == '' || formData.subject == '' || formData.message == '') {
+            alert('Veuillez remplir correctement tous les champs')
+            return
+        }
+        
+        //https://codesource.io/how-to-validate-email-in-javascript/
+        if (!formData.email.match('/^[^\s@]+@[^\s@]+$/')) {
+            alert('Veuillez fournir une adresse email correcte')
+            return
+        }
 
+        setIsLoading(true)
+        
         const timestamp = new Date().toUTCString()
 
         setFormData({ ...formData, timestamp: timestamp })
-        
+
         fetch('https://sheet.best/api/sheets/b0e5f88f-386b-43a3-85f8-dc194a89262f', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
@@ -76,10 +87,10 @@ export default function Contact({ activePage, setActivePage }: IProps) {
 
                 <div className="col-span-6 md:col-auto order-1">
                     <div className="grid grid-cols-2 gap-3">
-                        <input type="text" id="name" className="placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500" placeholder="Nom et prénom(s)" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
-                        <input type="email" id="email" className="placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500" placeholder="Adresse email" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
-                        <input type="text" id="subject" className="placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base my-3 col-span-full border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500" placeholder="Objet" value={formData.subject} onChange={e => setFormData({...formData, subject: e.target.value})} />
-                        <textarea id="message" placeholder="Message" className="placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base col-span-full border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500" rows={5} value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})}></textarea>
+                        <input type="text" id="name" className="placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500" placeholder="Nom et prénom(s)" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} onKeyUp={e => {if (e.key == 'Enter') return submitContactForm()}} />
+                        <input type="email" id="email" className="placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500" placeholder="Adresse email" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} onKeyUp={e => {if (e.key == 'Enter') return submitContactForm()}} />
+                        <input type="text" id="subject" className="placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base my-3 col-span-full border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500" placeholder="Objet" value={formData.subject} onChange={e => setFormData({...formData, subject: e.target.value})} onKeyUp={e => {if (e.key == 'Enter') return submitContactForm()}} />
+                        <textarea id="message" placeholder="Message" className="placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base col-span-full border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500" rows={5} value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} onKeyUp={e => {if (e.key == 'Enter') return submitContactForm()}}></textarea>
                     
                         <button type="button" className="text-base md:text-xl md:leading-loose col-span-full font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => submitContactForm()}>
                             {isLoading && 'Opération en cours...'}

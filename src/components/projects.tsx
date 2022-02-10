@@ -2,18 +2,18 @@ import { useState } from "react"
 import { IProps } from "../interfaces/iprops"
 import { faArrowLeft, faSyncAlt } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { IData, projectsData } from "../data/projects"
+import { IData, Data } from "../data/projects"
 
 export default function Projects({ activePage, setActivePage }: IProps) {
     const [activeItem, setActiveItem] = useState<number>(1)
-    const [activeData, setActiveData] = useState<Array<IData>>(projectsData[0])
+    const [activeData, setActiveData] = useState<Array<IData>>(Data[0])
 
-    const loadMoreWork = () => {
+    const loadMoreProjects = () => {
         setActiveItem(activeItem + 1)
 
-        if (activeItem >= projectsData.length - 1) setActiveItem(0)
+        if (activeItem >= Data.length - 1) setActiveItem(0)
 
-        setActiveData(projectsData[activeItem])
+        setActiveData(Data[activeItem])
     }
 
     return (
@@ -35,11 +35,11 @@ export default function Projects({ activePage, setActivePage }: IProps) {
                     <FontAwesomeIcon icon={faArrowLeft} />
                 </button>
 
-                {projectsData.length > 1 && <button className="text-base md:text-xl md:leading-loose mx-5 font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => loadMoreWork()} title="Plus de projets">
+                {Data.length > 1 && <button className="text-base md:text-xl md:leading-loose mx-5 font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" onClick={() => loadMoreProjects()} title="Plus de projets">
                     <FontAwesomeIcon icon={faSyncAlt} />
                 </button>}
 
-                <button className={"text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500 " + (projectsData.length == 1 && 'ml-5')} onClick={() => setActivePage('Me contacter')}>
+                <button className={"text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500 " + (Data.length == 1 && 'ml-5')} onClick={() => setActivePage('Me contacter')}>
                     <span className="hidden md:block">Me contacter</span>
                     <span className="block md:hidden">Contact</span>
                 </button>

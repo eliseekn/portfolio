@@ -16,13 +16,13 @@ export interface IData {
     desc: string
 }
 
-export const workData: Array<Array<IData>> = [
+export const Data: Array<Array<IData>> = [
     [
         {
             url: 'https://immobiliere-abidjan.vercel.app/',
             img: immobiliere_abidjan,
             alt: 'Immobilière d\'Abidjan',
-            skills: 'Next.js, Bootstrap',
+            skills: 'Next.js, Laravel, Bootstrap',
             desc: 'Design et intégration responsive, développement du backoffice.'
         },
 

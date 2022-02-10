@@ -18,7 +18,7 @@ export default function App() {
     const Contact = React.lazy(() => import('./components/contact'))
 
     return (
-        <div className="container mx-auto px-10 py-8 md:py-0 text-white">
+        <div className="container mx-auto px-10 md:px-15 py-8 md:py-0 text-white">
             {activePage === 'About' && <Suspense fallback={<Spinner />}>
                 <About activePage={activePage} setActivePage={setActivePage} />
             </Suspense>}

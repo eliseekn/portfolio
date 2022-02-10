@@ -1,6 +1,6 @@
 import { IProps } from "../interfaces/iprops"
-import { faAppStore, faCss3Alt, faGooglePlay, faHtml5, faJsSquare, faLaravel, faNodeJs, faPhp, faReact, faSymfony, faVuejs, faWordpressSimple } from "@fortawesome/free-brands-svg-icons"
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+import { faAppStore, faAppStoreIos, faAws, faCss3Alt, faGit, faGitAlt, faGooglePlay, faHtml5, faJsSquare, faLaravel, faLinux, faNodeJs, faPhp, faReact, faSymfony, faVuejs, faWordpressSimple } from "@fortawesome/free-brands-svg-icons"
+import { faArrowLeft, faChalkboardTeacher, faCloud } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Services({ activePage, setActivePage }: IProps) {
@@ -10,7 +10,7 @@ export default function Services({ activePage, setActivePage }: IProps) {
 
             <div className="grid grid-cols-3 gap-3">
                 <div className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
-                    <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Full Stack</p>
+                    <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Web</p>
 
                     <div className="my-3 md:my-7 text-xl md:text-5xl">
                         <span><FontAwesomeIcon icon={faPhp} color="#7e97a6" /></span>
@@ -22,22 +22,7 @@ export default function Services({ activePage, setActivePage }: IProps) {
                     </div>
 
                     <p className="text-base md:text-xl md:leading-loose">
-                        Je développe des API avec PHP et Node.js, mais également des applications web dynamiques avec React.js et Vue.js.
-                    </p>
-                </div>
-
-                <div className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
-                    <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement WordPress</p>
-
-                    <div className="my-3 md:my-7 text-xl md:text-5xl">
-                        <span><FontAwesomeIcon icon={faWordpressSimple} color="#7e97a6" /></span>
-                        <span className="mx-4 md:mx-6"><FontAwesomeIcon icon={faHtml5} color="#7e97a6" /></span>
-                        <span><FontAwesomeIcon icon={faCss3Alt} color="#7e97a6" /></span>
-                        <span className="mx-4 md:ml-6"><FontAwesomeIcon icon={faJsSquare} color="#7e97a6" /></span>
-                    </div>
-
-                    <p className="text-base md:text-xl md:leading-loose">
-                        Je développe des thèmes et des plugins sur mesure pour WordPress.
+                        Je développe des applications Backend avec PHP et Node.js, et des applications Frontend avec React.js et Vue.js.
                     </p>
                 </div>
 
@@ -46,12 +31,27 @@ export default function Services({ activePage, setActivePage }: IProps) {
 
                     <div className="my-3 md:my-7 text-xl md:text-5xl">
                         <span><FontAwesomeIcon icon={faGooglePlay} color="#7e97a6" /></span>
-                        <span className="mx-4 md:mx-6"><FontAwesomeIcon icon={faAppStore} color="#7e97a6" /></span>
+                        <span className="mx-4 md:mx-6"><FontAwesomeIcon icon={faAppStoreIos} color="#7e97a6" /></span>
                         <span><FontAwesomeIcon icon={faReact} color="#7e97a6" /></span>
                     </div>
 
                     <p className="text-base md:text-xl md:leading-loose">
                         Je développe des applications mobile multi-plateformes (iOS et Android) avec React Native.
+                    </p>
+                </div>
+
+                <div className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
+                    <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">DevOps</p>
+
+                    <div className="my-3 md:my-7 text-xl md:text-5xl">
+                        <span><FontAwesomeIcon icon={faCloud} color="#7e97a6" /></span>
+                        <span className="mx-4 md:mx-6"><FontAwesomeIcon icon={faAws} color="#7e97a6" /></span>
+                        <span><FontAwesomeIcon icon={faGit} color="#7e97a6" /></span>
+                        <span className="mx-4 md:mx-6"><FontAwesomeIcon icon={faLinux} color="#7e97a6" /></span>
+                    </div>
+
+                    <p className="text-base md:text-xl md:leading-loose">
+                        Je mets en place des pipelines de déploiement et d'intégration continues sur des Serveurs Cloud.
                     </p>
                 </div>
             </div>
