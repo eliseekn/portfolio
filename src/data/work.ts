@@ -8,7 +8,7 @@ import cabinet_gesma from '../../img/work/cabinet_gesma.png'
 import eliseekn from '../../img/work/eliseekn.png'
 import immobiliere_abidjan from '../../img/work/immobiliere_abidjan.png'
 
-export interface IData {
+interface IData {
     url: string,
     img: string,
     alt: string,
@@ -16,7 +16,7 @@ export interface IData {
     desc: string
 }
 
-export const Data: Array<Array<IData>> = [
+export const Data: IData[][] = [
     [
         {
             url: 'https://immobiliere-abidjan.vercel.app/',
@@ -30,7 +30,7 @@ export const Data: Array<Array<IData>> = [
             url: '#',
             img: eliseekn,
             alt: 'Portfolio',
-            skills: 'React.js, Typescript, TailwindCSS',
+            skills: 'Vue.js, Typescript, TailwindCSS',
             desc: 'Design et intégration responsive.'
         },
 

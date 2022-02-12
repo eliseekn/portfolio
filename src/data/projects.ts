@@ -1,10 +1,10 @@
-export interface IData {
+interface IData {
     name: string,
     url: string,
     desc: string
 }
 
-export const Data: Array<Array<IData>> = [
+export const Data: IData[][] = [
     [
         {
             name: 'TinyMVC',
