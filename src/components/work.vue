@@ -4,7 +4,7 @@
         
         <div className="grid grid-cols-3 gap-3">
             <div v-for="(data, index) in activeData" :key="index" className="relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
-                <img :src=data.img :alt=data.alt loading="lazy" className="rounded-t-lg" />
+                <img :src=data.img :alt=data.alt loading="lazy" @load="onLoad" className="rounded-t-lg" />
                 
                 <div className="p-4">
                     <p className="text-[#7e97a6] font-bold text-base md:text-xl md:leading-loose">{{ data.skills }}</p>
@@ -56,5 +56,9 @@
         if (activeItem.value >= Data.length - 1) activeItem.value = 0
 
         activeData.value = Data[activeItem.value]
+    }
+
+    const onLoad = () => {
+        return `<div className="inline-block w-8 h-8 border-4 rounded-full"></div>`
     }
 </script>
