@@ -3,7 +3,7 @@
             <h1 className="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">{{ props.activePage }}</h1>
 
             <div className="grid grid-cols-3 gap-3">
-                <div className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
+                <div className="animate-fade-in-1 col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
                     <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Web</p>
 
                     <div className="my-3 md:my-7 text-xl md:text-5xl">
@@ -16,11 +16,11 @@
                     </div>
 
                     <p className="text-base md:text-xl md:leading-loose">
-                        Je développe des applications Backend avec PHP et Node.js, et des applications Frontend avec React.js et Vue.js.
+                        Je développe des applications Backend avec PHP ou Node.js, et des applications Frontend avec React.js ou Vue.js.
                     </p>
                 </div>
 
-                <div className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
+                <div className="animate-fade-in-2 col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
                     <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Mobile</p>
 
                     <div className="my-3 md:my-7 text-xl md:text-5xl">
@@ -34,7 +34,7 @@
                     </p>
                 </div>
 
-                <div className="col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
+                <div className="animate-fade-in-3 col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
                     <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">DevOps</p>
 
                     <div className="my-3 md:my-7 text-xl md:text-5xl">

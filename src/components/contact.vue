@@ -3,7 +3,7 @@
         <h1 className="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">{{ activePage }}</h1>
             
         <div className="grid grid-cols-2 gap-3">
-            <div className="col-span-6 md:col-auto text-center order-2 md:text-left mt-5 md:mt-0 px-0 md:px-10">
+            <div className="col-span-6 md:col-auto text-center order-2 md:text-left mt-5 md:mt-0 px-0 md:px-10 animate-slide-out">
                 <p className="text-base md:text-xl md:leading-loose">
                     Besoin de mes services ? Je suis actuellement <span className="text-[#7e97a6] font-medium">disponible pour des missions en freelance</span>, remote ou sur site.
                 </p>

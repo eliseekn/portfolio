@@ -7,7 +7,7 @@
                     <span className="text-lg md:text-3xl md:leading-loose font-semibold">Elisée Kouadio N'GUESSAN,</span>
                 </p>
 
-                <h1 className="my-4 md:my-5 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
+                <h1 className="animate-slide-in my-4 md:my-5 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
                     Développeur Full Stack.
                 </h1>
 
@@ -16,14 +16,14 @@
                     dans le développement d'interfaces utilisateurs et d'applications web.
                 </p>
 
-                <div className="flex items-center justify-center md:justify-start mt-10">
+                <div className="animate-slide-in flex items-center justify-center md:justify-start mt-10">
                     <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="props.setActivePage('Mes services')">
                         Mes services
                     </button>
                 </div>
             </div>
 
-            <div className="col-span-6 md:col-auto m-auto order-1 md:order-2">
+            <div className="col-span-6 md:col-auto m-auto order-1 md:order-2 animate-fade-in-1">
                 <img :src=avatar alt="Avatar" loading="lazy" className="w-28 md:w-full" />
             </div>
         </div>

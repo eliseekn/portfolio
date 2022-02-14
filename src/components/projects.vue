@@ -3,7 +3,7 @@
         <h1 className="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">{{ activePage }}</h1>
         
         <div className="grid grid-cols-3 gap-3">
-            <div v-for="(data, index) in activeData" :key="index" className="relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500">
+            <div v-for="(data, index) in activeData" :key="index" :className="'relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500' + ' animate-fade-in-' + (index + 1)">
                 <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">{{ data.name }}</p>
                 <p className="text-base md:text-xl md:leading-loose my-4">{{ data.desc }}</p>
                 <a :href=data.url target="_blank" rel="nofollow noreferrer noopener" className="after:absolute after:inset-0 text-[#7e97a6] font-bold text-base md:text-xl md:leading-loose"></a>
