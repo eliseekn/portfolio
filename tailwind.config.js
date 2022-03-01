@@ -10,7 +10,7 @@ module.exports = {
             },
 
             animation: {
-                'slide-in' : 'slideIn .5s ease-in-out',
+                'slide-in' : 'slideIn 1s ease-in-out',
                 'slide-out' : 'slideOut .5s ease-in-out',
                 'fade-in-1' : 'fadeIn .5s ease-in-out',
                 'fade-in-2' : 'fadeIn 1s ease-in-out',

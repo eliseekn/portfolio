@@ -19,7 +19,7 @@ interface IData {
 export const Data: IData[][] = [
     [
         {
-            url: 'https://immobiliere-abidjan.vercel.app/',
+            url: '#',
             img: immobiliere_abidjan,
             alt: 'Immobilière d\'Abidjan',
             skills: 'Next.js, Laravel, Bootstrap',
@@ -45,7 +45,7 @@ export const Data: IData[][] = [
     
     [
         {
-            url: 'https://iziloyer.net',
+            url: 'https://iziloyer.com',
             img: iziloyer,
             alt: 'IZI LOYER',
             skills: 'Laravel, Bootstrap, Javascript',
@@ -61,7 +61,7 @@ export const Data: IData[][] = [
         },
 
         {
-            url: 'https://iziplanning.com',
+            url: '#',
             img: iziplanning,
             alt: 'IZI PLANNING',
             skills: 'Laravel, Bootstrap, Javascript',

@@ -1,27 +1,27 @@
 <template>
-    <div className="flex flex-col items-start justify-center min-h-screen">
-        <h1 className="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">{{ activePage }}</h1>
+    <div class="flex flex-col items-start justify-center min-h-screen">
+        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">{{ activePage }}</h1>
         
-        <div className="grid grid-cols-3 gap-3">
-            <div v-for="(data, index) in activeData" :key="index" :className="'relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500' + ' animate-fade-in-' + (index + 1)">
-                <p className="text-[#7e97a6] font-bold text-xl md:text-3xl">{{ data.name }}</p>
-                <p className="text-base md:text-xl md:leading-loose my-4">{{ data.desc }}</p>
-                <a :href=data.url target="_blank" rel="nofollow noreferrer noopener" className="after:absolute after:inset-0 text-[#7e97a6] font-bold text-base md:text-xl md:leading-loose"></a>
+        <div class="grid grid-cols-3 gap-3">
+            <div v-for="(data, index) in activeData" :key="index" :class="'relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500' + ' animate-fade-in-' + (index + 1)">
+                <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">{{ data.name }}</p>
+                <p class="text-base md:text-xl md:leading-loose my-4">{{ data.desc }}</p>
+                <a :href=data.url target="_blank" rel="nofollow noreferrer noopener" class="after:absolute after:inset-0 text-[#7e97a6] font-bold text-base md:text-xl md:leading-loose"></a>
             </div>
         </div>
 
-        <div className="flex items-center justify-center lg:justify-start mt-10">
-            <button className="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="props.setActivePage('Mes réalisations')" title="Retour">
+        <div class="flex items-center justify-center lg:justify-start mt-10">
+            <button class="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="props.setActivePage('Mes réalisations')" title="Retour">
                 <font-awesome-icon :icon="faArrowLeft" />
             </button>
 
-            <button v-if="Data.length > 1" className="text-base md:text-xl md:leading-loose mx-5 font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="loadMoreProjects()" title="Plus de projets">
+            <button v-if="Data.length > 1" class="text-base md:text-xl md:leading-loose mx-5 font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="loadMoreProjects()" title="Plus de projets">
                 <font-awesome-icon :icon="faSyncAlt" />
             </button>
 
-            <button :className="Data.length == 1 ? 'ml-5 ' + btnClass : btnClass" @click="props.setActivePage('Me contacter')">
-                <span className="hidden md:block">Me contacter</span>
-                <span className="block md:hidden">Contact</span>
+            <button :class="Data.length == 1 ? 'ml-5 ' + btnClass : btnClass" @click="props.setActivePage('Me contacter')">
+                <span class="hidden md:block">Me contacter</span>
+                <span class="block md:hidden">Contact</span>
             </button>
         </div>
     </div>
@@ -48,9 +48,7 @@
 
     const loadMoreProjects = () => {
         activeItem.value = activeItem.value + 1
-
         if (activeItem.value >= Data.length - 1) activeItem.value = 0
-
         activeData.value = Data[activeItem.value]
     }
 
