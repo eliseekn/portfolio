@@ -1,9 +1,9 @@
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
-        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">{{ activePage }}</h1>
+        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">Mes réalisations</h1>
         
         <div class="grid grid-cols-3 gap-3">
-            <div v-for="(data, index) in activeData" :key="index" :class="'relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500' + ' animate-fade-in-' + (index + 1)">
+            <div v-for="(data, index) in activeData" :key="index" :class="'relative col-span-6 lg:col-auto card' + ' animate-fade-in-' + (index + 1)">
                 <img :src=data.img :alt=data.alt loading="lazy" @load="onLoad" class="rounded-t-lg" />
                 
                 <div class="p-4">
@@ -16,15 +16,15 @@
         </div>
 
         <div class="flex items-center justify-center lg:justify-start mt-10">
-            <button class="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="props.setActivePage('Mes services')" title="Retour">
+            <button class="btn" @click="props.setActivePage('Mes services')" title="Retour">
                 <font-awesome-icon :icon="faArrowLeft" />
             </button>
 
-            <button class="text-base md:text-xl md:leading-loose mx-5 font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="loadMoreWork()" title="Plus de réalisations">
+            <button class="mx-5 btn" @click="loadMoreWork()" title="Plus de réalisations">
                 <font-awesome-icon :icon="faSyncAlt" />
             </button>
 
-            <button class="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="props.setActivePage('Mes projets')">
+            <button class="btn" @click="props.setActivePage('Mes projets')">
                 Mes projets
             </button>
         </div>
@@ -40,12 +40,7 @@
 
     library.add(faArrowLeft, faSyncAlt)
 
-    interface Props {
-        activePage: string,
-        setActivePage: (page: string) => void
-    }
-
-    const props = defineProps<Props>()
+    const props = defineProps<{ setActivePage: (page: string) => void }>()
 
     const activeItem = ref(0)
     const activeData = ref(Data[0])

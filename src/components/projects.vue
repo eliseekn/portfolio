@@ -1,25 +1,25 @@
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
-        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">{{ activePage }}</h1>
+        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">Mes projets</h1>
         
         <div class="grid grid-cols-3 gap-3">
-            <div v-for="(data, index) in activeData" :key="index" :class="'relative col-span-6 lg:col-auto bg-transparent border-2 border-[#7e97a6] rounded-lg p-4 hover:shadow hover:shadow-[#7e97a6] transition-all duration-500' + ' animate-fade-in-' + (index + 1)">
+            <div v-for="(data, index) in activeData" :key="index" :class="'relative col-span-6 lg:col-auto card p-4' + ' animate-fade-in-' + (index + 1)">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">{{ data.name }}</p>
                 <p class="text-base md:text-xl md:leading-loose my-4">{{ data.desc }}</p>
-                <a :href=data.url target="_blank" rel="nofollow noreferrer noopener" class="after:absolute after:inset-0 text-[#7e97a6] font-bold text-base md:text-xl md:leading-loose"></a>
+                <a :href=data.url target="_blank" rel="nofollow noreferrer noopener" class="after:absolute after:inset-0"></a>
             </div>
         </div>
 
         <div class="flex items-center justify-center lg:justify-start mt-10">
-            <button class="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="props.setActivePage('Mes réalisations')" title="Retour">
+            <button class="btn" @click="props.setActivePage('Mes réalisations')" title="Retour">
                 <font-awesome-icon :icon="faArrowLeft" />
             </button>
 
-            <button v-if="Data.length > 1" class="text-base md:text-xl md:leading-loose mx-5 font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="loadMoreProjects()" title="Plus de projets">
+            <button v-if="Data.length > 1" class="btn mx-5" @click="loadMoreProjects()" title="Plus de projets">
                 <font-awesome-icon :icon="faSyncAlt" />
             </button>
-
-            <button :class="Data.length == 1 ? 'ml-5 ' + btnClass : btnClass" @click="props.setActivePage('Me contacter')">
+            
+            <button :class="Data.length == 1 ? 'ml-5 btn' : 'btn'" @click="props.setActivePage('Me contacter')">
                 <span class="hidden md:block">Me contacter</span>
                 <span class="block md:hidden">Contact</span>
             </button>
@@ -36,21 +36,14 @@
 
     library.add(faArrowLeft, faSyncAlt)
 
-    interface Props {
-        activePage: string,
-        setActivePage: (page: string) => void
-    }
-
-    const props = defineProps<Props>()
+    const props = defineProps<{ setActivePage: (page: string) => void }>()
 
     const activeItem = ref(0)
     const activeData = ref(Data[0])
 
     const loadMoreProjects = () => {
         activeItem.value = activeItem.value + 1
-        if (activeItem.value >= Data.length - 1) activeItem.value = 0
+        if (activeItem.value > Data.length - 1) activeItem.value = 0
         activeData.value = Data[activeItem.value]
     }
-
-    let btnClass = 'text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500';
 </script>

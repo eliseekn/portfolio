@@ -9,7 +9,7 @@ export const Data: IData[][] = [
         {
             name: 'TinyMVC',
             url: 'https://github.com/eliseekn/tinymvc',
-            desc: 'Framework PHP basé sur l\'achitecture MVC permettant de créer facilement et rapidement des applications web et des API.'
+            desc: 'Framework PHP basé sur l\'achitecture MVC permettant de créer facilement et rapidement des applications web et des APIs.'
         },
 
         {
@@ -22,6 +22,6 @@ export const Data: IData[][] = [
             name: 'CountriesHelper',
             url: 'https://github.com/eliseekn/countries-helper',
             desc: 'Package Laravel qui est un helper pour le package Countries for Laravel.'
-        }
-    ],
+        },
+    ]
 ]

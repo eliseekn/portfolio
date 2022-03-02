@@ -16,7 +16,7 @@
                 </p>
 
                 <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10">
-                    <button class="text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500" @click="props.setActivePage('Mes services')">
+                    <button class="btn" @click="props.setActivePage('Mes services')">
                         Mes services
                     </button>
                 </div>
@@ -32,10 +32,5 @@
 <script setup lang="ts">
     import avatar from '../../img/avatar.png'
 
-    interface Props {
-        activePage: string,
-        setActivePage: (page: string) => void
-    }
-
-    const props = defineProps<Props>()
+    const props = defineProps<{ setActivePage: (page: string) => void }>()
 </script>

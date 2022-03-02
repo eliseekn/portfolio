@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500
+    }
+
+    .card {
+        @apply bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500
+    }
+
+    .input {
+        @apply placeholder:text-white placeholder:text-sm md:placeholder:text-base text-base border bg-transparent px-4 py-2 rounded-lg w-full focus:ring-2 focus:ring-[#7e97a6] focus:outline-0 transition ease-in-out duration-500
+    }
+}
