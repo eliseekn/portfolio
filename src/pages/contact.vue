@@ -9,9 +9,17 @@
                 </p>
 
                 <div class="mt-8">
-                    <a href="mailto:eliseekn@gmail.com" target='_blank' rel="nofollow noreferrer noopener"><span class="text-5xl"><font-awesome-icon :icon="faEnvelope" /></span></a>
-                    <a href="https://linkedin.com/in/eliseekn" target='_blank' rel="nofollow noreferrer noopener"><span class="text-5xl mx-6"><font-awesome-icon :icon="faLinkedin" /></span></a>
-                    <a href="https://github.com/eliseekn" target='_blank' rel="nofollow noreferrer noopener"><span class="text-5xl"><font-awesome-icon :icon="faGithub" /></span></a>
+                    <a href="mailto:eliseekn@gmail.com" target='_blank' rel="nofollow noreferrer noopener">
+                        <span class="text-5xl"><font-awesome-icon :icon="faEnvelope" /></span>
+                    </a>
+
+                    <a href="https://linkedin.com/in/eliseekn" target='_blank' rel="nofollow noreferrer noopener">
+                        <span class="text-5xl mx-6"><font-awesome-icon :icon="faLinkedin" /></span>
+                    </a>
+
+                    <a href="https://github.com/eliseekn" target='_blank' rel="nofollow noreferrer noopener">
+                        <span class="text-5xl"><font-awesome-icon :icon="faGithub" /></span>
+                    </a>
                 </div>
                 
                 <div class="flex items-center justify-center md:justify-start mt-10">
@@ -19,21 +27,19 @@
                         <font-awesome-icon :icon="faArrowLeft" />
                     </button>
 
-                    <button class="btn ml-5" @click="props.setActivePage('FAQ')">
-                        FAQ
-                    </button>
+                    <button class="btn ml-5" @click="props.setActivePage('FAQ')">FAQ</button>
                 </div>
             </div>
 
             <div class="col-span-6 md:col-auto order-1">
                 <div class="grid grid-cols-2 gap-3">
-                    <input type="text" id="name" class="input" placeholder="Nom et prénom(s)" v-model.lazy="formData.name" @keyup.enter="submitContactForm()" />
-                    <input type="email" id="email" class="input" placeholder="Adresse email" v-model.lazy="formData.email" @keyup.enter="submitContactForm()" />
-                    <input type="text" id="subject" class="input my-3 col-span-full" placeholder="Objet" v-model.lazy="formData.subject" @keyup.enter="submitContactForm()" />
-                    <textarea id="message" placeholder="Message" class="input col-span-full" rows="5" v-model.lazy="formData.message" @keyup.enter="submitContactForm()"></textarea>
+                    <input type="text" id="name" class="input" placeholder="Nom et prénom(s)" v-model.lazy="form.name" />
+                    <input type="email" id="email" class="input" placeholder="Adresse email" v-model.lazy="form.email" />
+                    <input type="text" id="subject" class="input my-3 col-span-full" placeholder="Objet" v-model.lazy="form.subject" />
+                    <textarea id="message" placeholder="Message" class="input col-span-full" rows="5" v-model.lazy="form.message"></textarea>
                 
                     <button type="button" class="btn col-span-full" @click="submitContactForm()">
-                        <span v-if="isLoading">Opération en cours...</span>
+                        <span v-if="form.submitted">Opération en cours...</span>
                         <span v-else>Envoyer</span>
                     </button>
                 </div>
@@ -53,47 +59,44 @@
 
     const props = defineProps<{ setActivePage: (page: string) => void }>()
 
-    const isLoading = ref(false)
-
-    const formData = ref({
+    const form = ref({
         name: '',
         email: '',
         subject: '',
         message: '',
-        timestamp: ''
+        timestamp: '',
+        submitted: false
     })
 
     const submitContactForm = () => {
-        if (formData.value.name == '' || formData.value.email == '' || formData.value.subject == '' || formData.value.message == '') {
+        if (form.value.name == '' || form.value.email == '' || form.value.subject == '' || form.value.message == '') {
             alert('Veuillez remplir correctement tous les champs')
             return
         }
 
         //https://codesource.io/how-to-validate-email-in-javascript/
-        if (!new RegExp(/^[^\s@]+@[^\s@]+$/).test(formData.value.email)) {
+        if (!new RegExp(/^[^\s@]+@[^\s@]+$/).test(form.value.email)) {
             alert('Veuillez fournir une adresse email correcte')
             return
         }
 
-        isLoading.value = true
-
-        formData.value.timestamp = new Date().toUTCString()
+        form.value.submitted = true
+        form.value.timestamp = new Date().toUTCString()
 
         fetch('https://sheet.best/api/sheets/b0e5f88f-386b-43a3-85f8-dc194a89262f', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(formData.value)
+            body: JSON.stringify(form.value)
         })
             .then(res => res.json())
             .then(() => {
-                isLoading.value = false
-
-                formData.value = {
+                form.value = {
                     name: '',
                     email: '',
                     subject: '',
                     message: '',
-                    timestamp: ''
+                    timestamp: '',
+                    submitted: false
                 }
 
                 alert('Votre message a bien été envoyé. Vous serez recontactez dans les plus brefs délais.')

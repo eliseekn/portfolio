@@ -3,7 +3,7 @@
         <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">Mes projets</h1>
         
         <div class="grid grid-cols-3 gap-3">
-            <div v-for="(data, index) in activeData" :key="index" :class="'relative col-span-6 lg:col-auto card p-4' + ' animate-fade-in-' + (index + 1)">
+            <div v-for="data in activeData" :key="data.id" :class="'relative col-span-6 lg:col-auto card p-4' + ' animate-fade-in-' + (data.id)">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">{{ data.name }}</p>
                 <p class="text-base md:text-xl md:leading-loose my-4">{{ data.desc }}</p>
                 <a :href=data.url target="_blank" rel="nofollow noreferrer noopener" class="after:absolute after:inset-0"></a>

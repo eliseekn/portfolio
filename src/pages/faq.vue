@@ -5,7 +5,7 @@
         <div class="grid grid-cols-2 gap-x-10">
             <div class="col-span-6 md:col-auto">
                 <div class="mb-10">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quelles sont vos disponibilités ?</p>
+                    <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quelles sont vos disponibilités ?</h5>
 
                     <p class="text-base md:text-xl md:leading-loose mt-3">
                         Je suis actuellement <span class="text-[#7e97a6] font-semibold">disponible</span> pour des missions en freelance.
@@ -13,17 +13,17 @@
                 </div>
 
                 <div class="mb-10">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quels sont vos tarifs ?</p>
+                    <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quels sont vos tarifs ?</h5>
                     
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        La tarification dépend principalement du projet. Pour un site vitrine, il faut prévoir au minimum <span class="text-[#7e97a6] font-semibold">300 000 F CFA</span>.
+                        La tarification dépend des fonctionnalités à développer. Pour un site vitrine, par example, il faut prévoir au minimum <span class="text-[#7e97a6] font-semibold">300 000 F CFA</span>.
                     </p>
                 </div>
             </div>
 
             <div class="col-span-6 md:col-auto animate-slide-out">
                 <div class="mb-10">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Effectuez-vous des missions sur site ?</p>
+                    <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Effectuez-vous des missions sur site ?</h5>
                     
                     <p class="text-base md:text-xl md:leading-loose mt-3">
                         Oui, en partie, à raison <span class="text-[#7e97a6] font-semibold">2 jours</span> par semaine maximum. 
@@ -31,10 +31,10 @@
                 </div>
 
                 <div class="mb-10">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Faites-vous du design ?</p>
+                    <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Faites-vous du design ?</h5>
                     
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        <span class="text-[#7e97a6] font-semibold">Non</span>, toutes les ressources graphiques doivent m'être fournies au préalable.
+                        <span class="text-[#7e97a6] font-semibold">Non</span>, toutes les ressources graphiques relatives au projet doivent m'être fournies au préalable.
                     </p>
                 </div>
             </div>

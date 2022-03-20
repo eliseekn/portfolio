@@ -3,16 +3,16 @@
         <div class="grid grid-cols-2 gap-3">
             <div class="col-span-6 md:col-auto my-auto order-2 md:order-1 text-center md:text-left">
                 <p>
-                    <span class="text-base md:text-xl md:leading-loose">Bonjour 👋, je suis</span> <br />
+                    <span class="text-base md:text-xl md:leading-loose">Bonjour 👋, je suis</span> <br>
                     <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée Kouadio N'GUESSAN,</span>
                 </p>
 
-                <h1 class="my-4 md:my-5 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl leading-10">
-                    Développeur PHP <br> Full Stack.
+                <h1 class="my-4 md:my-5 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
+                    Développeur Web <br> Full Stack.
                 </h1>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Avec plus de 3 années d'expérience, je suis spécialisé dans le développement d'interfaces utilisateur et d'applications web.
+                    Spécialisé en développement backend PHP et frontend React.js, <br> j'ai plus de 3 années d'expériences dans le développement d'interfaces utilisateurs et d'applications web.
                 </p>
 
                 <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10">

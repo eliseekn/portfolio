@@ -13,7 +13,7 @@
                     </div>
 
                     <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des APIs et des applications web avec Laravel et Symfony.
+                        Je développe des APIs REST et des applications web avec Laravel et Symfony.
                     </p>
                 </div>
 
@@ -32,22 +32,22 @@
                 </div>
 
                 <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">DevOps</p>
+                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Developpement WordPress</p>
 
                     <div class="my-3 md:my-5 text-xl md:text-5xl">
-                        <span><font-awesome-icon :icon="faGit" color="#7e97a6" /></span>
-                        <span class="mx-4 md:mx-6"><font-awesome-icon :icon="faDocker" color="#7e97a6" /></span>
-                        <span><font-awesome-icon :icon="faLinux" color="#7e97a6" /></span>
+                        <span><font-awesome-icon :icon="faHtml5" color="#7e97a6" /></span>
+                        <span class="mx-4 md:mx-6"><font-awesome-icon :icon="faCss3Alt" color="#7e97a6" /></span>
+                        <span><font-awesome-icon :icon="faWordpressSimple" color="#7e97a6" /></span>
                     </div>
 
                     <p class="text-base md:text-xl md:leading-loose">
-                        Je mets en place des systèmes de déploiement et d'intégration continus.
+                        Je développe des sites et des plugins sur mesure pour WordPress.
                     </p>
                 </div>
             </div>
 
             <div class="flex items-center justify-center md:justify-start mt-10">
-                <button class="btn" @click="props.setActivePage('About')" title="Retour">
+                <button class="btn" @click="props.setActivePage('Home')" title="Retour">
                     <font-awesome-icon :icon="faArrowLeft" />
                 </button>
 
@@ -61,10 +61,10 @@
 <script setup lang="ts">
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
-    import { faGit, faLaravel, faLinux, faNodeJs, faPhp, faReact, faSymfony, faVuejs, faDocker } from "@fortawesome/free-brands-svg-icons"
+    import { faLaravel, faNodeJs, faPhp, faReact, faSymfony, faVuejs, faWordpressSimple, faHtml5, faCss3Alt } from "@fortawesome/free-brands-svg-icons"
     import { library } from '@fortawesome/fontawesome-svg-core'
 
-    library.add(faGit, faLaravel, faLinux, faNodeJs, faPhp, faReact, faSymfony, faVuejs, faArrowLeft, faDocker)
+    library.add(faLaravel, faNodeJs, faPhp, faReact, faSymfony, faVuejs, faArrowLeft, faWordpressSimple, faHtml5, faCss3Alt)
 
     const props = defineProps<{ setActivePage: (page: string) => void }>()
 </script>
