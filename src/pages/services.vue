@@ -13,7 +13,7 @@
                     </div>
 
                     <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des APIs REST et des applications web avec Laravel et Symfony.
+                        Je développe des applications web et des API avec Laravel et Symfony.
                     </p>
                 </div>
 
@@ -27,7 +27,7 @@
                     </div>
 
                     <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des applications web dynamiques avec Reacts.js et Vue.js.
+                        Je développe des interfaces utilisateurs dynamiques avec Reacts.js et Vue.js.
                     </p>
                 </div>
 
@@ -41,7 +41,7 @@
                     </div>
 
                     <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des sites et des plugins sur mesure pour WordPress.
+                        Je développe des thèmes et des plugins sur mesure pour WordPress.
                     </p>
                 </div>
             </div>

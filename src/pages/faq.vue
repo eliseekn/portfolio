@@ -8,7 +8,7 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quelles sont vos disponibilités ?</h5>
 
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">disponible</span> pour des missions en freelance.
+                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en <span class="text-[#7e97a6] font-semibold">Septembre</span>.
                     </p>
                 </div>
 
@@ -16,7 +16,7 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quels sont vos tarifs ?</h5>
                     
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        La tarification dépend des fonctionnalités à développer. Pour un site vitrine, par example, il faut prévoir au minimum <span class="text-[#7e97a6] font-semibold">300 000 F CFA</span>.
+                        La tarification dépend des fonctionnalités du projet à développer. À titre indicatif mon tarif journalier moyen est de <span class="text-[#7e97a6] font-semibold">15 000 F CFA/jour</span>.
                     </p>
                 </div>
             </div>

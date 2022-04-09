@@ -1,12 +1,12 @@
 import cps_securite from '../../img/work/cps_securite.png'
 import iziloyer from '../../img/work/iziloyer.png'
 import les_ateliers_nappy from '../../img/work/les_ateliers_nappy.png'
-import iziplanning from '../../img/work/iziplanning.png'
+// import iziplanning from '../../img/work/iziplanning.png'
 import diaspozen from '../../img/work/diaspozen.png'
 import yellior from '../../img/work/yellior.png'
 import cabinet_gesma from '../../img/work/cabinet_gesma.png'
-import eliseekn from '../../img/work/eliseekn.png'
-import immobiliere_abidjan from '../../img/work/immobiliere_abidjan.png'
+// import eliseekn from '../../img/work/eliseekn.png'
+// import immobiliere_abidjan from '../../img/work/immobiliere_abidjan.png'
 
 export interface Props {
     id: number,
@@ -22,38 +22,16 @@ export const Data: Props[][] = [
     [
         {
             id: 1,
-            url: '#',
-            img: immobiliere_abidjan,
-            alt: 'Immobilière d\'Abidjan',
-            skills: 'Next.js, Laravel, Bootstrap',
-            desc: 'Design et intégration responsive, développement du backoffice.',
-            fullDesc: 'Le besoin, pour cette agence immobilière, a été à la fois d\'avoir une vitrine sur le web afin de mettre en avant ses biens en location et en vente, mais également d\'avoir une interface d\'administration permettant la gestion des ces biens. Le projet a été développé en deux parties: l\'API avec Laravel et toute l\'IU avec Next.js.'
-        },
-
-        {
-            id: 2,
-            url: '#',
-            img: eliseekn,
-            alt: 'Portfolio',
-            skills: 'Vue.js, Typescript, TailwindCSS',
-            desc: 'Design et intégration responsive.',
-            fullDesc: 'Site web personnel.'
-        },
-
-        {
-            id: 3,
             url: 'https://cps-securite.com',
             img: cps_securite,
             alt: 'CPS Sécurité',
             skills: 'Laravel',
             desc: 'Implémentation backend.',
             fullDesc: 'Pour le compte d\'une agence web, j\'ai procédé à l\'intégration backend du site avec Laravel. Il a s\'agit principalement d\'intégrer le système de mailing pour le formulaire de contact et la gestion du consentement des cookies.'
-        }
-    ],
-    
-    [
+        },
+
         {
-            id: 4,
+            id: 2,
             url: 'https://iziloyer.com',
             img: iziloyer,
             alt: 'IZI LOYER',
@@ -63,7 +41,7 @@ export const Data: Props[][] = [
         },
 
         {
-            id: 5,
+            id: 3,
             url: 'https://lesateliersnappy.com',
             img: les_ateliers_nappy,
             alt: 'Les Ateliers Nappy',
@@ -72,20 +50,11 @@ export const Data: Props[][] = [
             fullDesc: 'L\'objectif a été de se refaire une petite beauté. J\'ai donc procédé à la refonte et à la personnalisation du site en me basant sur un thème WordPress.'
         },
 
-        {
-            id: 6,
-            url: '#',
-            img: iziplanning,
-            alt: 'IZI PLANNING',
-            skills: 'Laravel, Bootstrap, Javascript',
-            desc: 'Intégration responsive, développement du backoffice.',
-            fullDesc: 'IziPlanning est une application dédiée à la gestion et à la plannification des agents de sécurité. Pour ce projet il a s\'agit principalement de faire la refonte du site et le refactoring du backoffice. D\'autres fonctionnalités on par la suite été développées.'
-        }
     ],
     
     [
         {
-            id: 7,
+            id: 4,
             url: 'https://diaspozen.com',
             img: diaspozen,
             alt: 'DIASPO ZEN',
@@ -95,7 +64,7 @@ export const Data: Props[][] = [
         },
 
         {
-            id: 8,
+            id: 4,
             url: 'https://yellior.ci',
             img: yellior,
             alt: 'Yellior',
@@ -105,7 +74,7 @@ export const Data: Props[][] = [
         },
 
         {
-            id: 9,
+            id: 6,
             url: 'https://cabinetgesma.com',
             img: cabinet_gesma,
             alt: 'Cabinet GESMA',
