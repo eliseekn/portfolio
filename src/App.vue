@@ -1,5 +1,5 @@
 <template>
-    <div className="container mx-auto px-10 md:px-15 py-8 md:py-0 text-white">
+    <div class="container mx-auto px-10 md:px-15 py-8 md:py-0 text-white">
         <Home v-if="activePage === 'Home'" :setActivePage="setActivePage" />
         <Services v-if="activePage === 'Mes services'" :setActivePage="setActivePage" />
         <Work v-if="activePage === 'Mes réalisations'" :setActivePage="setActivePage" />

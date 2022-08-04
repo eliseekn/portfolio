@@ -1,4 +1,3 @@
-# My personal website
+# My portfolio
 
-Made with React.js and TailwindCSS
-Built with Vite
+Made with Vite, Vue.js and TailwindCSS
