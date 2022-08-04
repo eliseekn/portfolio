@@ -19,7 +19,7 @@
                 <font-awesome-icon :icon="faSyncAlt" />
             </button>
             
-            <button :class="Data.length == 1 ? 'ml-5 btn' : 'btn'" @click="props.setActivePage('Me contacter')">
+            <button :class="Data.length === 1 ? 'ml-5 btn' : 'btn'" @click="props.setActivePage('Me contacter')">
                 <span class="hidden md:block">Me contacter</span>
                 <span class="block md:hidden">Contact</span>
             </button>

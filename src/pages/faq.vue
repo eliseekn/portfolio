@@ -8,7 +8,7 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quelles sont vos disponibilités ?</h5>
 
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en <span class="text-[#7e97a6] font-semibold">Septembre</span>.
+                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en <span class="text-[#7e97a6] font-semibold">Décembre</span>.
                     </p>
                 </div>
 
@@ -26,7 +26,7 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Effectuez-vous des missions sur site ?</h5>
                     
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        Oui, en partie, à raison <span class="text-[#7e97a6] font-semibold">2 jours</span> par semaine maximum. 
+                        Non, j'effectue la majeure partie de mes missions à <span class="text-[#7e97a6] font-semibold">distance</span>.
                     </p>
                 </div>
 

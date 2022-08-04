@@ -4,7 +4,7 @@
 
             <div class="grid grid-cols-3 gap-3">
                 <div class="animate-fade-in-1 col-span-6 lg:col-auto card p-4">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Backend</p>
+                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Back-end</p>
 
                     <div class="my-3 md:my-5 text-xl md:text-5xl">
                         <span><font-awesome-icon :icon="faPhp" color="#7e97a6" /></span>
@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="animate-fade-in-2 col-span-6 lg:col-auto card p-4">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Frontend</p>
+                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Front-end</p>
 
                     <div class="my-3 md:my-5 text-xl md:text-5xl">
                         <span><font-awesome-icon :icon="faNodeJs" color="#7e97a6" /></span>

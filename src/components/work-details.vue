@@ -8,5 +8,5 @@
 <script setup lang="ts">
     import { Props } from '../data/work'
 
-    const props = defineProps<{  data: Props }>()
+    defineProps<{ data: Props }>()
 </script>
