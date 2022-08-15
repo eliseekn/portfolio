@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
-        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">Mes réalisations</h1>
+        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">Mes réalisations</h1>
         
         <div class="grid grid-cols-3 gap-3">
             <div v-for="data in activeData" :key="data.id" :class="'relative col-span-6 lg:col-auto card' + ' animate-fade-in-' + (data.id + 1)">
@@ -18,19 +18,19 @@
         </div>
 
         <div class="flex items-center justify-center lg:justify-start mt-10">
-            <button class="btn" @click="props.setActivePage('Mes services')" title="Retour">
-                <font-awesome-icon :icon="faArrowLeft" />
+            <button class="btn xl:hidden" @click="props.setActivePage('Mes services')" title="Retour">
+                <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
             </button>
 
-            <button class="ml-5 btn" @click="loadMoreWork()" title="Plus de réalisations">
-                <font-awesome-icon :icon="faSyncAlt" />
+            <button class="btn mx-5 xl:ml-0" @click="loadMoreWork" title="Plus de réalisations">
+                <font-awesome-icon :icon="['fa-solid' , 'plus']" />
             </button>
 
-            <button class="mx-5 btn" :class='showModal ? "text-white bg-[#7e97a6]" : ""' @click="showModal = !showModal" :title='showModal ? "Masquer les détails" : "Afficher les détails"'>
-                <font-awesome-icon :icon="showModal ? faEyeSlash : faEye" />
+            <button class="mr-5 btn" :class='showModal ? "text-white bg-[#7e97a6]" : ""' @click="showModal = !showModal" :title='showModal ? "Masquer les détails" : "Afficher les détails"'>
+                <font-awesome-icon :icon="showModal ? ['fa-solid' , 'eye-slash'] : ['fa-solid' , 'eye']" />
             </button>
 
-            <button class="btn" @click="props.setActivePage('Mes projets')">
+            <button class="btn xl:hidden" @click="props.setActivePage('Mes projets')">
                 Mes projets
             </button>
         </div>
@@ -39,19 +39,14 @@
 
 <script setup lang="ts">
     import { ref } from 'vue'
-    import { Data } from '../data/work'
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-    import { faArrowLeft, faSyncAlt, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons"
-    import { library } from '@fortawesome/fontawesome-svg-core'
+    import { Data, Props } from '../data/work'
     import { WorkDetails } from '../components'
-
-    library.add(faArrowLeft, faSyncAlt, faEye)
 
     const props = defineProps<{ setActivePage: (page: string) => void }>()
 
-    const activeItem = ref(0)
-    const activeData = ref(Data[0])
-    const showModal = ref(false)
+    const activeItem = ref<number>(0)
+    const activeData = ref<Props[]>(Data[0])
+    const showModal = ref<boolean>(false)
 
     const loadMoreWork = () => {
         activeItem.value = activeItem.value + 1
@@ -59,5 +54,7 @@
         activeData.value = Data[activeItem.value]
     }
 
-    const onLoad = () => { return `<div class="inline-block w-8 h-8 border-4 rounded-full"></div>` }
+    const onLoad = () => {
+        return `<div class="inline-block w-8 h-8 border-4 rounded-full"></div>`
+    }
 </script>

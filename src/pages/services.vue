@@ -1,70 +1,70 @@
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
-            <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">Mes services</h1>
+        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">Mes services</h1>
 
-            <div class="grid grid-cols-3 gap-3">
-                <div class="animate-fade-in-1 col-span-6 lg:col-auto card p-4">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Back-end</p>
+        <div class="grid grid-cols-3 gap-3">
+            <div class="animate-fade-in-1 col-span-6 lg:col-auto card p-4">
+                <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
+                    Développement Web <br> Back-end
+                </p>
 
-                    <div class="my-3 md:my-5 text-xl md:text-5xl">
-                        <span><font-awesome-icon :icon="faPhp" color="#7e97a6" /></span>
-                        <span class="mx-4 md:mx-6"><font-awesome-icon :icon="faLaravel" color="#7e97a6" /></span>
-                        <span><font-awesome-icon :icon="faSymfony" color="#7e97a6" /></span>
-                    </div>
-
-                    <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des applications web et des API avec Laravel et Symfony.
-                    </p>
+                <div class="my-3 md:my-5 text-xl md:text-5xl">
+                    <span><font-awesome-icon :icon="['fa-brands' , 'php']" color="#7e97a6" /></span>
+                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'node-js']" color="#7e97a6" /></span>
+                    <span class="mr-4 md:mr-6"><font-awesome-icon :icon="['fa-brands' , 'laravel']" color="#7e97a6" /></span>
+                    <span><font-awesome-icon :icon="['fa-brands' , 'symfony']" color="#7e97a6" /></span>
                 </div>
 
-                <div class="animate-fade-in-2 col-span-6 lg:col-auto card p-4">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Développement Front-end</p>
+                <p class="text-base md:text-xl md:leading-loose">
+                    Je développe des applications web et des API avec PHP et Node.js.
+                </p>
+            </div>
 
-                    <div class="my-3 md:my-5 text-xl md:text-5xl">
-                        <span><font-awesome-icon :icon="faNodeJs" color="#7e97a6" /></span>
-                        <span class="mx-4 md:ml-6"><font-awesome-icon :icon="faReact" color="#7e97a6" /></span>
-                        <span><font-awesome-icon :icon="faVuejs" color="#7e97a6" /></span>
-                    </div>
+            <div class="animate-fade-in-2 col-span-6 lg:col-auto card p-4">
+                <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
+                    Développement Web <br> Front-end
+                </p>
 
-                    <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des interfaces utilisateurs dynamiques avec Reacts.js et Vue.js.
-                    </p>
+                <div class="my-3 md:my-5 text-xl md:text-5xl">
+                    <span><font-awesome-icon :icon="['fa-brands' , 'node-js']" color="#7e97a6" /></span>
+                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'react']" color="#7e97a6" /></span>
+                    <span><font-awesome-icon :icon="['fa-brands' , 'vuejs']" color="#7e97a6" /></span>
                 </div>
 
-                <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
-                    <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">Developpement WordPress</p>
+                <p class="text-base md:text-xl md:leading-loose">
+                    Je développe des interfaces utilisateurs dynamiques avec Reacts.js et Vue.js.
+                </p>
+            </div>
 
-                    <div class="my-3 md:my-5 text-xl md:text-5xl">
-                        <span><font-awesome-icon :icon="faHtml5" color="#7e97a6" /></span>
-                        <span class="mx-4 md:mx-6"><font-awesome-icon :icon="faCss3Alt" color="#7e97a6" /></span>
-                        <span><font-awesome-icon :icon="faWordpressSimple" color="#7e97a6" /></span>
-                    </div>
+            <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
+                <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
+                    Developpement Mobile <br> Front-end
+                </p>
+
+                <div class="my-3 md:my-5 text-xl md:text-5xl">
+                    <span><font-awesome-icon :icon="['fa-brands' , 'react']" color="#7e97a6" /></span>
+                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'android']" color="#7e97a6" /></span>
+                    <span><font-awesome-icon :icon="['fa-brands' , 'app-store-ios']" color="#7e97a6" /></span>
+                </div>
 
                     <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des thèmes et des plugins sur mesure pour WordPress.
+                        Je développe des interfaces utilisateur pour mobile avec React Native.
                     </p>
                 </div>
             </div>
 
-            <div class="flex items-center justify-center md:justify-start mt-10">
-                <button class="btn" @click="props.setActivePage('Home')" title="Retour">
-                    <font-awesome-icon :icon="faArrowLeft" />
-                </button>
+        <div class="flex items-center justify-center md:justify-start mt-10 xl:hidden">
+            <button class="btn" @click="props.setActivePage('A propos')" title="Retour">
+                <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
+            </button>
 
-                <button class="btn ml-5" @click="props.setActivePage('Mes réalisations')">
-                    Mes réalisations
-                </button>
-            </div>
+            <button class="btn ml-5" @click="props.setActivePage('Mes réalisations')">
+                Mes réalisations
+            </button>
         </div>
+    </div>
 </template>
 
 <script setup lang="ts">
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-    import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
-    import { faLaravel, faNodeJs, faPhp, faReact, faSymfony, faVuejs, faWordpressSimple, faHtml5, faCss3Alt } from "@fortawesome/free-brands-svg-icons"
-    import { library } from '@fortawesome/fontawesome-svg-core'
-
-    library.add(faLaravel, faNodeJs, faPhp, faReact, faSymfony, faVuejs, faArrowLeft, faWordpressSimple, faHtml5, faCss3Alt)
-
     const props = defineProps<{ setActivePage: (page: string) => void }>()
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
-        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">Me contacter</h1>
+        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">Me contacter</h1>
             
         <div class="grid grid-cols-2 gap-3">
             <div class="col-span-6 md:col-auto text-center order-2 md:text-left mt-5 md:mt-0 px-0 md:px-10 animate-slide-out">
@@ -10,21 +10,21 @@
 
                 <div class="mt-8">
                     <a href="mailto:eliseekn@gmail.com" target='_blank' rel="nofollow noreferrer noopener">
-                        <span class="text-5xl"><font-awesome-icon :icon="faEnvelope" /></span>
+                        <span class="text-5xl"><font-awesome-icon :icon="['fa-solid' , 'envelope']" /></span>
                     </a>
 
                     <a href="https://linkedin.com/in/eliseekn" target='_blank' rel="nofollow noreferrer noopener">
-                        <span class="text-5xl mx-6"><font-awesome-icon :icon="faLinkedin" /></span>
+                        <span class="text-5xl mx-6"><font-awesome-icon :icon="['fa-brands' , 'linkedin']" /></span>
                     </a>
 
                     <a href="https://github.com/eliseekn" target='_blank' rel="nofollow noreferrer noopener">
-                        <span class="text-5xl"><font-awesome-icon :icon="faGithub" /></span>
+                        <span class="text-5xl"><font-awesome-icon :icon="['fa-brands' , 'github']" /></span>
                     </a>
                 </div>
                 
-                <div class="flex items-center justify-center md:justify-start mt-10">
+                <div class="flex items-center justify-center md:justify-start mt-10 xl:hidden">
                     <button class="btn" @click="props.setActivePage('Mes projets')" title="Retour">
-                        <font-awesome-icon :icon="faArrowLeft" />
+                        <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
                     </button>
 
                     <button class="btn ml-5" @click="props.setActivePage('FAQ')">FAQ</button>
@@ -50,12 +50,6 @@
 
 <script setup lang="ts">
     import { ref } from 'vue'
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-    import { faArrowLeft, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-    import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-    import { library } from '@fortawesome/fontawesome-svg-core'
-
-    library.add(faArrowLeft, faEnvelope, faGithub, faLinkedin)
 
     const props = defineProps<{ setActivePage: (page: string) => void }>()
 

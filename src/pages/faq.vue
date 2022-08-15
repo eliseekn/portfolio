@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
-        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl">FAQ</h1>
+        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">FAQ</h1>
 
         <div class="grid grid-cols-2 gap-x-10">
             <div class="col-span-6 md:col-auto">
@@ -39,9 +39,9 @@
                 </div>
             </div>
 
-            <div class="mt-10">
+            <div class="mt-10 xl:hidden">
                 <button class="btn" @click="props.setActivePage('Me contacter')" title="Retour">
-                    <font-awesome-icon :icon="faArrowLeft" />
+                    <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
                 </button>
             </div>
         </div>
@@ -49,11 +49,5 @@
 </template>
 
 <script setup lang="ts">
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-    import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
-    import { library } from '@fortawesome/fontawesome-svg-core'
-
-    library.add(faArrowLeft)
-
     const props = defineProps<{ setActivePage: (page: string) => void }>()
 </script>

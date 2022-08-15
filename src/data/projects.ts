@@ -1,4 +1,4 @@
-interface Props {
+export interface Props {
     id: number,
     name: string,
     url: string,

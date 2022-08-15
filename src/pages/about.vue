@@ -13,10 +13,10 @@
 
                 <p class="text-base md:text-xl md:leading-loose">
                     Spécialisé en développement back-end PHP et front-end React, <br>
-                    j'ai plus de 3 années d'expériences dans le développement d'interfaces utilisateurs et d'applications web.
+                    j'ai plus de 3 années d'expériences dans le développement d'interfaces utilisateur et d'applications web.
                 </p>
 
-                <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10">
+                <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10 xl:hidden">
                     <button class="btn" @click="props.setActivePage('Mes services')">
                         Mes services
                     </button>
