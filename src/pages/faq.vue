@@ -8,7 +8,7 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quelles sont vos disponibilités ?</h5>
 
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en <span class="text-[#7e97a6] font-semibold">Décembre</span>.
+                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en <span class="text-[#7e97a6] font-semibold">Décembre 2022</span>.
                     </p>
                 </div>
 

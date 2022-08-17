@@ -7,12 +7,12 @@
                     <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée K. N'Guessan,</span>
                 </p>
 
-                <h1 class="my-4 md:my-5 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
-                    Développeur Web <br> Freelance.
+                <h1 class="my-4 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
+                    Développeur Web Freelance.
                 </h1>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Spécialisé en développement back-end PHP et front-end React, <br>
+                    Spécialisé en développement back-end PHP et front-end React.js, <br>
                     j'ai plus de 3 années d'expériences dans le développement d'interfaces utilisateur et d'applications web.
                 </p>
 

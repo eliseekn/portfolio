@@ -5,7 +5,7 @@
         <div class="grid grid-cols-3 gap-3">
             <div class="animate-fade-in-1 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Développement Web <br> Back-end
+                    Développement Back-end
                 </p>
 
                 <div class="my-3 md:my-5 text-xl md:text-5xl">
@@ -22,7 +22,7 @@
 
             <div class="animate-fade-in-2 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Développement Web <br> Front-end
+                    Développement Front-end
                 </p>
 
                 <div class="my-3 md:my-5 text-xl md:text-5xl">
@@ -38,7 +38,7 @@
 
             <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Developpement Mobile <br> Front-end
+                    Developpement Mobile
                 </p>
 
                 <div class="my-3 md:my-5 text-xl md:text-5xl">
@@ -48,7 +48,7 @@
                 </div>
 
                     <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des interfaces utilisateur pour mobile avec React Native.
+                        Je développe des interfaces utilisateur pour mobile avec React Native et Ionic.
                     </p>
                 </div>
             </div>

@@ -36,7 +36,7 @@
                     <input type="text" id="name" class="input" placeholder="Nom et prénom(s)" v-model.lazy="form.name" />
                     <input type="email" id="email" class="input" placeholder="Adresse email" v-model.lazy="form.email" />
                     <input type="text" id="subject" class="input my-3 col-span-full" placeholder="Objet" v-model.lazy="form.subject" />
-                    <textarea id="message" placeholder="Message" class="input col-span-full" rows="5" v-model.lazy="form.message"></textarea>
+                    <textarea id="message" placeholder="Message" class="input col-span-full resize-none" rows="5" v-model.lazy="form.message"></textarea>
                 
                     <button type="button" class="btn col-span-full" @click="submitContactForm()">
                         <span v-if="form.submitted">Opération en cours...</span>

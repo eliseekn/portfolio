@@ -3,7 +3,7 @@
         <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">Mes réalisations</h1>
         
         <div class="grid grid-cols-3 gap-3">
-            <div v-for="data in activeData" :key="data.id" :class="'relative col-span-6 lg:col-auto card' + ' animate-fade-in-' + (data.id + 1)">
+            <div v-for="data in activeData" :key="data.id" class="relative col-span-6 lg:col-auto card">
                 <img :src=data.img :alt=data.alt loading="lazy" @load="onLoad" class="rounded-t-lg" />
                 
                 <div class="p-4">

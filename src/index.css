@@ -6,19 +6,19 @@
 
 @layer components {
     .btn {
-        @apply text-base md:text-xl md:leading-loose font-semibold bg-transparent text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500
+        @apply text-base md:text-xl md:leading-loose font-semibold bg-transparent hover:shadow-md text-[#7e97a6] border-2 border-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500
     }
 
     .menu-item {
-        @apply text-base md:text-lg md:leading-loose font-semibold text-[#7e97a6] hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500
+        @apply text-base md:text-lg md:leading-loose font-semibold text-[#7e97a6] hover:shadow-md hover:bg-[#7e97a6] hover:text-white px-4 py-2 rounded-lg transition-all duration-500
     }
 
     .menu-item-active {
-        @apply text-white bg-[#7e97a6]
+        @apply text-white bg-[#7e97a6] shadow-md
     }
 
     .card {
-        @apply bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow hover:shadow-[#7e97a6] transition-all duration-500
+        @apply bg-transparent border-2 border-[#7e97a6] rounded-lg hover:shadow-md hover:shadow-[#7e97a6] transition-all duration-500
     }
 
     .input {
