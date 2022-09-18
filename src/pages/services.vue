@@ -16,7 +16,7 @@
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des applications web et des API avec PHP et Node.js.
+                    Je développe des API RESTful robustes avec PHP et Node.js.
                 </p>
             </div>
 
@@ -32,13 +32,13 @@
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des interfaces utilisateurs dynamiques avec Reacts.js et Vue.js.
+                    Je développe des interfaces utilisateur dynamiques avec Reacts.js et Vue.js.
                 </p>
             </div>
 
             <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Developpement Mobile
+                    Développement Mobile
                 </p>
 
                 <div class="my-3 md:my-5 text-xl md:text-5xl">
@@ -48,7 +48,7 @@
                 </div>
 
                     <p class="text-base md:text-xl md:leading-loose">
-                        Je développe des interfaces utilisateur pour mobile avec React Native et Ionic.
+                        Je développe des interfaces utilisateur pour mobile avec React Native.
                     </p>
                 </div>
             </div>

@@ -9,13 +9,13 @@
                 Services
             </a>
 
-            <a href="#" class="menu-item" :class='activePage === "Mes réalisations" ? "menu-item-active" : ""' @click.prevent="setActivePage('Mes réalisations')">
+            <a href="#" class="menu-item mr-5" :class='activePage === "Mes réalisations" ? "menu-item-active" : ""' @click.prevent="setActivePage('Mes réalisations')">
                 Réalisations
             </a>
 
-            <a href="#" class="mx-5 menu-item" :class='activePage === "Mes projets" ? "menu-item-active" : ""' @click.prevent="setActivePage('Mes projets')">
-                Projets
-            </a>
+<!--            <a href="#" class="mx-5 menu-item" :class='activePage === "Mes projets" ? "menu-item-active" : ""' @click.prevent="setActivePage('Mes projets')">-->
+<!--                Projets-->
+<!--            </a>-->
 
             <a href="#" class="menu-item" :class='activePage === "Me contacter" ? "menu-item-active" : ""' @click.prevent="setActivePage('Me contacter')">
                 Contact

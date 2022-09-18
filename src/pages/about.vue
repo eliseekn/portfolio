@@ -12,8 +12,7 @@
                 </h1>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Spécialisé en développement back-end PHP et front-end React.js, <br>
-                    j'ai plus de 3 années d'expériences dans le développement d'interfaces utilisateur et d'applications web.
+                    J'ai plus de 4 années d'expériences dans le développement d'applications web avec PHP et Node.js.
                 </p>
 
                 <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10 xl:hidden">

@@ -26,7 +26,7 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Effectuez-vous des missions sur site ?</h5>
                     
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        Non, j'effectue la majeure partie de mes missions à <span class="text-[#7e97a6] font-semibold">distance</span>.
+                        <span class="text-[#7e97a6] font-semibold">Non</span>, j'effectue la majeure partie de mes missions à <span class="text-[#7e97a6] font-semibold">distance</span>.
                     </p>
                 </div>
 
