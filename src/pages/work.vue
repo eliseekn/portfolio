@@ -23,11 +23,14 @@
             </button>
 
             <button class="btn mx-5 xl:ml-0" @click="loadMoreWork" title="Plus de réalisations">
-                <font-awesome-icon :icon="['fa-solid' , 'plus']" />
+<!--                <font-awesome-icon :icon="['fa-solid' , 'plus']" />-->
+                Voir plus
             </button>
 
             <button class="mr-5 btn" :class='showModal ? "text-white bg-[#7e97a6]" : ""' @click="showModal = !showModal" :title='showModal ? "Masquer les détails" : "Afficher les détails"'>
-                <font-awesome-icon :icon="showModal ? ['fa-solid' , 'eye-slash'] : ['fa-solid' , 'eye']" />
+<!--                <font-awesome-icon :icon="showModal ? ['fa-solid' , 'eye-slash'] : ['fa-solid' , 'eye']" />-->
+                <span v-if="showModal">Plus de détails</span>
+                <span v-else>Moins de détails</span>
             </button>
 
             <button class="btn xl:hidden" @click="props.setActivePage('Mes projets')">
