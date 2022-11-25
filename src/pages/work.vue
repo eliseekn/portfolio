@@ -54,7 +54,5 @@
         activeData.value = Data[activeItem.value]
     }
 
-    const onLoad = () => {
-        return `<div class="inline-block w-8 h-8 border-4 rounded-full"></div>`
-    }
+    const onLoad = () => `<div class="inline-block w-8 h-8 border-4 rounded-full"></div>`
 </script>

@@ -5,4 +5,11 @@ import Projects from './projects.vue'
 import Contact from './contact.vue'
 import FAQ from './faq.vue'
 
-export { About, Services, Work, Projects, Contact, FAQ }
+export {
+    About,
+    Services,
+    Work,
+    Projects,
+    Contact,
+    FAQ
+}

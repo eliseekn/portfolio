@@ -31,7 +31,7 @@ export const Data: Props[][] = [
         },
 
         {
-            id: 3,
+            id: 2,
             url: 'https://iziloyer.com',
             img: iziloyer,
             alt: 'IZI LOYER',

@@ -10,13 +10,12 @@
 
                 <div class="my-3 md:my-5 text-xl md:text-5xl">
                     <span><font-awesome-icon :icon="['fa-brands' , 'php']" color="#7e97a6" /></span>
-                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'node-js']" color="#7e97a6" /></span>
-                    <span class="mr-4 md:mr-6"><font-awesome-icon :icon="['fa-brands' , 'laravel']" color="#7e97a6" /></span>
+                    <span class="mr-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'laravel']" color="#7e97a6" /></span>
                     <span><font-awesome-icon :icon="['fa-brands' , 'symfony']" color="#7e97a6" /></span>
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des API RESTful robustes avec PHP et Node.js.
+                    Je développe des API RESTful robustes avec Laravel ou Symfony.
                 </p>
             </div>
 
@@ -32,7 +31,7 @@
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des interfaces utilisateur dynamiques avec Reacts.js et Vue.js.
+                    Je développe des interfaces utilisateur dynamiques avec Reacts.js ou Vue.js.
                 </p>
             </div>
 

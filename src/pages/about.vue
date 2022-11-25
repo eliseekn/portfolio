@@ -4,7 +4,7 @@
             <div class="col-span-6 md:col-auto my-auto order-2 md:order-1 text-center md:text-left">
                 <p>
                     <span class="text-base md:text-xl md:leading-loose">Bonjour 👋, je suis</span> <br>
-                    <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée K. N'Guessan,</span>
+                    <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée Kouadio N'Guessan,</span>
                 </p>
 
                 <h1 class="my-4 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
@@ -12,7 +12,7 @@
                 </h1>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    J'ai plus de 4 années d'expériences dans le développement d'applications web avec PHP et Node.js.
+                    J'ai plus de 4 années d'expériences dans le développement d'applications web full-stack.
                 </p>
 
                 <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10 xl:hidden">

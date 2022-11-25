@@ -1,7 +1,12 @@
 {
-  "name": "vite-vue-ts-todo-app",
+  "name": "portfolio",
+  "author": {
+    "name": "Elisée K. N'Guessan",
+    "email": "eliseekn@gmail.com",
+    "url": "eliseekn.netlify.app"
+  },
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
