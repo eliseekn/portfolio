@@ -22,17 +22,22 @@
                 <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
             </button>
 
-            <button class="btn mx-5 xl:ml-0" @click="loadMoreWork" title="Plus de réalisations">
-                Voir plus
+            <button class="btn mx-2 xl:ml-0" @click="loadMoreWork" title="Plus de réalisations">
+                <span class="xl:hidden"><font-awesome-icon :icon="['fa-solid', 'plus']" /></span>
+                <span class="hidden xl:block">Voir plus</span>
             </button>
 
-            <button class="mr-5 btn" :class='showModal ? "text-white bg-[#7e97a6]" : ""' @click="showModal = !showModal" :title='showModal ? "Masquer les détails" : "Afficher les détails"'>
+            <button class="btn mr-2 xl:ml-0" :class='showModal ? "text-white bg-[#7e97a6]" : ""' @click="showModal = !showModal" :title='showModal ? "Masquer les détails" : "Afficher les détails"'>
                 <font-awesome-icon :icon="showModal ? ['fa-solid' , 'eye'] : ['fa-solid' , 'eye-slash']" />
             </button>
 
-            <button class="btn xl:hidden" @click="props.setActivePage('Mes projets')">
-                Mes projets
+            <button class="btn xl:hidden" @click="props.setActivePage('Me contacter')">
+                Contact
             </button>
+
+<!--            <button class="btn xl:hidden" @click="props.setActivePage('Mes projets')">-->
+<!--                Mes projets-->
+<!--            </button>-->
         </div>
     </div>
 </template>

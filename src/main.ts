@@ -7,25 +7,31 @@ import {
     faPlus,
     faEye,
     faEyeSlash,
-    faEnvelope
+    faEnvelope,
+    faDatabase,
+    faHeadset
 } from "@fortawesome/free-solid-svg-icons"
 import {
     faLaravel,
-    faNodeJs,
+    faNode,
     faPhp,
     faReact,
     faSymfony,
     faVuejs,
     faGithub,
     faLinkedin,
-    faAndroid,
-    faAppStoreIos
+    faJsSquare,
+    faLinux,
+    faAws,
+    faWindows,
+    faGitlab,
+    faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons"
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(
     faLaravel,
-    faNodeJs,
+    faNode,
     faPhp,
     faReact,
     faSymfony,
@@ -37,8 +43,14 @@ library.add(
     faEnvelope,
     faGithub,
     faLinkedin,
-    faAndroid,
-    faAppStoreIos
+    faJsSquare,
+    faLinux,
+    faAws,
+    faWindows,
+    faGitlab,
+    faGithubSquare,
+    faDatabase,
+    faHeadset
 )
 
 createApp(App)

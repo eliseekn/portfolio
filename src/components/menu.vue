@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute items-center pt-5 pb-2 hidden xl:flex border-b border-b-[#7e97a6]">
+    <div class="absolute items-center pt-5 pb-2 hidden xl:flex">
         <a href="#" class="menu-item" :class='props.activePage === "A propos" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('A propos')">
             A propos
         </a>

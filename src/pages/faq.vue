@@ -8,7 +8,8 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quelles sont vos disponibilités ?</h5>
 
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en fin <span class="text-[#7e97a6] font-semibold">Décembre 2022</span>.
+<!--                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en fin <span class="text-[#7e97a6] font-semibold">Décembre 2022</span>.-->
+                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">disponible</span> pour des missions en <span class="text-[#7e97a6] font-semibold">freelance</span>.
                     </p>
                 </div>
 
@@ -16,7 +17,7 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quels sont vos tarifs ?</h5>
                     
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        Mon <span class="text-[#7e97a6] font-semibold">TJM</span> (Tarif Journalier Moyen) est de <span class="text-[#7e97a6] font-semibold">15 000 F CFA</span> et mon <span class="text-[#7e97a6] font-semibold">THM</span> (Tarif Horaire Moyen) de <span class="text-[#7e97a6] font-semibold">2 000 F CFA</span>.
+                        Mon <span class="text-[#7e97a6] font-semibold">THM</span> (Tarif Horaire Moyen) de <span class="text-[#7e97a6] font-semibold">5 000 F CFA</span>.
                     </p>
                 </div>
             </div>
@@ -26,7 +27,7 @@
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Effectuez-vous des missions sur site ?</h5>
                     
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        <span class="text-[#7e97a6] font-semibold">Non</span>, j'effectue toutes mes missions à <span class="text-[#7e97a6] font-semibold">distance</span>.
+                        <span class="text-[#7e97a6] font-semibold">Non</span>, j'effectue mes missions à <span class="text-[#7e97a6] font-semibold">distance</span>.
                     </p>
                 </div>
 
