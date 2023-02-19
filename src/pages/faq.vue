@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const props = defineProps<{ setActivePage: (page: string) => void }>()
+</script>
+
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
         <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">FAQ</h1>
@@ -48,7 +52,3 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-    const props = defineProps<{ setActivePage: (page: string) => void }>()
-</script>

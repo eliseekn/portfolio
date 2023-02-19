@@ -1,3 +1,23 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Data, Props } from '../data/work'
+import { WorkDetails } from '../components'
+
+const props = defineProps<{ setActivePage: (page: string) => void }>()
+
+const activeItem = ref<number>(0)
+const activeData = ref<Props[]>(Data[0])
+const showModal = ref<boolean>(false)
+
+const loadMoreWork = () => {
+    activeItem.value = activeItem.value + 1
+    if (activeItem.value > Data.length - 1) activeItem.value = 0
+    activeData.value = Data[activeItem.value]
+}
+
+const onLoad = () => `<div class="inline-block w-8 h-8 border-4 rounded-full"></div>`
+</script>
+
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
         <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">Mes réalisations</h1>
@@ -34,30 +54,7 @@
             <button class="btn xl:hidden" @click="props.setActivePage('Me contacter')">
                 Contact
             </button>
-
-<!--            <button class="btn xl:hidden" @click="props.setActivePage('Mes projets')">-->
-<!--                Mes projets-->
-<!--            </button>-->
         </div>
     </div>
 </template>
 
-<script setup lang="ts">
-    import { ref } from 'vue'
-    import { Data, Props } from '../data/work'
-    import { WorkDetails } from '../components'
-
-    const props = defineProps<{ setActivePage: (page: string) => void }>()
-
-    const activeItem = ref<number>(0)
-    const activeData = ref<Props[]>(Data[0])
-    const showModal = ref<boolean>(false)
-
-    const loadMoreWork = () => {
-        activeItem.value = activeItem.value + 1
-        if (activeItem.value > Data.length - 1) activeItem.value = 0
-        activeData.value = Data[activeItem.value]
-    }
-
-    const onLoad = () => `<div class="inline-block w-8 h-8 border-4 rounded-full"></div>`
-</script>

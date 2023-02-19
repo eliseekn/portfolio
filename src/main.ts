@@ -8,12 +8,11 @@ import {
     faEye,
     faEyeSlash,
     faEnvelope,
-    faDatabase,
     faHeadset
 } from "@fortawesome/free-solid-svg-icons"
 import {
     faLaravel,
-    faNode,
+    faNodeJs,
     faPhp,
     faReact,
     faSymfony,
@@ -31,7 +30,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(
     faLaravel,
-    faNode,
+    faNodeJs,
     faPhp,
     faReact,
     faSymfony,
@@ -49,7 +48,6 @@ library.add(
     faWindows,
     faGitlab,
     faGithubSquare,
-    faDatabase,
     faHeadset
 )
 

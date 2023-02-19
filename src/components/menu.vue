@@ -1,3 +1,10 @@
+<script setup lang="ts">
+const props = defineProps<{
+    activePage: string,
+    setActivePage: (page: string) => void
+}>()
+</script>
+
 <template>
     <div class="absolute items-center pt-5 pb-2 hidden xl:flex">
         <a href="#" class="menu-item" :class='props.activePage === "A propos" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('A propos')">
@@ -12,10 +19,6 @@
             Réalisations
         </a>
 
-        <!--            <a href="#" class="mx-3 menu-item" :class='props.activePage === "Mes projets" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('Mes projets')">-->
-        <!--                Projets-->
-        <!--            </a>-->
-
         <a href="#" class="menu-item" :class='props.activePage === "Me contacter" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('Me contacter')">
             Contact
         </a>
@@ -26,9 +29,3 @@
     </div>
 </template>
 
-<script setup lang="ts">
-    const props = defineProps<{
-        activePage: string,
-        setActivePage: (page: string) => void
-    }>()
-</script>

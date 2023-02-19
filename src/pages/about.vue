@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import avatar from '../../img/avatar.png'
+
+const props = defineProps<{ setActivePage: (page: string) => void }>()
+</script>
+
 <template>
     <div class="flex items-center min-h-screen">
         <div class="grid grid-cols-2 gap-3">
@@ -28,9 +34,3 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-    import avatar from '../../img/avatar.png'
-
-    const props = defineProps<{ setActivePage: (page: string) => void }>()
-</script>

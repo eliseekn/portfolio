@@ -1,3 +1,53 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const props = defineProps<{ setActivePage: (page: string) => void }>()
+
+const form = ref({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+    timestamp: '',
+    submitted: false
+})
+
+const submitContactForm = () => {
+    if (form.value.name == '' || form.value.email == '' || form.value.subject == '' || form.value.message == '') {
+        alert('Veuillez remplir correctement tous les champs')
+        return
+    }
+
+    //https://codesource.io/how-to-validate-email-in-javascript/
+    if (!new RegExp(/^[^\s@]+@[^\s@]+$/).test(form.value.email)) {
+        alert('Veuillez fournir une adresse email correcte')
+        return
+    }
+
+    form.value.submitted = true
+    form.value.timestamp = new Date().toUTCString()
+
+    fetch('https://sheet.best/api/sheets/b0e5f88f-386b-43a3-85f8-dc194a89262f', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(form.value)
+    })
+        .then(res => res.json())
+        .then(() => {
+            form.value = {
+                name: '',
+                email: '',
+                subject: '',
+                message: '',
+                timestamp: '',
+                submitted: false
+            }
+
+            alert('Votre message a bien été envoyé. Vous serez recontactez dans les plus brefs délais.')
+        })
+}
+</script>
+
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
         <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">Me contacter</h1>
@@ -47,53 +97,3 @@
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-    import { ref } from 'vue'
-
-    const props = defineProps<{ setActivePage: (page: string) => void }>()
-
-    const form = ref({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-        timestamp: '',
-        submitted: false
-    })
-
-    const submitContactForm = () => {
-        if (form.value.name == '' || form.value.email == '' || form.value.subject == '' || form.value.message == '') {
-            alert('Veuillez remplir correctement tous les champs')
-            return
-        }
-
-        //https://codesource.io/how-to-validate-email-in-javascript/
-        if (!new RegExp(/^[^\s@]+@[^\s@]+$/).test(form.value.email)) {
-            alert('Veuillez fournir une adresse email correcte')
-            return
-        }
-
-        form.value.submitted = true
-        form.value.timestamp = new Date().toUTCString()
-
-        fetch('https://sheet.best/api/sheets/b0e5f88f-386b-43a3-85f8-dc194a89262f', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(form.value)
-        })
-            .then(res => res.json())
-            .then(() => {
-                form.value = {
-                    name: '',
-                    email: '',
-                    subject: '',
-                    message: '',
-                    timestamp: '',
-                    submitted: false
-                }
-
-                alert('Votre message a bien été envoyé. Vous serez recontactez dans les plus brefs délais.')
-            })
-    }
-</script>
