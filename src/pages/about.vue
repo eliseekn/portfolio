@@ -10,7 +10,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
             <div class="col-span-6 md:col-auto my-auto order-2 md:order-1 text-center md:text-left">
                 <p>
                     <span class="text-base md:text-xl md:leading-loose">Bonjour 👋, je suis</span> <br>
-                    <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée K. N'Guessan,</span>
+                    <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée K. N'GUESSAN,</span>
                 </p>
 
                 <h1 class="my-4 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
