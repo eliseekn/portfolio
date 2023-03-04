@@ -55,6 +55,20 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
 
             <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
+                    Développement WordPress
+                </p>
+
+                <div class="my-3 md:my-5 text-3xl md:text-4xl">
+                    <span><font-awesome-icon :icon="['fa-brands' , 'wordpress']" color="#7e97a6" /></span>
+                </div>
+
+                <p class="text-base md:text-xl md:leading-loose">
+                    Je développe des thèmes et des plugins WordPress sur mesure.
+                </p>
+            </div>
+
+            <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
+                <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
                     DevOps
                 </p>
 
@@ -81,7 +95,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je vous accompagne dans les choix techniques pour vos projets.
+                    Je vous accompagne dans les choix techniques pour la réalisation vos projets.
                 </p>
             </div>
         </div>

@@ -25,6 +25,7 @@ import {
     faWindows,
     faGitlab,
     faGithubSquare,
+    faWordpress
 } from "@fortawesome/free-brands-svg-icons"
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -48,7 +49,8 @@ library.add(
     faWindows,
     faGitlab,
     faGithubSquare,
-    faHeadset
+    faHeadset,
+    faWordpress
 )
 
 createApp(App)
