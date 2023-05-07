@@ -28,13 +28,12 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
-                    <span><font-awesome-icon :icon="['fa-brands' , 'node-js']" color="#7e97a6" /></span>
-                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'react']" color="#7e97a6" /></span>
-                    <span><font-awesome-icon :icon="['fa-brands' , 'vuejs']" color="#7e97a6" /></span>
+                    <span class="mr-4 md:mr-6"><font-awesome-icon :icon="['fa-brands' , 'node-js']" color="#7e97a6" /></span>
+                    <span><font-awesome-icon :icon="['fa-brands' , 'react']" color="#7e97a6" /></span>
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des interfaces utilisateur dynamiques avec Reacts.js ou Vue.js.
+                    Je développe des interfaces utilisateur dynamiques avec React.js.
                 </p>
             </div>
 
@@ -44,12 +43,13 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
-                    <span class="mr-4 md:mr-6"><font-awesome-icon :icon="['fa-brands' , 'laravel']" color="#7e97a6" /></span>
-                    <span><font-awesome-icon :icon="['fa-brands' , 'js-square']" color="#7e97a6" /></span>
+                    <span><font-awesome-icon :icon="['fa-brands' , 'laravel']" color="#7e97a6" /></span>
+                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'js-square']" color="#7e97a6" /></span>
+                    <span><font-awesome-icon :icon="['fa-brands' , 'react']" color="#7e97a6" /></span>
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des applications web full-stack avec Laravel.
+                    Je développe des applications web full-stack avec Laravel ou Next.js.
                 </p>
             </div>
 
@@ -73,11 +73,9 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
-                    <span><font-awesome-icon :icon="['fa-brands' , 'github-square']" color="#7e97a6" /></span>
-                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'gitlab']" color="#7e97a6" /></span>
-                    <span><font-awesome-icon :icon="['fa-brands' , 'aws']" color="#7e97a6" /></span>
-                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'linux']" color="#7e97a6" /></span>
-                    <span><font-awesome-icon :icon="['fa-brands' , 'windows']" color="#7e97a6" /></span>
+                    <span><font-awesome-icon :icon="['fa-brands' , 'git-alt']" color="#7e97a6" /></span>
+                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands' , 'docker']" color="#7e97a6" /></span>
+                    <span><font-awesome-icon :icon="['fa-brands' , 'linux']" color="#7e97a6" /></span>
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">

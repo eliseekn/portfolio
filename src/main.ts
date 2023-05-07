@@ -15,16 +15,13 @@ import {
     faNodeJs,
     faPhp,
     faReact,
-    faSymfony,
     faVuejs,
     faGithub,
     faLinkedin,
     faJsSquare,
     faLinux,
-    faAws,
-    faWindows,
-    faGitlab,
-    faGithubSquare,
+    faGitAlt,
+    faDocker,
     faWordpress
 } from "@fortawesome/free-brands-svg-icons"
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -34,7 +31,6 @@ library.add(
     faNodeJs,
     faPhp,
     faReact,
-    faSymfony,
     faVuejs,
     faArrowLeft,
     faPlus,
@@ -45,10 +41,8 @@ library.add(
     faLinkedin,
     faJsSquare,
     faLinux,
-    faAws,
-    faWindows,
-    faGitlab,
-    faGithubSquare,
+    faGitAlt,
+    faDocker,
     faHeadset,
     faWordpress
 )
