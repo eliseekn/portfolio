@@ -14,11 +14,11 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </p>
 
                 <h1 class="my-4 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
-                    Développeur Web Freelance.
+                    Développeur Freelance.
                 </h1>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    J'ai plus de 4 années d'expériences dans le développement d'applications web full-stack.
+                    J'ai plus de 4 années d'expériences dans le développement d'applications sur mesure.
                 </p>
 
                 <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10 xl:hidden">

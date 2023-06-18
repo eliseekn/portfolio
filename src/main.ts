@@ -8,7 +8,6 @@ import {
     faEye,
     faEyeSlash,
     faEnvelope,
-    faHeadset
 } from "@fortawesome/free-solid-svg-icons"
 import {
     faLaravel,
@@ -19,10 +18,6 @@ import {
     faGithub,
     faLinkedin,
     faJsSquare,
-    faLinux,
-    faGitAlt,
-    faDocker,
-    faWordpress
 } from "@fortawesome/free-brands-svg-icons"
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -40,11 +35,6 @@ library.add(
     faGithub,
     faLinkedin,
     faJsSquare,
-    faLinux,
-    faGitAlt,
-    faDocker,
-    faHeadset,
-    faWordpress
 )
 
 createApp(App)
