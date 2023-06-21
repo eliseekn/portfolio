@@ -9,7 +9,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
         <div class="grid grid-cols-2 gap-3">
             <div class="col-span-6 md:col-auto my-auto order-2 md:order-1 text-center md:text-left">
                 <p>
-                    <span class="text-base md:text-xl md:leading-loose">Bonjour 👋, je suis</span> <br>
+                    <span class="text-base md:text-xl md:leading-loose">Salut 👋, je suis</span> <br>
                     <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée K. N'GUESSAN,</span>
                 </p>
 
