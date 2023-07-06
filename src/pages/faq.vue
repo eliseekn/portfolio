@@ -21,7 +21,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                     <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">Quels sont vos tarifs ?</h5>
 
                     <p class="text-base md:text-xl md:leading-loose mt-3">
-                        Mon <span class="text-[#7e97a6] font-semibold">THM</span> (Tarif Horaire Moyen) de <span class="text-[#7e97a6] font-semibold">3 000 F CFA</span>.
+                        Mon <span class="text-[#7e97a6] font-semibold">THM</span> (Tarif Horaire Moyen) de <span class="text-[#7e97a6] font-semibold">5 000 F CFA</span>.
                     </p>
                 </div>
             </div>
