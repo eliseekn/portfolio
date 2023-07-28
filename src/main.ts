@@ -21,6 +21,7 @@ import {
     faJsSquare,
     faGooglePlay,
     faAppStoreIos,
+    faBootstrap,
 } from "@fortawesome/free-brands-svg-icons"
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -40,7 +41,8 @@ library.add(
     faJsSquare,
     faGooglePlay,
     faAppStoreIos,
-    faHeadset
+    faHeadset,
+    faBootstrap
 )
 
 createApp(App)
