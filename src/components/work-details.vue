@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Props } from '../data/work'
+import { WorkType } from '../interfaces';
 
-defineProps<{ data: Props }>()
+defineProps<{ data: WorkType }>()
 </script>
 
 <template>

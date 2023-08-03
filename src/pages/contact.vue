@@ -14,14 +14,12 @@ const form = ref({
 
 const submitContactForm = () => {
     if (form.value.name == '' || form.value.email == '' || form.value.subject == '' || form.value.message == '') {
-        alert('Veuillez remplir correctement tous les champs')
-        return
+        return alert('Veuillez remplir correctement tous les champs')
     }
 
     //https://codesource.io/how-to-validate-email-in-javascript/
     if (!new RegExp(/^[^\s@]+@[^\s@]+$/).test(form.value.email)) {
-        alert('Veuillez fournir une adresse email correcte')
-        return
+        return alert('Veuillez fournir une adresse email correcte')
     }
 
     form.value.submitted = true
@@ -82,14 +80,14 @@ const submitContactForm = () => {
             </div>
 
             <div class="col-span-6 md:col-auto order-1">
-                <div class="grid grid-cols-2 gap-3">
-                    <input type="text" id="name" class="input" placeholder="Nom et prénom(s)" v-model.lazy="form.name" />
-                    <input type="email" id="email" class="input" placeholder="Adresse email" v-model.lazy="form.email" />
-                    <input type="text" id="subject" class="input my-3 col-span-full" placeholder="Objet" v-model.lazy="form.subject" />
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" id="name" class="input col-span-full xl:col-auto" placeholder="Nom et prénom(s)" v-model.lazy="form.name" />
+                    <input type="email" id="email" class="input col-span-full xl:col-auto" placeholder="Adresse email" v-model.lazy="form.email" />
+                    <input type="text" id="subject" class="input col-span-full" placeholder="Objet" v-model.lazy="form.subject" />
                     <textarea id="message" placeholder="Message" class="input col-span-full resize-none" rows="5" v-model.lazy="form.message"></textarea>
                 
                     <button type="button" class="btn col-span-full" @click="submitContactForm()">
-                        <span v-if="form.submitted">Opération en cours...</span>
+                        <span v-if="form.submitted">Envoie en cours...</span>
                         <span v-else>Envoyer</span>
                     </button>
                 </div>

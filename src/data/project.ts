@@ -13,7 +13,7 @@ export const Data: ProjectType[][] = [
       id: 2,
       url: 'https://github.com/eliseekn/tinymvc',
       alt: 'tiny-mvc',
-      desc: 'Framework PHP basé sur une achitecture MVC permettant de créer facilement et rapidement des applications web et des API.',
+      desc: 'Framework PHP basé sur une architecture MVC et permettant de créer facilement et rapidement des applications web et des API.',
     },
 
     {

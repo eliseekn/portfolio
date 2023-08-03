@@ -17,8 +17,8 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
             <!--                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en fin <span class="text-[#7e97a6] font-semibold">Décembre 2022</span>.-->
             Je suis actuellement
             <span class="text-[#7e97a6] font-semibold">disponible</span> pour
-            des missions en
-            <span class="text-[#7e97a6] font-semibold">freelance</span>.
+            des missions 
+            <span class="text-[#7e97a6] font-semibold">freelance</span> de développement d'application <span class="text-[#7e97a6] font-semibold">web</span> ou <span class="text-[#7e97a6] font-semibold">mobile</span>.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
 
         <div class="mb-10">
           <h5 class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-            Faites-vous du design ?
+            Faites-vous de l'UI/UX design ?
           </h5>
 
           <p class="text-base md:text-xl md:leading-loose mt-3">

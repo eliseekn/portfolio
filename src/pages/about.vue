@@ -13,12 +13,12 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                     <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée K. N'GUESSAN,</span>
                 </p>
 
-                <h1 class="my-4 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
+                <h1 class="my-6 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
                     Développeur Freelance.
                 </h1>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    J'ai plus de 4 années d'expériences dans le développement d'applications sur mesure.
+                    Autodidacte et passionné de développement informatique, j'ai plus de 4 années d'expériences dans le développement d'applications sur mesure avec PHP et JavaScript.
                 </p>
 
                 <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10 xl:hidden">

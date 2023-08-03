@@ -14,7 +14,7 @@
     }
 
     .menu-item-active {
-        @apply text-white bg-[#7e97a6] shadow-md
+        @apply border-2 border-[#7e97a6]
     }
 
     .card {
