@@ -15,8 +15,12 @@ const props = defineProps<{
             Services
         </a>
 
-        <a href="#" class="menu-item mr-3" :class='props.activePage === "Mes réalisations" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('Mes réalisations')">
+        <a href="#" class="menu-item" :class='props.activePage === "Mes réalisations" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('Mes réalisations')">
             Réalisations
+        </a>
+
+        <a href="#" class="menu-item mx-3" :class='props.activePage === "Mes projets" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('Mes projets')">
+            Projets
         </a>
 
         <a href="#" class="menu-item" :class='props.activePage === "Me contacter" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('Me contacter')">

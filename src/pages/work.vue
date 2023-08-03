@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Data, Props } from '../data/work'
+import { Data } from '../data/work'
 import { WorkDetails } from '../components'
+import { WorkType } from '../interfaces'
 
 const props = defineProps<{ setActivePage: (page: string) => void }>()
 
 const activeItem = ref<number>(0)
-const activeData = ref<Props[]>(Data[0])
+const activeData = ref<WorkType[]>(Data[0])
 const showModal = ref<boolean>(false)
 
 const loadMoreWork = () => {
@@ -51,8 +52,8 @@ const onLoad = () => `<div class="inline-block w-8 h-8 border-4 rounded-full"></
                 <font-awesome-icon :icon="showModal ? ['fa-solid' , 'eye'] : ['fa-solid' , 'eye-slash']" />
             </button>
 
-            <button class="btn xl:hidden" @click="props.setActivePage('Me contacter')">
-                Contact
+            <button class="btn xl:hidden" @click="props.setActivePage('Mes projets')">
+                Projets
             </button>
         </div>
     </div>

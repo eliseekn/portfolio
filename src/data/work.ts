@@ -7,18 +7,9 @@ import yellior from '../../img/work/yellior.png'
 import cabinet_gesma from '../../img/work/cabinet_gesma.png'
 import uvdrs from '../../img/work/uvdrs.png'
 import aff from '../../img/work/aff.png'
+import { WorkType } from '../interfaces'
 
-export interface Props {
-    id: number,
-    url: string,
-    img: string,
-    alt: string,
-    skills: string,
-    desc: string,
-    fullDesc: string
-}
-
-export const Data: Props[][] = [
+export const Data: WorkType[][] = [
     [
         {
             id: 1,
@@ -50,7 +41,7 @@ export const Data: Props[][] = [
             fullDesc: 'IziPlanning est une application dédiée à la gestion et à la plannification des agents de sécurité. Pour ce projet il a s\'agit principalement de faire la refonte du site et le refactoring du backoffice. D\'autres fonctionnalités on par la suite été développées.'
         },
     ],
-    
+
     [
         {
             id: 4,

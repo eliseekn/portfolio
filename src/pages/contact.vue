@@ -73,7 +73,7 @@ const submitContactForm = () => {
                 </div>
                 
                 <div class="flex items-center justify-center md:justify-start mt-10 xl:hidden">
-                    <button class="btn" @click="props.setActivePage('Mes réalisations')" title="Retour">
+                    <button class="btn" @click="props.setActivePage('Mes projets')" title="Retour">
                         <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
                     </button>
 

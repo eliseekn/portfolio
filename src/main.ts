@@ -21,8 +21,7 @@ import {
     faJsSquare,
     faGooglePlay,
     faAppStoreIos,
-    faBootstrap,
-} from "@fortawesome/free-brands-svg-icons"
+    faBootstrap} from "@fortawesome/free-brands-svg-icons"
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(

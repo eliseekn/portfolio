@@ -6,7 +6,8 @@ import {
     Services,
     Work,
     Contact,
-    FAQ
+    FAQ,
+    Project
 } from './pages'
 
 const activePage = ref<string>('A propos')
@@ -19,6 +20,7 @@ const setActivePage = (page: string) => { activePage.value = page }
         <About v-if="activePage === 'A propos'" :setActivePage="setActivePage" />
         <Services v-if="activePage === 'Mes services'" :setActivePage="setActivePage" />
         <Work v-if="activePage === 'Mes réalisations'" :setActivePage="setActivePage" />
+        <Project v-if="activePage === 'Mes projets'" :setActivePage="setActivePage" />
         <Contact v-if="activePage === 'Me contacter'" :setActivePage="setActivePage" />
         <FAQ v-if="activePage === 'FAQ'" :setActivePage="setActivePage" />
     </div>

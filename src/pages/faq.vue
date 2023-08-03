@@ -29,7 +29,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
 
           <p class="text-base md:text-xl md:leading-loose mt-3">
             Mon <span class="text-[#7e97a6] font-semibold">TJM</span> (Tarif Journalier Moyen) est de
-            <span class="text-[#7e97a6] font-semibold">15 000 F CFA</span>.
+            <span class="text-[#7e97a6] font-semibold">30 000 F CFA</span>.
           </p>
         </div>
       </div>
