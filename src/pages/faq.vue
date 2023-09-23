@@ -14,11 +14,17 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
           </h5>
 
           <p class="text-base md:text-xl md:leading-loose mt-3">
-            <!--                        Je suis actuellement <span class="text-[#7e97a6] font-semibold">indisponible</span> jusqu'en fin <span class="text-[#7e97a6] font-semibold">Décembre 2022</span>.-->
             Je suis actuellement
+            <span class="text-[#7e97a6] font-semibold">indisponible</span>
+            jusqu'à fin
+            <span class="text-[#7e97a6] font-semibold">Novembre 2023</span>.
+            <!--Je suis actuellement
             <span class="text-[#7e97a6] font-semibold">disponible</span> pour
-            des missions 
-            <span class="text-[#7e97a6] font-semibold">freelance</span> de développement d'application <span class="text-[#7e97a6] font-semibold">web</span> ou <span class="text-[#7e97a6] font-semibold">mobile</span>.
+            des missions
+            <span class="text-[#7e97a6] font-semibold">freelance</span> de
+            développement d'application
+            <span class="text-[#7e97a6] font-semibold">web</span> ou
+            <span class="text-[#7e97a6] font-semibold">mobile</span>.-->
           </p>
         </div>
 
@@ -28,7 +34,8 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
           </h5>
 
           <p class="text-base md:text-xl md:leading-loose mt-3">
-            Mon <span class="text-[#7e97a6] font-semibold">TJM</span> (Tarif Journalier Moyen) est de
+            Mon <span class="text-[#7e97a6] font-semibold">TJM</span> (Tarif
+            Journalier Moyen) est de
             <span class="text-[#7e97a6] font-semibold">30 000 F CFA</span>.
           </p>
         </div>
@@ -61,11 +68,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
       </div>
 
       <div class="mt-10 xl:hidden">
-        <button
-          class="btn"
-          @click="props.setActivePage('Me contacter')"
-          title="Retour"
-        >
+        <button class="btn" @click="props.setActivePage('Me contacter')" title="Retour">
           <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
         </button>
       </div>
