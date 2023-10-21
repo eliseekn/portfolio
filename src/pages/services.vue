@@ -1,15 +1,15 @@
 <script setup lang="ts">
-const props = defineProps<{ setActivePage: (page: string) => void }>()
+    const props = defineProps<{ setActivePage: (page: string) => void }>()
 </script>
 
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
-        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-4xl xl:hidden">Mes services</h1>
+        <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-4xl xl:hidden">Services</h1>
 
         <div class="grid grid-cols-3 gap-3">
             <div class="animate-fade-in-1 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Développement Back-end
+                    Back-end Development
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
@@ -20,13 +20,13 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des API RESTful robustes avec PHP ou Node.js.
+                    API RESTful development with PHP or Node.js.
                 </p>
             </div>
 
             <div class="animate-fade-in-2 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Développement Front-end
+                    Front-end Development
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
@@ -38,13 +38,13 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des interfaces utilisateur dynamiques avec React.js ou Vue.js.
+                    Dynamic UI development with React.js or Vue.js.
                 </p>
             </div>
 
             <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Développement Mobile
+                    Mobile Development
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
@@ -53,13 +53,13 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des applications mobile Android et iOS avec React Native.
+                    Cross-platform mobile application development with React Native.
                 </p>
             </div>
 
             <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Développement Full-stack
+                    Full-stack Development
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
@@ -68,13 +68,13 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je développe des applications web full-stack avec Laravel ou Next.js.
+                    Full-stack web application development with Laravel or Next.js.
                 </p>
             </div>
 
             <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
                 <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                    Consultance
+                    Consultancy
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
@@ -82,18 +82,18 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Je vous accompagne dans les choix techniques pour la réalisation vos projets.
+                    I help you making technical decisions for your project implementations.
                 </p>
             </div>
         </div>
 
         <div class="flex items-center justify-center md:justify-start mt-10 xl:hidden">
-            <button class="btn" @click="props.setActivePage('A propos')" title="Retour">
+            <button class="btn" @click="props.setActivePage('About')" title="Back">
                 <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
             </button>
 
-            <button class="btn ml-5" @click="props.setActivePage('Mes réalisations')">
-                Mes réalisations
+            <button class="btn ml-2" @click="props.setActivePage('Work')">
+                Work
             </button>
         </div>
     </div>

@@ -5,7 +5,6 @@ export type WorkType = {
   alt: string
   skills: string
   desc: string
-  fullDesc: string
 }
 
 export type ProjectType = {

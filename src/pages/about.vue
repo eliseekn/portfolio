@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import avatar from '../../img/avatar.png'
+    import avatar from '../../img/avatar.png'
 
-const props = defineProps<{ setActivePage: (page: string) => void }>()
+    const props = defineProps<{ setActivePage: (page: string) => void }>()
 </script>
 
 <template>
@@ -9,21 +9,21 @@ const props = defineProps<{ setActivePage: (page: string) => void }>()
         <div class="grid grid-cols-2 gap-3">
             <div class="col-span-6 md:col-auto my-auto order-2 md:order-1 text-center md:text-left">
                 <p>
-                    <span class="text-base md:text-xl md:leading-loose">Salut 👋, je suis</span> <br>
+                    <span class="text-base md:text-xl md:leading-loose">Hello 👋, I am</span> <br>
                     <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée K. N'GUESSAN,</span>
                 </p>
 
                 <h1 class="my-6 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
-                    Développeur Freelance.
+                    Freelance Developer.
                 </h1>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Autodidacte et passionné de développement informatique, j'ai plus de 4 années d'expériences dans le développement d'applications sur mesure avec PHP et JavaScript.
+                    Self-taught and passionate about computer programming, I have 4+ years of experience in web and mobile application development.
                 </p>
 
                 <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10 xl:hidden">
-                    <button class="btn" @click="props.setActivePage('Mes services')">
-                        Mes services
+                    <button class="btn" @click="props.setActivePage('Services')">
+                        Services
                     </button>
                 </div>
             </div>
