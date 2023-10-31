@@ -2,6 +2,7 @@
     import { ref } from 'vue'
     import { Data } from '../data/project'
     import { ProjectType } from '../interfaces'
+    import Project from "../components/project.vue";
 
     const props = defineProps<{ setActivePage: (page: string) => void }>()
     const activeData = ref<ProjectType[]>(Data[0])
@@ -19,6 +20,9 @@
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">{{ data.desc }}</p>
+
+                <Project :repo=data.repo />
+
                 <a :href=data.url class="after:absolute after:inset-0" target="blank" rel="nofollow noreferrer noopener"></a>
             </div>
         </div>

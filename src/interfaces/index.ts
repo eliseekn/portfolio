@@ -10,6 +10,7 @@ export type WorkType = {
 export type ProjectType = {
   id: number
   url: string
+  repo: string
   alt: string
   desc: string
 }

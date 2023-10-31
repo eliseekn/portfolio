@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const props = defineProps<{
-    activePage: string,
-    setActivePage: (page: string) => void
-}>()
+    const props = defineProps<{
+        activePage: string,
+        setActivePage: (page: string) => void
+    }>()
 </script>
 
 <template>

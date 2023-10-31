@@ -9,7 +9,10 @@ import {
     faEyeSlash,
     faEnvelope,
     faHeadset,
-    faDatabase
+    faDatabase,
+    faStar,
+    faCodeFork,
+    faDownLong
 } from "@fortawesome/free-solid-svg-icons"
 import {
     faLaravel,
@@ -47,7 +50,10 @@ library.add(
     faHeadset,
     faBootstrap,
     faDatabase,
-    faSass
+    faSass,
+    faStar,
+    faCodeFork,
+    faDownLong
 )
 
 createApp(App)
