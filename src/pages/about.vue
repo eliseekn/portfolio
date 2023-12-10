@@ -27,7 +27,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
         </h1>
 
         <p class="text-base md:text-xl md:leading-loose">
-          Self-taught and passionate about computer programming, I have 4+ years
+          Self-taught and passionate about computer programming, I have 5+ years
           of experience in web application development.
         </p>
 
