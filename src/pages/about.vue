@@ -7,8 +7,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
 <template>
   <div class="flex items-center min-h-screen">
     <div class="grid grid-cols-2 gap-3">
-      <div
-        class="col-span-6 md:col-auto my-auto order-2 md:order-1 text-center md:text-left"
+      <div class="col-span-6 md:col-auto my-auto order-2 md:order-1 text-center md:text-left"
       >
         <p>
           <span class="text-base md:text-xl md:leading-loose"
@@ -27,7 +26,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
         </h1>
 
         <p class="text-base md:text-xl md:leading-loose">
-          Self-taught and passionate about computer programming, I have 5+ years
+          Self-taught and passionate about computer programming, I have 5 years
           of experience in web application development.
         </p>
 
