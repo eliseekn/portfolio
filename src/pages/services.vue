@@ -17,11 +17,12 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
                     <span><font-awesome-icon :icon="['fa-brands', 'php']" color="#7e97a6"/></span>
                     <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands', 'laravel']" color="#7e97a6"/></span>
-                    <span><font-awesome-icon :icon="['fa-solid', 'database']" color="#7e97a6"/></span>
+                    <span><font-awesome-icon :icon="['fa-brands', 'symfony']" color="#7e97a6"/></span>
+                    <span class="ml-4 md:ml-6"><font-awesome-icon :icon="['fa-solid', 'database']" color="#7e97a6"/></span>
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    API RESTful development with PHP/Laravel.
+                    API RESTful development with Laravel and Symfony.
                 </p>
               </div>
 
@@ -38,22 +39,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Dynamic UI development with React.js and Next.js.
-                </p>
-            </div>
-
-            <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
-                <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
-                  Full-stack Development
-                </p>
-
-                <div class="my-3 md:my-5 text-3xl md:text-4xl">
-                    <span class="mr-4 md:mr-6"><font-awesome-icon :icon="['fa-brands', 'laravel']" color="#7e97a6"/></span>
-                    <span><font-awesome-icon :icon="['fa-brands', 'react']" color="#7e97a6"/></span>
-                </div>
-
-                <p class="text-base md:text-xl md:leading-loose">
-                    Full-stack web application development with Laravel.
+                    Dynamic UI development with React.js.
                 </p>
             </div>
 
@@ -69,6 +55,21 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
 
                 <p class="text-base md:text-xl md:leading-loose">
                     Cross-platform mobile application development with React Native.
+                </p>
+            </div>
+
+            <div class="animate-fade-in-3 col-span-6 lg:col-auto card p-4">
+                <p class="text-[#7e97a6] font-bold text-xl md:text-3xl">
+                    Full-stack Development
+                </p>
+
+                <div class="my-3 md:my-5 text-3xl md:text-4xl">
+                    <span class="mr-4 md:mr-6"><font-awesome-icon :icon="['fa-brands', 'laravel']" color="#7e97a6"/></span>
+                    <span><font-awesome-icon :icon="['fa-brands', 'react']" color="#7e97a6"/></span>
+                </div>
+
+                <p class="text-base md:text-xl md:leading-loose">
+                    Full-stack web application development with Laravel and React.js.
                 </p>
             </div>
 

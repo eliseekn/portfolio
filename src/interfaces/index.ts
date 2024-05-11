@@ -13,4 +13,5 @@ export type ProjectType = {
   repo: string
   alt: string
   desc: string
+  techno: string
 }

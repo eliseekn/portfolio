@@ -14,20 +14,19 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
             >Hello 👋, I am</span
           >
           <br />
-          <span class="text-lg md:text-3xl md:leading-loose font-semibold"
-            >Elisée K. N'GUESSAN,</span
-          >
+          <span class="text-lg md:text-3xl md:leading-loose font-semibold">Elisée K. N'GUESSAN,</span>
         </p>
 
-        <h1
-          class="my-6 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl"
-        >
-          Freelance Developer.
+        <h1 class="my-6 text-[#7e97a6] uppercase font-black text-3xl md:text-5xl">
+          Full-Stack Developer.
         </h1>
 
         <p class="text-base md:text-xl md:leading-loose">
-          Self-taught and passionate about computer programming, I have 5 years
-          of experience in web application development.
+            Self-taught and passionate about computer programming, I have <span class="text-[#7e97a6] font-bold">5+ years experience</span> in application development.
+        </p>
+
+        <p class="text-base md:text-xl md:leading-loose mt-4">
+            I'm currently available to work on <span class="text-[#7e97a6] font-bold">Freelance</span>, <span class="text-[#7e97a6] font-bold">Part time</span> or <span class="text-[#7e97a6] font-bold">Full time</span> jobs.
         </p>
 
         <div

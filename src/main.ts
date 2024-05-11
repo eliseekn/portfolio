@@ -25,7 +25,8 @@ import {
     faGooglePlay,
     faAppStoreIos,
     faBootstrap,
-    faSass
+    faSass,
+    faSymfony
 } from "@fortawesome/free-brands-svg-icons"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -51,7 +52,8 @@ library.add(
     faSass,
     faStar,
     faCodeFork,
-    faDownLong
+    faDownLong,
+    faSymfony
 )
 
 createApp(App)
