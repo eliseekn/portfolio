@@ -5,8 +5,6 @@
         About,
         Services,
         Work,
-        Contact,
-        FAQ,
         Projects
     } from './pages'
 
@@ -21,8 +19,6 @@
         <Services v-if="activePage === 'Services'" :setActivePage="setActivePage" />
         <Work v-if="activePage === 'Work'" :setActivePage="setActivePage" />
         <Projects v-if="activePage === 'Projects'" :setActivePage="setActivePage" />
-        <Contact v-if="activePage === 'Contact'" :setActivePage="setActivePage" />
-        <FAQ v-if="activePage === 'FAQ'" :setActivePage="setActivePage" />
     </div>
 </template>
 

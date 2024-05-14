@@ -69,7 +69,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Full-stack web application development with Laravel and React.js.
+                    Full-stack application development with Laravel and React.js/React Native.
                 </p>
             </div>
 

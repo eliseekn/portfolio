@@ -27,12 +27,8 @@
         </div>
 
         <div class="flex items-center justify-center lg:justify-start mt-10">
-            <button class="btn mr-2 xl:hidden" @click="props.setActivePage('Work')" title="Back">
+            <button class="btn xl:hidden" @click="props.setActivePage('Work')" title="Back">
                 <font-awesome-icon :icon="['fa-solid', 'arrow-left']" />
-            </button>
-
-            <button class="btn xl:hidden" @click="props.setActivePage('Contact')">
-                Contact
             </button>
         </div>
     </div>

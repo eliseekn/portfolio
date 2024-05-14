@@ -23,8 +23,8 @@
             Projects
         </a>
 
-        <a href="#" class="menu-item" :class='props.activePage === "Contact" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('Contact')">
-            Contact
+        <a href="https://docs.google.com/document/d/1LqnWpe-RlB_KMPcHvv75N10-IUuWMhUdW_2ARZrwyc8/edit?usp=sharing" class="menu-item" target="_blank">
+            Resume
         </a>
     </div>
 </template>
