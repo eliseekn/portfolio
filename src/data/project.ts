@@ -51,7 +51,7 @@ export const Data: ProjectType[][] = [
             id: 6,
             url: 'https://github.com/eliseekn/react-native-paper-form-components',
             repo: 'react-native-paper-form-components',
-            alt: 'Form Components for React Native Paper',
+            alt: 'React Native Paper Components',
             desc: 'A set of highly customizable form components for React Native Paper.',
             techno: 'JS'
         }
