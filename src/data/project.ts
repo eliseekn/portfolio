@@ -45,6 +45,15 @@ export const Data: ProjectType[][] = [
             alt: 'OpenStreetMapSearchPlace',
             desc: 'A React Native component to search places using OpenStreetMap.',
             techno: 'JS'
+        },
+
+        {
+            id: 6,
+            url: 'https://github.com/eliseekn/react-native-paper-form-components',
+            repo: 'react-native-paper-form-components',
+            alt: 'Form Components for React Native Paper',
+            desc: 'A set of highly customizable form components for React Native Paper.',
+            techno: 'JS'
         }
     ]
 ]
