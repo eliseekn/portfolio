@@ -15,11 +15,11 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
         </p>
 
         <h1 class="my-6 text-[#7e97a6] font-black text-3xl md:text-5xl">
-          Full-stack Web Developer.
+          Full-stack Developer.
         </h1>
 
         <p class="text-base md:text-xl md:leading-loose">
-            Self-taught and passionate about computer programming, I have <span class="text-[#7e97a6] font-bold">5+ years experience</span> in web application development.
+            Self-taught and passionate about software development, I have <span class="text-[#7e97a6] font-bold">5+ years experience</span> in web application development.
         </p>
 
         <p class="text-base md:text-xl md:leading-loose mt-4">

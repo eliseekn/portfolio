@@ -7,12 +7,22 @@ import yellior from "../../img/work/yellior.jpg";
 import cabinet_gesma from "../../img/work/cabinet_gesma.jpg";
 import uvdrs from "../../img/work/uvdrs.jpg";
 import aff from "../../img/work/aff.jpg";
+import volunteering_app from "../../img/work/volunteering_app.png"
 import { WorkType } from "../interfaces";
 
 export const Data: WorkType[][] = [
     [
         {
             id: 1,
+            url: "#",
+            img: volunteering_app,
+            alt: "Volunteering APP",
+            skills: "React Native, Expo, TypeScript",
+            desc: "Mobile app development."
+        },
+
+        {
+            id: 2,
             url: "https://uvdrs.com",
             img: uvdrs,
             alt: "UVDRS",
@@ -21,27 +31,27 @@ export const Data: WorkType[][] = [
         },
 
         {
-            id: 2,
+            id: 3,
             url: "https://iziloyer.com",
             img: iziloyer,
             alt: "IZI LOYER",
             skills: "Laravel, MySQL, Bootstrap, Javascript",
             desc: "Full-stack web development."
-        },
+        }
+    ],
 
+    [
         {
-            id: 3,
+            id: 4,
             url: "https://iziplanning.pro",
             img: iziplanning,
             alt: "IZI PLANNING",
             skills: "Laravel, MySQL, Bootstrap, Javascript",
             desc: "Full-stack web development."
         },
-    ],
 
-    [
         {
-            id: 4,
+            id: 5,
             url: "https://africafintechforum.org/",
             img: aff,
             alt: "Africa Fintech Forum",
@@ -50,27 +60,27 @@ export const Data: WorkType[][] = [
         },
 
         {
-            id: 5,
+            id: 6,
             url: "https://lesateliersnappy.com",
             img: les_ateliers_nappy,
             alt: "Les Ateliers Nappy",
             skills: "WordPress, API EtsyShop",
             desc: "Refonte et personnalisation du site."
-        },
+        }
+    ],
 
+    [
         {
-            id: 6,
+            id: 7,
             url: "https://cps-securite.com",
             img: cps_securite,
             alt: "CPS Sécurité",
             skills: "Laravel, MySQL",
             desc: "Back-end web development."
         },
-    ],
 
-    [
         {
-            id: 7,
+            id: 8,
             url: "https://diaspozen.com",
             img: diaspozen,
             alt: "DIASPO ZEN",
@@ -79,21 +89,22 @@ export const Data: WorkType[][] = [
         },
 
         {
-            id: 8,
+            id: 9,
             url: "https://yellior.ci",
             img: yellior,
             alt: "Yellior",
             skills: "TinyMVC, MySQL, Bootstrap, Javascript",
             desc: "Design and Full-stack web development."
-        },
-
+        }
+    ],
+    [
         {
-            id: 9,
+            id: 10,
             url: "https://cabinetgesma.com",
             img: cabinet_gesma,
             alt: "Cabinet GESMA",
             skills: "WordPress, MySQL, Bootstrap",
             desc: "Design and WordPress development."
         },
-    ],
+    ]
 ];

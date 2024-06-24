@@ -22,7 +22,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    API RESTful development with Laravel and Symfony.
+                    API RESTful development with PHP, Laravel or Symfony.
                 </p>
               </div>
 
@@ -64,12 +64,13 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
                 </p>
 
                 <div class="my-3 md:my-5 text-3xl md:text-4xl">
-                    <span class="mr-4 md:mr-6"><font-awesome-icon :icon="['fa-brands', 'laravel']" color="#7e97a6"/></span>
+                    <span><font-awesome-icon :icon="['fa-brands', 'laravel']" color="#7e97a6"/></span>
+                    <span class="mx-4 md:mx-6"><font-awesome-icon :icon="['fa-brands', 'symfony']" color="#7e97a6"/></span>
                     <span><font-awesome-icon :icon="['fa-brands', 'react']" color="#7e97a6"/></span>
                 </div>
 
                 <p class="text-base md:text-xl md:leading-loose">
-                    Full-stack application development with Laravel and React.js/React Native.
+                    Full-stack application development with Laravel/Symfony and React.js/React Native.
                 </p>
             </div>
 
