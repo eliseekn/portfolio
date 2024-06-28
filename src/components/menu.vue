@@ -1,10 +1,3 @@
-<script setup lang="ts">
-    const props = defineProps<{
-        activePage: string,
-        setActivePage: (page: string) => void
-    }>()
-</script>
-
 <template>
     <div class="absolute items-center pt-5 pb-2 hidden xl:flex">
         <a href="#" class="menu-item" :class='props.activePage === "About" ? "menu-item-active" : ""' @click.prevent="props.setActivePage('About')">
@@ -29,3 +22,9 @@
     </div>
 </template>
 
+<script setup lang="ts">
+const props = defineProps<{
+    activePage: string,
+    setActivePage: (page: string) => void
+}>()
+</script>

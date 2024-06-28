@@ -18,7 +18,7 @@ export const Data: WorkType[][] = [
             img: volunteering_app,
             alt: "Volunteering APP",
             skills: "React Native, Expo, TypeScript",
-            desc: "Mobile app development."
+            desc: "Organization mobile app development."
         },
 
         {
@@ -27,7 +27,7 @@ export const Data: WorkType[][] = [
             img: uvdrs,
             alt: "UVDRS",
             skills: "Laravel, MySQL, Bootstrap, Javascript",
-            desc: "Full-stack web development."
+            desc: "Online courses website development."
         },
 
         {
@@ -36,7 +36,7 @@ export const Data: WorkType[][] = [
             img: iziloyer,
             alt: "IZI LOYER",
             skills: "Laravel, MySQL, Bootstrap, Javascript",
-            desc: "Full-stack web development."
+            desc: "Real estate website development."
         }
     ],
 
@@ -47,7 +47,7 @@ export const Data: WorkType[][] = [
             img: iziplanning,
             alt: "IZI PLANNING",
             skills: "Laravel, MySQL, Bootstrap, Javascript",
-            desc: "Full-stack web development."
+            desc: "Bug fixes and features development."
         },
 
         {
@@ -56,7 +56,7 @@ export const Data: WorkType[][] = [
             img: aff,
             alt: "Africa Fintech Forum",
             skills: "Next.js, TypeScript",
-            desc: "Front-end web development."
+            desc: "Organization website development."
         },
 
         {
@@ -65,7 +65,7 @@ export const Data: WorkType[][] = [
             img: les_ateliers_nappy,
             alt: "Les Ateliers Nappy",
             skills: "WordPress, API EtsyShop",
-            desc: "Refonte et personnalisation du site."
+            desc: "Website redesign and feature development."
         }
     ],
 
@@ -76,7 +76,7 @@ export const Data: WorkType[][] = [
             img: cps_securite,
             alt: "CPS Sécurité",
             skills: "Laravel, MySQL",
-            desc: "Back-end web development."
+            desc: "Security company website development."
         },
 
         {
@@ -85,7 +85,7 @@ export const Data: WorkType[][] = [
             img: diaspozen,
             alt: "DIASPO ZEN",
             skills: "Laravel, Bootstrap, Javascript",
-            desc: "Front-end web development."
+            desc: "Real estate website development."
         },
 
         {
@@ -94,7 +94,7 @@ export const Data: WorkType[][] = [
             img: yellior,
             alt: "Yellior",
             skills: "TinyMVC, MySQL, Bootstrap, Javascript",
-            desc: "Design and Full-stack web development."
+            desc: "E-commerce website development."
         }
     ],
     [
@@ -104,7 +104,7 @@ export const Data: WorkType[][] = [
             img: cabinet_gesma,
             alt: "Cabinet GESMA",
             skills: "WordPress, MySQL, Bootstrap",
-            desc: "Design and WordPress development."
+            desc: "Accounting company website development."
         },
     ]
 ];

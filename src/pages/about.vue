@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import avatar from "../../img/avatar.png";
-
-const props = defineProps<{ setActivePage: (page: string) => void }>();
-</script>
-
 <template>
   <div class="flex items-center min-h-screen">
     <div class="grid grid-cols-2 gap-3">
@@ -19,7 +13,7 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
         </h1>
 
         <p class="text-base md:text-xl md:leading-loose">
-            Self-taught and passionate about software development, I have <span class="text-[#7e97a6] font-bold">5+ years experience</span> in web application development.
+            Self-taught and passionate about software development, I have <span class="text-[#7e97a6] font-bold">5+ years experience</span> in application development.
         </p>
 
         <p class="text-base md:text-xl md:leading-loose mt-4">
@@ -43,3 +37,9 @@ const props = defineProps<{ setActivePage: (page: string) => void }>();
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import avatar from "../../img/avatar.png";
+
+const props = defineProps<{ setActivePage: (page: string) => void }>();
+</script>

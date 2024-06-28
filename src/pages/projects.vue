@@ -1,13 +1,3 @@
-<script setup lang="ts">
-    import { ref } from 'vue'
-    import { Data } from '../data/project'
-    import { ProjectType } from '../interfaces'
-    import Project from "../components/project.vue";
-
-    const props = defineProps<{ setActivePage: (page: string) => void }>()
-    const activeData = ref<ProjectType[]>(Data[0])
-</script>
-
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
         <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">Projects</h1>
@@ -34,3 +24,12 @@
     </div>
 </template>
 
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Data } from '../data/project'
+import { ProjectType } from '../interfaces'
+import Project from "../components/project.vue";
+
+const props = defineProps<{ setActivePage: (page: string) => void }>()
+const activeData = ref<ProjectType[]>(Data[0])
+</script>

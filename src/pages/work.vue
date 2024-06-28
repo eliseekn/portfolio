@@ -1,24 +1,3 @@
-<script setup lang="ts">
-    import { ref } from 'vue'
-    import { Data } from '../data/work'
-    import { WorkType } from '../interfaces'
-
-    const props = defineProps<{ setActivePage: (page: string) => void }>()
-
-    const activeItem = ref<number>(0)
-    const activeData = ref<WorkType[]>(Data[0])
-
-    const loadMoreWork = () => {
-        activeItem.value = activeItem.value + 1
-
-        if (activeItem.value > Data.length - 1) {
-            activeItem.value = 0
-        }
-
-        activeData.value = Data[activeItem.value]
-    }
-</script>
-
 <template>
     <div class="flex flex-col items-start justify-center min-h-screen">
         <h1 class="mb-5 md:mb-10 font-bold text-3xl md:text-5xl xl:hidden">Work</h1>
@@ -53,3 +32,23 @@
     </div>
 </template>
 
+<script setup lang="ts">
+import { ref } from 'vue'
+import { Data } from '../data/work'
+import { WorkType } from '../interfaces'
+
+const props = defineProps<{ setActivePage: (page: string) => void }>()
+
+const activeItem = ref<number>(0)
+const activeData = ref<WorkType[]>(Data[0])
+
+const loadMoreWork = () => {
+    activeItem.value = activeItem.value + 1
+
+    if (activeItem.value > Data.length - 1) {
+        activeItem.value = 0
+    }
+
+    activeData.value = Data[activeItem.value]
+}
+</script>
