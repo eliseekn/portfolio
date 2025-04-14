@@ -14,8 +14,7 @@
 
         <p class="text-base md:text-xl md:leading-loose">
           Self-taught and passionate about software development, I have <span class="text-[#7e97a6] font-bold">6+ years
-            experience</span> in <span class="text-[#7e97a6] font-bold">web application development</span> with <span
-            class="text-[#7e97a6] font-bold">PHP</span>.
+            experience</span> in <span class="text-[#7e97a6] font-bold">web application development</span>.
         </p>
 
         <div class="animate-slide-in flex items-center justify-center md:justify-start mt-10 xl:hidden">
