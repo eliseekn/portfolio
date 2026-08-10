@@ -7,7 +7,7 @@
     <div class="grid grid-cols-3 gap-3">
       <div
         v-for="data in activeData"
-        :key="data.id"
+        :key="data.url"
         class="p-4 relative col-span-6 lg:col-auto card"
       >
         <div class="mb-3 md:mb-4 text-3xl md:text-4xl flex">
@@ -48,6 +48,5 @@ import { ProjectType } from "../interfaces";
 import Project from "../components/project.vue";
 
 const props = defineProps<{ setActivePage: (page: string) => void }>();
-const activeData = ref<ProjectType[]>(Data[0]);
+const activeData = ref<ProjectType[]>(Data);
 </script>
-

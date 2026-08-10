@@ -16,8 +16,8 @@ import { Menu } from "./components";
 import { About, Services, Work, Projects } from "./pages";
 
 const activePage = ref<string>("About");
+
 const setActivePage = (page: string) => {
   activePage.value = page;
 };
 </script>
-

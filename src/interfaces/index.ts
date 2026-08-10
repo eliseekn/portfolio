@@ -1,5 +1,4 @@
 export type WorkType = {
-  id: number;
   url: string;
   img: string;
   alt: string;
@@ -8,7 +7,6 @@ export type WorkType = {
 };
 
 export type ProjectType = {
-  id: number;
   url: string;
   repo: string;
   alt: string;

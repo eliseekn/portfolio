@@ -19,11 +19,14 @@
         </h1>
 
         <p class="text-base md:text-xl md:leading-loose">
-          Self-taught and passionate about software development, I have
-          <span class="text-[#7e97a6] font-bold">6+ years experience</span> in
+          Self-taught and passionate about software development with
+          <span class="text-[#7e97a6] font-bold">7+ years of experience</span>
+          in
           <span class="text-[#7e97a6] font-bold"
             >web application development</span
-          >.
+          >. I work mainly with
+          <span class="text-[#7e97a6] font-bold">PHP</span> and
+          <span class="text-[#7e97a6] font-bold">Laravel</span>.
         </p>
 
         <div
