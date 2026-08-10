@@ -1,8 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+    --font-montserrat: "Montserrat", sans-serif;
+
+    --animate-slide-in: slideIn 1s ease-in-out;
+    --animate-slide-out: slideOut .5s ease-in-out;
+    --animate-fade-in-1: fadeIn .5s ease-in-out;
+    --animate-fade-in-2: fadeIn 1s ease-in-out;
+    --animate-fade-in-3: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        margin-left: 1%;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 0;
+        margin-left: -5%;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 @layer components {
     .btn {
